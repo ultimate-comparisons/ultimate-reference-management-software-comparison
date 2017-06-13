@@ -1,5 +1,5 @@
-# JabRef - http://www.jabref.org
-Open source reference management software.
+# Zotero - https://www.zotero.org/
+Free reference management software.
 
 ## Open Source
 - yes
@@ -7,7 +7,7 @@ Open source reference management software.
     - [@tum_comparison]
 
 ## Web client
-- no
+- yes
     - [@qucosa]
     - [@tum_comparison]
 
@@ -34,21 +34,12 @@ Open source reference management software.
     - [@tum_comparison]
 - BibTeX
     - [@tum_comparison]
-- Biblatex
+- XML
     - [@tum_comparison]
 - others
     - [@tum_comparison]
 
 ## Database search
-- Google Scholar
-- ArXiv
-- IEEEXplore
-    - [@tum_comparison]
-- dblp
-- Springer
-    - [@tum_comparison]
-- others
-    - [@tum_comparison]
 
 ## Full-text search
 - yes
@@ -60,24 +51,20 @@ Open source reference management software.
     - [@qucosa]
 
 ## Document types
-19
+33
     - [@qucosa]
     - [@tum_comparison]
 
 ## Define new document types
-- yes
+- no
     - [@tum_comparison]
 
 ## Define new entry fields
-- yes
+- no
     - [@qucosa]
     - [@tum_comparison]
 
 ## Add metadata from other sources
-- ISBN
-    - [@tum_comparison]
-- DOI
-    - [@tum_comparison]
 - others
     - [@qucosa]
     - [@tum_comparison]
@@ -98,19 +85,17 @@ Open source reference management software.
     - [@tum_comparison]
 
 ## Processing and evaluation of full texts
-- no
+- yes
     - [@qucosa]
-    - [@tum_comparison]
 
 ## Data display
 - short
     - [@qucosa]
 - full
     - [@qucosa]
-    - [@tum_comparison]
 - list
     - [@tum_comparison]
-- cite
+- timeline
     - [@tum_comparison]
 
 ## Sorting options
@@ -124,33 +109,34 @@ Open source reference management software.
     - [@tum_comparison]
 
 ## Sharing records
-- no
+- yes
     - [@qucosa]
+    - [@tum_comparison]
 
 ## Cooperative use
-- no
+- yes
     - [@qucosa]
     - [@tum_comparison]
 
 ## Different citation styles
 - yes
     - [@qucosa]
+    - [@tum_comparison]
 
 ## Self-definition or adaptation of citation styles
 - yes
     - [@qucosa]
+    - [@tum_comparison]
 
 ## Word processing support
-- TeX-Editor
-    - [@qucosa]
-    - [@tum_comparison]
 - MS Word
+    - [@qucosa]
     - [@tum_comparison]
 - LibreOffice
-    - [@qucosa]
     - [@tum_comparison]
 - Open Office
     - [@qucosa]
+    - [@tum_comparison]
 
 ## Insert text passages
 - yes
@@ -161,11 +147,13 @@ Open source reference management software.
     - [@qucosa]
 - dynamic
     - [@qucosa]
+    - [@tum_comparison]
 
 ## Organization of knowledge
+- notes
+    - [@qucosa]
+    - [@tum_comparison]
 - tags
     - [@qucosa]
-- groups
     - [@tum_comparison]
-- special fields
-
+	
