@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Creation of literature lists",
+    "tag": "Creation of literature lists",
+    "description": "Support of static or dynamic creation of literature lists.",
+    "placeholder": "Select ...",
+    "and_search": true,
+    "values": [
+      {
+        "name": "static"
+      },
+      {
+        "name": "dynamic"
+      }
+    ]
+  },
+  {
+    "name": "Word processing support",
+    "tag": "Word processing support",
+    "description": "The software has word processing program support.",
+    "placeholder": "Select word processing program ...",
+    "and_search": true,
+    "values": [
+      {
+        "name": "TeX-Editor"
+      },
+      {
+        "name": "MS Word"
+      },
+      {
+        "name": "Open Office"
+      },
+      {
+        "name": "Google Docs"
+      }
+    ]
+  }
+]

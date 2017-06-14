@@ -1,0 +1,707 @@
+[
+    {
+        "name": "Software",
+        "tag": "tag",
+        "urlTag": "url",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "url"
+        },
+        "valign": "top"
+    },
+    {
+        "name": "Short Description",
+        "tag": "descr",
+        "style": "width: 25%",
+        "display": false,
+        "type": {
+            "tag": "text"
+        }
+    },
+    {
+        "name": "Open Source",
+        "tag": "Open Source",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software is not Open Source.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software is Open Source.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Web client",
+        "tag": "Web client",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software has no web client.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software has a web client.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Import from files",
+        "tag": "Import from files",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support import from files.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports import from files.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Import filter",
+        "tag": "Import filter",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "RIS",
+                    "description": "RIS import filter is available.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "BibTeX",
+                    "description": "BibTeX import filter is available.",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "TXT",
+                    "description": "TXT import filter is available.",
+                    "color": "#4F11EA"
+                },
+                {
+                    "name": "XML",
+                    "description": "XML import filter is available.",
+                    "color": "#EA6311"
+                },
+                {
+                    "name": "others",
+                    "description": "Other import filters are available.",
+                    "color": "#C6EA11"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Import from web pages",
+        "tag": "Import from web pages",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support import from web pages.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports import from web pages.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Export",
+        "tag": "Export",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "RIS",
+                    "description": "RIS export available.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "BibTeX",
+                    "description": "BibTeX export available.",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "XML",
+                    "description": "XML export format available.",
+                    "color": "#4F11EA"
+                },
+                {
+                    "name": "others",
+                    "description": "Other export formats available.",
+                    "color": "#EA6311"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Database search",
+        "tag": "Database search",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "Google Scholar",
+                    "description": "The software supports database search in Google Scholar.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "Own database",
+                    "description": "The software supports database search in the softwares own database.",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "ArXiv",
+                    "description": "The software supports database search in ArXiv.",
+                    "color": "#4F11EA"
+                },
+                {
+                    "name": "IEEEXplore",
+                    "description": "The software supports database search in IEEE.",
+                    "color": "#EA6311"
+                },
+                {
+                    "name": "dblp",
+                    "description": "The software supports database search in dblp.",
+                    "color": "#C6EA11"
+                },
+                {
+                    "name": "Springer",
+                    "description": "The software supports database search in Springer.",
+                    "color": "#113FEA"
+                },
+                {
+                    "name": "crossref.org (doi)",
+                    "description": "The software supports database search at crossref.org.",
+                    "color": "#77EA11"
+                },
+                {
+                    "name": "others",
+                    "description": "The software supports other database searchs.",
+                    "color": "#9811EA"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Full-text search",
+        "tag": "Full-text search",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support full-text search.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports full-text search.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Manual entry of Reference / Title",
+        "tag": "Manual entry of Reference / Title",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support manual entry of a reference / title.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports manual entry of a reference / title.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Document types",
+        "tag": "Document types",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "text"
+        },
+        "valign": "top"
+    },
+    {
+        "name": "Define new document types",
+        "tag": "Define new document types",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support user defined document types.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports user defined document types.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Define new entry fields",
+        "tag": "Define new entry fields",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support user defined entry fields.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports user defined entry fields.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Add metadata from other sources",
+        "tag": "Add metadata from other sources",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "ISBN",
+                    "description": "The software supports adding metadata via ISBN.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "DOI",
+                    "description": "The software supports adding metadata via DOI.",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "others",
+                    "description": "The software supports adding metadata via other information.",
+                    "color": "#4F11EA"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Link references",
+        "tag": "Link references",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support linking references (e.g. reprints, translations).",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports linking references (e.g. reprints, translations).",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Integration of documents",
+        "tag": "Integration of documents",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support integration of documents (local or via internet).",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports integration of documents (local or via internet).",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Duplicate check",
+        "tag": "Duplicate check",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support duplicate check.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports duplicate check.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Processing and evaluation of full texts",
+        "tag": "Processing and evaluation of full texts",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support processing and evaluation of full texts.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports processing and evaluation of full texts.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Data display",
+        "tag": "Data display",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "list",
+                    "description": "The software supports list display.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "short",
+                    "description": "The software supports short display.",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "full",
+                    "description": "The software supports full display.",
+                    "color": "#4F11EA"
+                },
+                {
+                    "name": "cite",
+                    "description": "The software supports cite view.",
+                    "color": "#EA6311"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Sorting options",
+        "tag": "Sorting options",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support sorting options for references.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports sorting options for references.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Search history",
+        "tag": "Search history",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support search history.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports search history.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Sharing records (account required)",
+        "tag": "Sharing records",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support sharing records with other users.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports sharing records with other users.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Cooperative use",
+        "tag": "Cooperative use",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support cooperative use and processing possible by several users.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports cooperative use and processing possible by several users.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Different citation styles",
+        "tag": "Different citation styles",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support different citation styles.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports different citation styles.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Self-definition or adaptation of citation styles",
+        "tag": "Self-definition or adaptation of citation styles",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support self-definition or adaptation of citation styles.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports self-definition or adaptation of citation styles.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Word processing support",
+        "tag": "Word processing support",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "TeX-Editor",
+                    "description": "The software supports inserting references into TeX-Editors including automatic updating.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "MS Word",
+                    "description": "The software supports inserting references into Microsoft Word including automatic updating.",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "Open Office",
+                    "description": "The software supports inserting references into Open Office including automatic updating.",
+                    "color": "#4F11EA"
+                },
+                {
+                    "name": "LibreOffice",
+                    "description": "The software supports inserting references into LibreOffice including automatic updating.",
+                    "color": "#EA6311"
+                },
+                {
+                    "name": "Google Docs",
+                    "description": "The software supports inserting references into Google Docs including automatic updating.",
+                    "color": "#C6EA11"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Insert text passages",
+        "tag": "Insert text passages",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "no",
+                    "description": "The software does not support inserting text passages.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "yes",
+                    "description": "The software supports inserting text passages.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Creation of literature lists",
+        "tag": "Creation of literature lists",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "static",
+                    "description": "The software supports creation of static reference lists.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "dynamic",
+                    "description": "The software supports creation of dynamic reference lists.",
+                    "color": "#11EAD3"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Organization of knowledge",
+        "tag": "Organization of knowledge",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-primary",
+            "values": [
+                {
+                    "name": "notes",
+                    "description": "The software supports creation of notes.",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "tags",
+                    "description": "The software supports creation of tags.",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "groups",
+                    "description": "The software supports creation of reference groups.",
+                    "color": "#4F11EA"
+                },
+                {
+                    "name": "special fields",
+                    "description": "The software supports creation of special fields.",
+                    "color": "#EA6311"
+                },
+                {
+                    "name": "free text fields",
+                    "description": "The software supports creation of free text fields.",
+                    "color": "#C6EA11"
+                }
+            ]
+        }
+    }
+]

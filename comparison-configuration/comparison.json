@@ -1,0 +1,42 @@
+{
+  "title": "Ultimate-Comparison",
+  "subtitle": "Ultimate reference management software comparison framework",
+  "selecttitle": "Criteria",
+  "tabletitle": "Comparison of reference management software",
+  "details": {
+    "header-label": "",
+    "body-main-title": "Description",
+    "body": "descr",
+    "body-attachment-tags": [
+      "Open Source",
+      "Web client",
+      "Import from files",
+      "Import from web pages",
+      "Import filter",
+      "Export",
+      "Database search",
+      "Full-text search",
+      "Manual entry of Reference / Title",
+      "Document types",
+      "Define new document types",
+      "Define new entry fields",
+      "Add metadata from other sources",
+      "Link references",
+      "Integration of documents",
+      "Duplicate check",
+      "Processing and evaluation of full texts",
+      "Data display",
+      "Sorting options",
+      "Search history",
+      "Sharing records",
+      "Cooperative use",
+      "Different citation styles",
+      "Self-definition or adaptation of citation styles",
+      "Word processing support",
+      "Insert text passages",
+      "Creation of literature lists",
+      "Organization of knowledge"
+    ]
+  },
+  "repository": "https://github.com/muelletr/ultimate-reference-management-software-comparison.git"
+}
