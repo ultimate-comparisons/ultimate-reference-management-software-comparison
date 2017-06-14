@@ -598,27 +598,27 @@
             "values": [
                 {
                     "name": "TeX-Editor",
-                    "description": "The software supports inserting references into TeX-Editors including automatic updating.",
+                    "description": "The software supports inserting references into TeX-Editors.",
                     "class": "label-primary"
                 },
                 {
                     "name": "MS Word",
-                    "description": "The software supports inserting references into Microsoft Word including automatic updating.",
+                    "description": "The software supports inserting references into Microsoft Word.",
                     "class": "label-primary"
                 },
                 {
                     "name": "Open Office",
-                    "description": "The software supports inserting references into Open Office including automatic updating.",
+                    "description": "The software supports inserting references into Open Office.",
                     "class": "label-primary"
                 },
 				{
                     "name": "LibreOffice",
-                    "description": "The software supports inserting references into LibreOffice including automatic updating.",
+                    "description": "The software supports inserting references into LibreOffice.",
                     "class": "label-primary"
                 },
                 {
                     "name": "Google Docs",
-                    "description": "The software supports inserting references into Google Docs including automatic updating.",
+                    "description": "The software supports inserting references into Google Docs.",
                     "class": "label-primary"
                 }
             ]
@@ -656,13 +656,18 @@
             "values": [
                 {
                     "name": "static",
-                    "description": "The software supports creation of static reference lists.",
+                    "description": "The software supports the creation of static reference lists.",
                     "class": "label-primary"
                 },
                 {
                     "name": "dynamic",
-                    "description": "The software supports creation of dynamic reference lists.",
+                    "description": "The software supports the creation of dynamic reference lists.",
                     "class": "label-primary"
+                },
+                {
+                    "name": "(dynamic)",
+                    "description": "The software supports partly the creation of dynamic reference lists.",
+                    "class": "label-warning"
                 }
             ]
         }
