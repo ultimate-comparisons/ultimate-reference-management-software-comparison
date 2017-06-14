@@ -23,7 +23,7 @@
         "name": "Open Source",
         "tag": "Open Source",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -44,7 +44,7 @@
         "name": "Web client",
         "tag": "Web client",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -61,11 +61,11 @@
             ]
         }
     },
-    {
+	{
         "name": "Import from files",
         "tag": "Import from files",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -94,27 +94,27 @@
                 {
                     "name": "RIS",
                     "description": "RIS import filter is available.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
-                {
+				{
                     "name": "BibTeX",
                     "description": "BibTeX import filter is available.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 },
                 {
                     "name": "TXT",
                     "description": "TXT import filter is available.",
-                    "color": "#4F11EA"
+                    "class": "label-primary"
                 },
                 {
                     "name": "XML",
                     "description": "XML import filter is available.",
-                    "color": "#EA6311"
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
                     "description": "Other import filters are available.",
-                    "color": "#C6EA11"
+                    "class": "label-primary"
                 }
             ]
         }
@@ -123,7 +123,7 @@
         "name": "Import from web pages",
         "tag": "Import from web pages",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -152,22 +152,22 @@
                 {
                     "name": "RIS",
                     "description": "RIS export available.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
                 {
                     "name": "BibTeX",
                     "description": "BibTeX export available.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 },
                 {
                     "name": "XML",
                     "description": "XML export format available.",
-                    "color": "#4F11EA"
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
                     "description": "Other export formats available.",
-                    "color": "#EA6311"
+                    "class": "label-primary"
                 }
             ]
         }
@@ -184,42 +184,42 @@
                 {
                     "name": "Google Scholar",
                     "description": "The software supports database search in Google Scholar.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
                 {
                     "name": "Own database",
                     "description": "The software supports database search in the softwares own database.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 },
                 {
                     "name": "ArXiv",
                     "description": "The software supports database search in ArXiv.",
-                    "color": "#4F11EA"
+                    "class": "label-primary"
                 },
                 {
                     "name": "IEEEXplore",
                     "description": "The software supports database search in IEEE.",
-                    "color": "#EA6311"
+                    "class": "label-primary"
                 },
                 {
                     "name": "dblp",
                     "description": "The software supports database search in dblp.",
-                    "color": "#C6EA11"
+                    "class": "label-primary"
                 },
                 {
                     "name": "Springer",
                     "description": "The software supports database search in Springer.",
-                    "color": "#113FEA"
+                    "class": "label-primary"
                 },
                 {
                     "name": "crossref.org (doi)",
                     "description": "The software supports database search at crossref.org.",
-                    "color": "#77EA11"
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
                     "description": "The software supports other database searchs.",
-                    "color": "#9811EA"
+                    "class": "label-primary"
                 }
             ]
         }
@@ -249,7 +249,7 @@
         "name": "Manual entry of Reference / Title",
         "tag": "Manual entry of Reference / Title",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -270,7 +270,7 @@
         "name": "Document types",
         "tag": "Document types",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "text"
         },
@@ -330,17 +330,17 @@
                 {
                     "name": "ISBN",
                     "description": "The software supports adding metadata via ISBN.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
-                {
+				{
                     "name": "DOI",
                     "description": "The software supports adding metadata via DOI.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
                     "description": "The software supports adding metadata via other information.",
-                    "color": "#4F11EA"
+                    "class": "label-primary"
                 }
             ]
         }
@@ -349,7 +349,7 @@
         "name": "Link references",
         "tag": "Link references",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -370,7 +370,7 @@
         "name": "Integration of documents",
         "tag": "Integration of documents",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -391,7 +391,7 @@
         "name": "Duplicate check",
         "tag": "Duplicate check",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -412,7 +412,7 @@
         "name": "Processing and evaluation of full texts",
         "tag": "Processing and evaluation of full texts",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -433,7 +433,7 @@
         "name": "Data display",
         "tag": "Data display",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "class": "label label-primary",
@@ -441,22 +441,22 @@
                 {
                     "name": "list",
                     "description": "The software supports list display.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
                 {
                     "name": "short",
                     "description": "The software supports short display.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 },
                 {
                     "name": "full",
                     "description": "The software supports full display.",
-                    "color": "#4F11EA"
+                    "class": "label-primary"
                 },
                 {
                     "name": "cite",
                     "description": "The software supports cite view.",
-                    "color": "#EA6311"
+                    "class": "label-primary"
                 }
             ]
         }
@@ -465,7 +465,7 @@
         "name": "Sorting options",
         "tag": "Sorting options",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -486,7 +486,7 @@
         "name": "Search history",
         "tag": "Search history",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -507,7 +507,7 @@
         "name": "Sharing records (account required)",
         "tag": "Sharing records",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -549,7 +549,7 @@
         "name": "Different citation styles",
         "tag": "Different citation styles",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -570,7 +570,7 @@
         "name": "Self-definition or adaptation of citation styles",
         "tag": "Self-definition or adaptation of citation styles",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -591,7 +591,7 @@
         "name": "Word processing support",
         "tag": "Word processing support",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "class": "label label-primary",
@@ -599,27 +599,27 @@
                 {
                     "name": "TeX-Editor",
                     "description": "The software supports inserting references into TeX-Editors including automatic updating.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
                 {
                     "name": "MS Word",
                     "description": "The software supports inserting references into Microsoft Word including automatic updating.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 },
                 {
                     "name": "Open Office",
                     "description": "The software supports inserting references into Open Office including automatic updating.",
-                    "color": "#4F11EA"
+                    "class": "label-primary"
                 },
-                {
+				{
                     "name": "LibreOffice",
                     "description": "The software supports inserting references into LibreOffice including automatic updating.",
-                    "color": "#EA6311"
+                    "class": "label-primary"
                 },
                 {
                     "name": "Google Docs",
                     "description": "The software supports inserting references into Google Docs including automatic updating.",
-                    "color": "#C6EA11"
+                    "class": "label-primary"
                 }
             ]
         }
@@ -628,7 +628,7 @@
         "name": "Insert text passages",
         "tag": "Insert text passages",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -657,12 +657,12 @@
                 {
                     "name": "static",
                     "description": "The software supports creation of static reference lists.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
                 {
                     "name": "dynamic",
                     "description": "The software supports creation of dynamic reference lists.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 }
             ]
         }
@@ -679,27 +679,27 @@
                 {
                     "name": "notes",
                     "description": "The software supports creation of notes.",
-                    "color": "#EA3711"
+                    "class": "label-primary"
                 },
                 {
                     "name": "tags",
                     "description": "The software supports creation of tags.",
-                    "color": "#11EAD3"
+                    "class": "label-primary"
                 },
                 {
                     "name": "groups",
                     "description": "The software supports creation of reference groups.",
-                    "color": "#4F11EA"
+                    "class": "label-primary"
                 },
                 {
                     "name": "special fields",
                     "description": "The software supports creation of special fields.",
-                    "color": "#EA6311"
+                    "class": "label-primary"
                 },
                 {
                     "name": "free text fields",
                     "description": "The software supports creation of free text fields.",
-                    "color": "#C6EA11"
+                    "class": "label-primary"
                 }
             ]
         }
