@@ -1,5 +1,891 @@
 [
   {
+    "tag": "Citavi - https://www.citavi.com",
+    "descr": "",
+    "Open Source": {
+      "plain": "- no\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Web client": {
+      "plain": "- no\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Import from files": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Import filter": {
+      "plain": "- BibTeX\n    - [@tum_comparison]\n- RIS\n    - [@tum_comparison]\n- others\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BibTeX",
+              "plain": "BibTeX\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "RIS",
+              "plain": "RIS\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "others",
+              "plain": "others\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Import from web pages": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Export": {
+      "plain": "- RIS\n    - [@tum_comparison]\n- BibTeX\n    - [@tum_comparison]\n- Biblatex\n    - [@tum_comparison]\n- others\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "RIS",
+              "plain": "RIS\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "BibTeX",
+              "plain": "BibTeX\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Biblatex",
+              "plain": "Biblatex\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "others",
+              "plain": "others\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Database search": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Full-text search": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Manual entry of Reference / Title": {
+      "plain": "- yes\n    - [@qucosa]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Document types": {
+      "plain": "35\n    - [@qucosa]\n    - [@tum_comparison]",
+      "childs": {
+        "0": [
+          "35  - [@qucosa]  - [@tum_comparison]"
+        ]
+      }
+    },
+    "Define new document types": {
+      "plain": "- no\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Define new entry fields": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Add metadata from other sources": {
+      "plain": "- ISBN\n    - [@tum_comparison]\n- DOI\n    - [@tum_comparison]\n- others\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "ISBN",
+              "plain": "ISBN\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "DOI",
+              "plain": "DOI\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "others",
+              "plain": "others\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Link references": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Integration of documents": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Duplicate check": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Processing and evaluation of full texts": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Data display": {
+      "plain": "- short\n    - [@qucosa]\n- full\n    - [@qucosa]\n- list\n    - [@tum_comparison]\n- cite\n    - [@qucosa]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "short",
+              "plain": "short\n",
+              "plainChilds": "    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "full",
+              "plain": "full\n",
+              "plainChilds": "    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "list",
+              "plain": "list\n",
+              "plainChilds": "    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "cite",
+              "plain": "cite\n",
+              "plainChilds": "    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Sorting options": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Search history": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Sharing records": {
+      "plain": "- yes\n    - [@qucosa]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Cooperative use": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Different citation styles": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Self-definition or adaptation of citation styles": {
+      "plain": "- yes\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Word processing support": {
+      "plain": "- TeX-Editor\n    - [@qucosa]\n    - [@tum_comparison]\n- MS Word\n    - [@qucosa]\n    - [@tum_comparison]\n- LibreOffice\n    - [@qucosa]\n    - [@tum_comparison]\n- Open Office\n    - [@qucosa]\n    - [@tum_comparison]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "TeX-Editor",
+              "plain": "TeX-Editor\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MS Word",
+              "plain": "MS Word\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "LibreOffice",
+              "plain": "LibreOffice\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Open Office",
+              "plain": "Open Office\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum_comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum_comparison]",
+                  "plain": "[@tum_comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Insert text passages": {
+      "plain": "- yes\n    - [@qucosa]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Creation of literature lists": {
+      "plain": "- static\n    - [@qucosa]\n- (dynamic)\n    - only for MS Word and LaTeX\n    - [@qucosa]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "static",
+              "plain": "static\n",
+              "plainChilds": "    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "(dynamic)",
+              "plain": "(dynamic)\n",
+              "plainChilds": "    - only for MS Word and LaTeX\n    - [@qucosa]\n",
+              "childs": [
+                {
+                  "content": "only for MS Word and LaTeX",
+                  "plain": "only for MS Word and LaTeX\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Organization of knowledge": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    }
+  },
+  {
     "tag": "JabRef - http://www.jabref.org",
     "descr": "Open source reference management software.",
     "Open Source": {
