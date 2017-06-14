@@ -23,7 +23,7 @@
         "name": "Open Source",
         "tag": "Open Source",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -44,7 +44,7 @@
         "name": "Web client",
         "tag": "Web client",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -65,7 +65,7 @@
         "name": "Import from files",
         "tag": "Import from files",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -93,23 +93,28 @@
             "values": [
                 {
                     "name": "RIS",
-                    "description": "RIS import filter is available."
+                    "description": "RIS import filter is available.",
+                    "class": "label-primary"
                 },
 				{
                     "name": "BibTeX",
-                    "description": "BibTeX import filter is available."
+                    "description": "BibTeX import filter is available.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "TXT",
-                    "description": "TXT import filter is available."
+                    "description": "TXT import filter is available.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "XML",
-                    "description": "XML import filter is available."
+                    "description": "XML import filter is available.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
-                    "description": "Other import filters are available."
+                    "description": "Other import filters are available.",
+                    "class": "label-primary"
                 }
             ]
         }
@@ -118,7 +123,7 @@
         "name": "Import from web pages",
         "tag": "Import from web pages",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -146,19 +151,23 @@
             "values": [
                 {
                     "name": "RIS",
-                    "description": "RIS export available."
+                    "description": "RIS export available.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "BibTeX",
-                    "description": "BibTeX export available."
+                    "description": "BibTeX export available.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "XML",
-                    "description": "XML export format available."
+                    "description": "XML export format available.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
-                    "description": "Other export formats available."
+                    "description": "Other export formats available.",
+                    "class": "label-primary"
                 }
             ]
         }
@@ -174,35 +183,43 @@
             "values": [
                 {
                     "name": "Google Scholar",
-                    "description": "The software supports database search in Google Scholar."
+                    "description": "The software supports database search in Google Scholar.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "Own database",
-                    "description": "The software supports database search in the softwares own database."
+                    "description": "The software supports database search in the softwares own database.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "ArXiv",
-                    "description": "The software supports database search in ArXiv."
+                    "description": "The software supports database search in ArXiv.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "IEEEXplore",
-                    "description": "The software supports database search in IEEE."
+                    "description": "The software supports database search in IEEE.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "dblp",
-                    "description": "The software supports database search in dblp."
+                    "description": "The software supports database search in dblp.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "Springer",
-                    "description": "The software supports database search in Springer."
+                    "description": "The software supports database search in Springer.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "crossref.org (doi)",
-                    "description": "The software supports database search at crossref.org."
+                    "description": "The software supports database search at crossref.org.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
-                    "description": "The software supports other database searchs."
+                    "description": "The software supports other database searchs.",
+                    "class": "label-primary"
                 }
             ]
         }
@@ -232,7 +249,7 @@
         "name": "Manual entry of Reference / Title",
         "tag": "Manual entry of Reference / Title",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -253,7 +270,7 @@
         "name": "Document types",
         "tag": "Document types",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "text"
         },
@@ -312,15 +329,18 @@
             "values": [
                 {
                     "name": "ISBN",
-                    "description": "The software supports adding metadata via ISBN."
+                    "description": "The software supports adding metadata via ISBN.",
+                    "class": "label-primary"
                 },
 				{
                     "name": "DOI",
-                    "description": "The software supports adding metadata via DOI."
+                    "description": "The software supports adding metadata via DOI.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "others",
-                    "description": "The software supports adding metadata via other information."
+                    "description": "The software supports adding metadata via other information.",
+                    "class": "label-primary"
                 }
             ]
         }
@@ -329,7 +349,7 @@
         "name": "Link references",
         "tag": "Link references",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -350,7 +370,7 @@
         "name": "Integration of documents",
         "tag": "Integration of documents",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -371,7 +391,7 @@
         "name": "Duplicate check",
         "tag": "Duplicate check",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -392,7 +412,7 @@
         "name": "Processing and evaluation of full texts",
         "tag": "Processing and evaluation of full texts",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -413,26 +433,30 @@
         "name": "Data display",
         "tag": "Data display",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "class": "label label-primary",
             "values": [
                 {
                     "name": "list",
-                    "description": "The software supports list display."
+                    "description": "The software supports list display.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "short",
-                    "description": "The software supports short display."
+                    "description": "The software supports short display.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "full",
-                    "description": "The software supports full display."
+                    "description": "The software supports full display.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "cite",
-                    "description": "The software supports cite view."
+                    "description": "The software supports cite view.",
+                    "class": "label-primary"
                 }
             ]
         }
@@ -441,7 +465,7 @@
         "name": "Sorting options",
         "tag": "Sorting options",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -462,7 +486,7 @@
         "name": "Search history",
         "tag": "Search history",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -483,7 +507,7 @@
         "name": "Sharing records (account required)",
         "tag": "Sharing records",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -525,7 +549,7 @@
         "name": "Different citation styles",
         "tag": "Different citation styles",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -546,7 +570,7 @@
         "name": "Self-definition or adaptation of citation styles",
         "tag": "Self-definition or adaptation of citation styles",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -567,30 +591,35 @@
         "name": "Word processing support",
         "tag": "Word processing support",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "class": "label label-primary",
             "values": [
                 {
                     "name": "TeX-Editor",
-                    "description": "The software supports inserting references into TeX-Editors including automatic updating."
+                    "description": "The software supports inserting references into TeX-Editors including automatic updating.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "MS Word",
-                    "description": "The software supports inserting references into Microsoft Word including automatic updating."
+                    "description": "The software supports inserting references into Microsoft Word including automatic updating.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "Open Office",
-                    "description": "The software supports inserting references into Open Office including automatic updating."
+                    "description": "The software supports inserting references into Open Office including automatic updating.",
+                    "class": "label-primary"
                 },
 				{
                     "name": "LibreOffice",
-                    "description": "The software supports inserting references into LibreOffice including automatic updating."
+                    "description": "The software supports inserting references into LibreOffice including automatic updating.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "Google Docs",
-                    "description": "The software supports inserting references into Google Docs including automatic updating."
+                    "description": "The software supports inserting references into Google Docs including automatic updating.",
+                    "class": "label-primary"
                 }
             ]
         }
@@ -599,7 +628,7 @@
         "name": "Insert text passages",
         "tag": "Insert text passages",
         "style": "width: 5%",
-        "display": false,
+        "display": true,
         "type": {
             "tag": "label",
             "values": [
@@ -627,11 +656,13 @@
             "values": [
                 {
                     "name": "static",
-                    "description": "The software supports creation of static reference lists."
+                    "description": "The software supports creation of static reference lists.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "dynamic",
-                    "description": "The software supports creation of dynamic reference lists."
+                    "description": "The software supports creation of dynamic reference lists.",
+                    "class": "label-primary"
                 }
             ]
         }
@@ -647,23 +678,28 @@
             "values": [
                 {
                     "name": "notes",
-                    "description": "The software supports creation of notes."
+                    "description": "The software supports creation of notes.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "tags",
-                    "description": "The software supports creation of tags."
+                    "description": "The software supports creation of tags.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "groups",
-                    "description": "The software supports creation of reference groups."
+                    "description": "The software supports creation of reference groups.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "special fields",
-                    "description": "The software supports creation of special fields."
+                    "description": "The software supports creation of special fields.",
+                    "class": "label-primary"
                 },
                 {
                     "name": "free text fields",
-                    "description": "The software supports creation of free text fields."
+                    "description": "The software supports creation of free text fields.",
+                    "class": "label-primary"
                 }
             ]
         }
