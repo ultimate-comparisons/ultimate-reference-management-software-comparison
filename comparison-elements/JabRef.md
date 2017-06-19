@@ -30,11 +30,9 @@ Open source reference management software.
     - [@tum_comparison]
 
 ## Export
-- RIS
-    - [@tum_comparison]
 - BibTeX
     - [@tum_comparison]
-- Biblatex
+- RIS
     - [@tum_comparison]
 - others
     - [@tum_comparison]
@@ -103,14 +101,18 @@ Open source reference management software.
     - [@tum_comparison]
 
 ## Data display
+- BibTeX
+    - [@tum_comparison]
 - short
     - [@qucosa]
 - full
     - [@qucosa]
-    - [@tum_comparison]
+    - with tabs
+        - [@tum_comparison]
 - list
-    - [@tum_comparison]
-- cite
+    - configurable
+        - [@tum_comparison]
+- citation
     - [@tum_comparison]
 
 ## Sorting options
@@ -125,6 +127,7 @@ Open source reference management software.
 
 ## Sharing records
 - no
+    - possible to share BibTeX file or database
     - [@qucosa]
 
 ## Cooperative use
@@ -145,15 +148,12 @@ Open source reference management software.
     - [@qucosa]
     - [@tum_comparison]
 - MS Word
+    - external plug-in required
     - [@tum_comparison]
 - LibreOffice
     - [@qucosa]
     - [@tum_comparison]
-- Open Office
-    - [@qucosa]
-
-## Insert text passages
-- yes
+- OpenOffice
     - [@qucosa]
 
 ## Creation of literature lists

@@ -29,16 +29,19 @@
     - [@tum_comparison]
 
 ## Export
-- RIS
-    - [@tum_comparison]
 - BibTeX
     - [@tum_comparison]
-- Biblatex
+- RIS
     - [@tum_comparison]
 - others
     - [@tum_comparison]
 
 ## Database search
+- ArXiv
+- IEEEXplore
+- Springer
+- Crossref
+- others
 
 ## Full-text search
 - yes
@@ -95,11 +98,17 @@
 ## Data display
 - short
     - [@qucosa]
+    - configurable
+        - [@tum_comparison]
 - full
     - [@qucosa]
 - list
-    - [@tum_comparison]
-- cite
+    - formatted
+        - [@tum_comparison]
+- table
+    - fields are configurable
+        - [@tum_comparison]
+- citation
     - [@qucosa]
 
 ## Sorting options
@@ -114,6 +123,7 @@
 
 ## Sharing records
 - yes
+    - only with Citavi for Windows and Citavi for DBServer
     - [@qucosa]
 
 ## Cooperative use
@@ -133,28 +143,32 @@
 
 ## Word processing support
 - TeX-Editor
+    - publication wizard
     - [@qucosa]
     - [@tum_comparison]
 - MS Word
+    - add-in required
     - [@qucosa]
     - [@tum_comparison]
 - LibreOffice
+    - publication wizard
     - [@qucosa]
     - [@tum_comparison]
-- Open Office
+- OpenOffice
+    - publication wizard
     - [@qucosa]
     - [@tum_comparison]
-
-## Insert text passages
-- yes
-    - [@qucosa]
 
 ## Creation of literature lists
 - static
     - [@qucosa]
-- (dynamic)
-    - only for MS Word and LaTeX
+- dynamic (L)
+    - only for MS Word with add-in and LaTeX
     - [@qucosa]
 
 ## Organization of knowledge
+- notes
+- tags
+- groups
+- free text fields
 

@@ -7,7 +7,7 @@ Free reference management software.
     - [@tum_comparison]
 
 ## Web client
-- yes
+- yes (L)
     - [@qucosa]
     - [@tum_comparison]
 
@@ -30,16 +30,15 @@ Free reference management software.
     - [@tum_comparison]
 
 ## Export
-- RIS
-    - [@tum_comparison]
 - BibTeX
     - [@tum_comparison]
-- XML
+- RIS
     - [@tum_comparison]
 - others
     - [@tum_comparison]
 
 ## Database search
+- none
 
 ## Full-text search
 - yes
@@ -65,6 +64,8 @@ Free reference management software.
     - [@tum_comparison]
 
 ## Add metadata from other sources
+- ISBN
+- DOI
 - others
     - [@qucosa]
     - [@tum_comparison]
@@ -85,15 +86,15 @@ Free reference management software.
     - [@tum_comparison]
 
 ## Processing and evaluation of full texts
-- yes
+- yes (L)
+    - only with add-on ZotFile for Firefox
     - [@qucosa]
 
 ## Data display
-- short
-    - [@qucosa]
 - full
     - [@qucosa]
 - list
+    - configurable
     - [@tum_comparison]
 - timeline
     - [@tum_comparison]
@@ -130,17 +131,16 @@ Free reference management software.
 
 ## Word processing support
 - MS Word
+    - plug-in required
     - [@qucosa]
     - [@tum_comparison]
 - LibreOffice
+    - plug-in required
     - [@tum_comparison]
-- Open Office
+- OpenOffice
+    - plug-in required
     - [@qucosa]
     - [@tum_comparison]
-
-## Insert text passages
-- yes
-    - [@qucosa]
 
 ## Creation of literature lists
 - static
