@@ -86,6 +86,7 @@ Free reference management software with a web client.
     - [@tum_comparison]
 
 ## Data display
+- short
 - full
 - list
     - [@tum_comparison]
@@ -132,6 +133,7 @@ Free reference management software with a web client.
 
 ## Creation of literature lists
 - static
+    - [@tum_comparison]
 - dynamic
     - [@tum_comparison]
 

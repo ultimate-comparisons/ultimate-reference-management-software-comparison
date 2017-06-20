@@ -90,8 +90,9 @@ Reference management software with costs which also provides a free web version 
 - full
     - [@qucosa]
     - [@tum_comparison]
-- list
+- table
     - [@qucosa]
+    - configurable
     - [@tum_comparison]
 - citation
     - [@qucosa]

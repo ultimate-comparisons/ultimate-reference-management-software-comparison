@@ -93,7 +93,7 @@ Free reference management software.
 ## Data display
 - full
     - [@qucosa]
-- list
+- table
     - configurable
     - [@tum_comparison]
 - timeline

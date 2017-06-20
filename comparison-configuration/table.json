@@ -455,22 +455,22 @@
                 },
                 {
                     "name": "short",
-                    "description": "The software supports a short view.",
+                    "description": "The software supports a short view of an entry.",
                     "class": "label-primary"
                 },
                 {
                     "name": "full",
-                    "description": "The software supports a full view.",
+                    "description": "The software supports a full view of an entry.",
                     "class": "label-primary"
                 },
                 {
                     "name": "timeline",
-                    "description": "The software supports a timeline view.",
+                    "description": "The software supports a timeline view of all entries.",
                     "class": "label-primary"
                 },
                 {
                     "name": "citation",
-                    "description": "The software supports a citation display.",
+                    "description": "The software supports a citation display of an entry.",
                     "class": "label-primary"
                 }
             ]

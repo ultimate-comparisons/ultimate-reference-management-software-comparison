@@ -109,7 +109,7 @@ Open source reference management software.
     - [@qucosa]
     - with tabs
     - [@tum_comparison]
-- list
+- table
     - configurable
     - [@tum_comparison]
 - citation

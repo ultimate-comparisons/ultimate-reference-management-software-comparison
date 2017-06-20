@@ -99,15 +99,15 @@
 - short
     - [@qucosa]
     - configurable
-        - [@tum_comparison]
+    - [@tum_comparison]
 - full
     - [@qucosa]
 - list
     - formatted
-        - [@tum_comparison]
+    - [@tum_comparison]
 - table
-    - fields are configurable
-        - [@tum_comparison]
+    - configurable
+    - [@tum_comparison]
 - citation
     - [@qucosa]
 
