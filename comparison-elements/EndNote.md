@@ -1,19 +1,20 @@
-# Colwiz - https://www.colwiz.com
-Free reference management software with a web client.
+# EndNote - http://www.endnote.com
+Reference management software with costs which also provides a free web version with limited functionality.
 
 ## Open Source
 - no
+    - [@qucosa]
 
 ## Web client
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Import from files
 - yes
+    - [@qucosa]
 
 ## Import filter
-- BibTeX
-    - [@tum_comparison]
 - RIS
     - [@tum_comparison]
 - others
@@ -21,7 +22,7 @@ Free reference management software with a web client.
 
 ## Import from web pages
 - yes
-    - with [Web Importer](https://www.colwiz.com/download/importer)
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Export
@@ -33,112 +34,120 @@ Free reference management software with a web client.
     - [@tum_comparison]
 
 ## Database search
-- Google Scholar
-- ArXiv
-- IEEEXplore
-- dblp
-- Springer
 - Crossref
-- own database
 - others
 
 ## Full-text search
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Manual entry of Reference / Title
 - yes
+    - [@qucosa]
 
 ## Document types
-15
+51
     - [@qucosa]
     - [@tum_comparison]
 
 ## Define new document types
-- no
+- yes
     - [@tum_comparison]
 
 ## Define new entry fields
-- no
+- yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Add metadata from other sources
-- DOI
+- ISBN
     - [@tum_comparison]
-- others
+- DOI
     - [@tum_comparison]
 
 ## Link references
 - no
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Integration of documents
 - yes
-    - only for Desktop version
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Duplicate check
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Processing and evaluation of full texts
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Data display
 - full
-- list
+    - [@qucosa]
     - [@tum_comparison]
-- table
+- list
+    - [@qucosa]
+    - [@tum_comparison]
+- citation
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Sorting options
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Search history
 - yes
-    - within one session
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Sharing records
 - yes
-    - [@tum_comparison]
+    - [@qucosa]
 
 ## Cooperative use
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Different citation styles
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Self-definition or adaptation of citation styles
 - yes
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Word processing support
-- TeX-Editor
-    - [@tum_comparison]
 - MS Word
-    - plug-in required
-    - [@tum_comparison]
-- LibreOffice
-    - plug-in required
+    - add-in required
+    - [@qucosa]
     - [@tum_comparison]
 - OpenOffice
-    - plug-in required
+    - add-in required
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Creation of literature lists
 - static
+    - [@qucosa]
+    - [@tum_comparison]
 - dynamic
+    - [@qucosa]
     - [@tum_comparison]
 
 ## Organization of knowledge
 - notes
-    - [@tum_comparison]
+    - [@qucosa]
+- tags
+    - [@qucosa]
 - groups
-    - [@tum_comparison]
-
 

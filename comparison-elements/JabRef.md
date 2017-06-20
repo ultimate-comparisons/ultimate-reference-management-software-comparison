@@ -108,10 +108,10 @@ Open source reference management software.
 - full
     - [@qucosa]
     - with tabs
-        - [@tum_comparison]
+    - [@tum_comparison]
 - list
     - configurable
-        - [@tum_comparison]
+    - [@tum_comparison]
 - citation
     - [@tum_comparison]
 
