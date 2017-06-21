@@ -1,5 +1,86 @@
 [
   {
+    "name": "Open Source",
+    "tag": "Open Source",
+    "description": "The software is open source or not.",
+    "placeholder": "Select ...",
+    "and_search": false,
+    "values": [
+      {
+        "name": "yes"
+      },
+      {
+        "name": "no"
+      }
+    ]
+  },
+  {
+    "name": "Database search",
+    "tag": "Database search",
+    "description": "Database searches within the software.",
+    "placeholder": "Select ...",
+    "and_search": true,
+    "values": [
+      {
+        "name": "ArXiv"
+      },
+      {
+        "name": "IEEEXplore"
+      },
+      {
+        "name": "dblp"
+      },
+      {
+        "name": "Springer"
+      },
+      {
+        "name": "Crossref"
+      },
+      {
+        "name": "own database"
+      },
+      {
+        "name": "others"
+      },
+      {
+        "name": "none"
+      }
+    ]
+  },
+  {
+    "name": "Cooperative use",
+    "tag": "Cooperative use",
+    "description": "The software supports cooperative use and processing by several users.",
+    "placeholder": "Select ...",
+    "and_search": false,
+    "values": [
+      {
+        "name": "yes"
+      },
+      {
+        "name": "no"
+      }
+    ]
+  },
+  {
+    "name": "Processing and evaluation of full texts",
+    "tag": "Processing and evaluation of full texts",
+    "description": "The software supports processing and evaluation of full texts.",
+    "placeholder": "Select ...",
+    "and_search": false,
+    "values": [
+      {
+        "name": "yes"
+      },
+      {
+        "name": "yes (L)"
+      },
+      {
+        "name": "no"
+      }
+    ]
+  },
+  {
     "name": "Creation of literature lists",
     "tag": "Creation of literature lists",
     "description": "Support of static or dynamic creation of literature lists.",
@@ -11,6 +92,9 @@
       },
       {
         "name": "dynamic"
+      },
+      {
+        "name": "dynamic (L)"
       }
     ]
   },
@@ -28,7 +112,10 @@
         "name": "MS Word"
       },
       {
-        "name": "Open Office"
+        "name": "OpenOffice"
+      },
+      {
+        "name": "LibreOffice"
       },
       {
         "name": "Google Docs"
