@@ -57,6 +57,11 @@
                     "name": "yes",
                     "description": "The software has a web client.",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software has a web client with limited functionality.",
+                    "class": "label-warning"
                 }
             ]
         }
@@ -99,16 +104,6 @@
 				{
                     "name": "BibTeX",
                     "description": "BibTeX import filter is available.",
-                    "class": "label-primary"
-                },
-                {
-                    "name": "TXT",
-                    "description": "TXT import filter is available.",
-                    "class": "label-primary"
-                },
-                {
-                    "name": "XML",
-                    "description": "XML import filter is available.",
                     "class": "label-primary"
                 },
                 {
@@ -160,11 +155,6 @@
                     "class": "label-primary"
                 },
                 {
-                    "name": "XML",
-                    "description": "XML export format available.",
-                    "class": "label-primary"
-                },
-                {
                     "name": "others",
                     "description": "Other export formats available.",
                     "class": "label-primary"
@@ -183,43 +173,48 @@
             "values": [
                 {
                     "name": "Google Scholar",
-                    "description": "The software supports database search in Google Scholar.",
+                    "description": "The software supports database search at [Google Scholar](https://scholar.google.com).",
                     "class": "label-primary"
                 },
                 {
-                    "name": "Own database",
-                    "description": "The software supports database search in the softwares own database.",
+                    "name": "own database",
+                    "description": "The software supports database search in its own database.",
                     "class": "label-primary"
                 },
                 {
                     "name": "ArXiv",
-                    "description": "The software supports database search in ArXiv.",
+                    "description": "The software supports database search at [ArXiv](https://arxiv.org).",
                     "class": "label-primary"
                 },
                 {
                     "name": "IEEEXplore",
-                    "description": "The software supports database search in IEEE.",
+                    "description": "The software supports database search at [IEEE Xplore](http://ieeexplore.ieee.org).",
                     "class": "label-primary"
                 },
                 {
                     "name": "dblp",
-                    "description": "The software supports database search in dblp.",
+                    "description": "The software supports database search at [dblp](http://dblp.uni-trier.de).",
                     "class": "label-primary"
                 },
                 {
                     "name": "Springer",
-                    "description": "The software supports database search in Springer.",
+                    "description": "The software supports database search at [Springer](https://link.springer.com).",
                     "class": "label-primary"
                 },
                 {
-                    "name": "crossref.org (doi)",
-                    "description": "The software supports database search at crossref.org.",
+                    "name": "Crossref",
+                    "description": "The software supports database search at [Crossref](http://search.crossref.org).",
                     "class": "label-primary"
                 },
                 {
                     "name": "others",
-                    "description": "The software supports other database searchs.",
+                    "description": "The software supports other database searches.",
                     "class": "label-primary"
+                },
+                {
+                    "name": "none",
+                    "description": "The software does not support database searches.",
+                    "class": "label-danger"
                 }
             ]
         }
@@ -246,7 +241,7 @@
         }
     },
     {
-        "name": "Manual entry of Reference / Title",
+        "name": "Manual entry of reference",
         "tag": "Manual entry of Reference / Title",
         "style": "width: 5%",
         "display": true,
@@ -425,6 +420,11 @@
                     "name": "yes",
                     "description": "The software supports processing and evaluation of full texts.",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software supports partly processing and evaluation of full texts.",
+                    "class": "label-warning"
                 }
             ]
         }
@@ -439,23 +439,38 @@
             "class": "label label-primary",
             "values": [
                 {
+                    "name": "BibTeX",
+                    "description": "The software supports a view of the BibTeX source code.",
+                    "class": "label-primary"
+                },
+                {
                     "name": "list",
-                    "description": "The software supports list display.",
+                    "description": "The software supports a list view of all entries.",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "table",
+                    "description": "The software supports a table view of all entries.",
                     "class": "label-primary"
                 },
                 {
                     "name": "short",
-                    "description": "The software supports short display.",
+                    "description": "The software supports a short view of an entry.",
                     "class": "label-primary"
                 },
                 {
                     "name": "full",
-                    "description": "The software supports full display.",
+                    "description": "The software supports a full view of an entry.",
                     "class": "label-primary"
                 },
                 {
-                    "name": "cite",
-                    "description": "The software supports cite view.",
+                    "name": "timeline",
+                    "description": "The software supports a timeline view of all entries.",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "citation",
+                    "description": "The software supports a citation display of an entry.",
                     "class": "label-primary"
                 }
             ]
@@ -504,7 +519,7 @@
         }
     },
     {
-        "name": "Sharing records (account required)",
+        "name": "Sharing records with other users",
         "tag": "Sharing records",
         "style": "width: 5%",
         "display": true,
@@ -513,12 +528,12 @@
             "values": [
                 {
                     "name": "no",
-                    "description": "The software does not support sharing records with other users.",
+                    "description": "The software does not support sharing records with other users of the same reference management software.",
                     "class": "label-danger"
                 },
                 {
                     "name": "yes",
-                    "description": "The software supports sharing records with other users.",
+                    "description": "The software supports sharing records with other users of the same reference management software.",
                     "class": "label-success"
                 }
             ]
@@ -534,12 +549,12 @@
             "values": [
                 {
                     "name": "no",
-                    "description": "The software does not support cooperative use and processing possible by several users.",
+                    "description": "The software does not support cooperative use and processing by several users.",
                     "class": "label-danger"
                 },
                 {
                     "name": "yes",
-                    "description": "The software supports cooperative use and processing possible by several users.",
+                    "description": "The software supports cooperative use and processing by several users.",
                     "class": "label-success"
                 }
             ]
@@ -607,7 +622,7 @@
                     "class": "label-primary"
                 },
                 {
-                    "name": "Open Office",
+                    "name": "OpenOffice",
                     "description": "The software supports inserting references into Open Office.",
                     "class": "label-primary"
                 },
@@ -620,27 +635,6 @@
                     "name": "Google Docs",
                     "description": "The software supports inserting references into Google Docs.",
                     "class": "label-primary"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Insert text passages",
-        "tag": "Insert text passages",
-        "style": "width: 5%",
-        "display": true,
-        "type": {
-            "tag": "label",
-            "values": [
-                {
-                    "name": "no",
-                    "description": "The software does not support inserting text passages.",
-                    "class": "label-danger"
-                },
-                {
-                    "name": "yes",
-                    "description": "The software supports inserting text passages.",
-                    "class": "label-success"
                 }
             ]
         }
@@ -665,7 +659,7 @@
                     "class": "label-primary"
                 },
                 {
-                    "name": "(dynamic)",
+                    "name": "dynamic (L)",
                     "description": "The software supports partly the creation of dynamic reference lists.",
                     "class": "label-warning"
                 }
