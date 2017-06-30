@@ -3,38 +3,38 @@
 ## Open Source
 - no
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Web client
 - no
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Import from files
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Import filter
 - BibTeX
-    - [@tum_comparison]
+    - [@tum-comparison]
 - RIS
-    - [@tum_comparison]
+    - [@tum-comparison]
 - others
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Import from web pages
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Export
 - BibTeX
-    - [@tum_comparison]
+    - [@tum-comparison]
 - RIS
-    - [@tum_comparison]
+    - [@tum-comparison]
 - others
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Database search
 - ArXiv
@@ -46,7 +46,7 @@
 ## Full-text search
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Manual entry of Reference / Title
 - yes
@@ -55,71 +55,71 @@
 ## Document types
 35
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Define new document types
 - no
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Define new entry fields
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Add metadata from other sources
 - ISBN
-    - [@tum_comparison]
+    - [@tum-comparison]
 - DOI
-    - [@tum_comparison]
+    - [@tum-comparison]
 - others
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Link references
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Integration of documents
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Duplicate check
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Processing and evaluation of full texts
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Data display
 - short
     - [@qucosa]
     - configurable
-    - [@tum_comparison]
+    - [@tum-comparison]
 - full
     - [@qucosa]
 - list
     - formatted
-    - [@tum_comparison]
+    - [@tum-comparison]
 - table
     - configurable
-    - [@tum_comparison]
+    - [@tum-comparison]
 - citation
     - [@qucosa]
 
 ## Sorting options
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Search history
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Sharing records
 - yes
@@ -129,35 +129,35 @@
 ## Cooperative use
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Different citation styles
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Self-definition or adaptation of citation styles
 - yes
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Word processing support
 - TeX-Editor
     - publication wizard
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 - MS Word
     - add-in required
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 - LibreOffice
     - publication wizard
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 - OpenOffice
     - publication wizard
     - [@qucosa]
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Creation of literature lists
 - static

@@ -3,50 +3,50 @@ Reference management software for Google Docs users.
 
 ## Open Source
 - no
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Web client
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Import from files
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Import filter
 - BibTeX
-    - [@tum_comparison]
+    - [@tum-comparison]
 - RIS
-    - [@tum_comparison]
+    - [@tum-comparison]
 - others
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Import from web pages
 - yes
     - with Google Chrome Extension
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Export
 - BibTeX
-    - [@tum_comparison]
+    - [@tum-comparison]
 - RIS
-    - [@tum_comparison]
+    - [@tum-comparison]
 - others
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Database search
 - Google Scholar
-    - [@tum_comparison]
+    - [@tum-comparison]
 - ArXiv
-    - [@tum_comparison]
+    - [@tum-comparison]
 - Crossref
-    - [@tum_comparison]
+    - [@tum-comparison]
 - others
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Full-text search
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Manual entry of Reference / Title
 - yes
@@ -56,76 +56,76 @@ Reference management software for Google Docs users.
 
 ## Define new document types
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Define new entry fields
 - no
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Add metadata from other sources
 - DOI
-    - [@tum_comparison]
+    - [@tum-comparison]
 - others
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Link references
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Integration of documents
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Duplicate check
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Processing and evaluation of full texts
 - no
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Data display
 - full
-    - [@tum_comparison]
+    - [@tum-comparison]
 - list
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Sorting options
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Search history
 - no
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Sharing records
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Cooperative use
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Different citation styles
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Self-definition or adaptation of citation styles
 - yes
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Word processing support
 - Google Docs
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Creation of literature lists
 - static
-    - [@tum_comparison]
+    - [@tum-comparison]
 - dynamic
-    - [@tum_comparison]
+    - [@tum-comparison]
 
 ## Organization of knowledge
 - notes
 - groups
-    - [@tum_comparison]
+    - [@tum-comparison]
 
