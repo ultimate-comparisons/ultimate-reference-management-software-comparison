@@ -709,6 +709,11 @@
                     "name": "free text fields",
                     "description": "The software supports creation of free text fields.",
                     "class": "label-primary"
+                },
+                {
+                    "name": "mind map",
+                    "description": "The software supports creation of mind maps.",
+                    "class": "label-primary"
                 }
             ]
         }
