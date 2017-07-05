@@ -70,7 +70,7 @@
         "name": "Import from files",
         "tag": "Import from files",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -223,7 +223,7 @@
         "name": "Full-text search",
         "tag": "Full-text search",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -244,7 +244,7 @@
         "name": "Manual entry of reference",
         "tag": "Manual entry of Reference / Title",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -265,7 +265,7 @@
         "name": "Document types",
         "tag": "Document types",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "text"
         },
@@ -365,7 +365,7 @@
         "name": "Integration of documents",
         "tag": "Integration of documents",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -386,7 +386,7 @@
         "name": "Duplicate check",
         "tag": "Duplicate check",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -438,7 +438,7 @@
         "name": "Data display",
         "tag": "Data display",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "class": "label label-primary",
@@ -485,7 +485,7 @@
         "name": "Sorting options",
         "tag": "Sorting options",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -506,7 +506,7 @@
         "name": "Search history",
         "tag": "Search history",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -569,7 +569,7 @@
         "name": "Different citation styles",
         "tag": "Different citation styles",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -611,7 +611,7 @@
         "name": "Word processing support",
         "tag": "Word processing support",
         "style": "width: 5%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "class": "label label-primary",
