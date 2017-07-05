@@ -635,6 +635,11 @@
                     "name": "Google Docs",
                     "description": "The software supports inserting references into Google Docs.",
                     "class": "label-primary"
+                },
+                {
+                    "name": "none",
+                    "description": "The software does not support a word processing program.",
+                    "class": "label-danger"
                 }
             ]
         }
