@@ -55,7 +55,10 @@ Free reference management software with a mind map feature.
 - yes
 
 ## Duplicate check
-- no
+- yes (L)
+    - in settings menu:
+    - automatically resolve duplicate keys
+    - always ignore duplicate keys
 
 ## Processing and evaluation of full texts
 - yes
