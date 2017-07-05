@@ -399,6 +399,11 @@
                     "name": "yes",
                     "description": "The software supports duplicate check.",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software supports partly a duplicate check.",
+                    "class": "label-warning"
                 }
             ]
         }
