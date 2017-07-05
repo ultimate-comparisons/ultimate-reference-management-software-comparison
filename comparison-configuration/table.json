@@ -399,6 +399,11 @@
                     "name": "yes",
                     "description": "The software supports duplicate check.",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software supports partly a duplicate check.",
+                    "class": "label-warning"
                 }
             ]
         }
@@ -635,6 +640,11 @@
                     "name": "Google Docs",
                     "description": "The software supports inserting references into Google Docs.",
                     "class": "label-primary"
+                },
+                {
+                    "name": "none",
+                    "description": "The software does not support a word processing program.",
+                    "class": "label-danger"
                 }
             ]
         }
@@ -698,6 +708,11 @@
                 {
                     "name": "free text fields",
                     "description": "The software supports creation of free text fields.",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "mind map",
+                    "description": "The software supports creation of mind maps.",
                     "class": "label-primary"
                 }
             ]
