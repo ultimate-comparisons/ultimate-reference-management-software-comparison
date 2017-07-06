@@ -58,7 +58,7 @@ Open source reference management software.
     - [@qucosa]
 
 ## Document types
-19
+- 19
     - [@qucosa]
     - [@tum-comparison]
 

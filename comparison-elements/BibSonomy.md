@@ -41,7 +41,7 @@
 - yes
 
 ## Document types
-20
+- 20
 
 ## Define new document types
 - no

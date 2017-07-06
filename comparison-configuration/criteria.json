@@ -121,5 +121,13 @@
         "name": "Google Docs"
       }
     ]
+  },
+  {
+    "name": "Document types",
+    "tag": "Document types",
+    "description": "Number of available document types.",
+    "placeholder": "Select number ranges ...",
+    "and_search": false,
+    "range_search": true
   }
 ]

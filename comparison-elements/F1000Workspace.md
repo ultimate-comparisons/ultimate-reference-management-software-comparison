@@ -45,7 +45,7 @@
     - [@f1000-user-guide]
 
 ## Document types
-11
+- 11
 
 ## Define new document types
 - no

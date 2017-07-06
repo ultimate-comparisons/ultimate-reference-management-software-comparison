@@ -50,7 +50,7 @@ Free reference management software with a web client.
 - yes
 
 ## Document types
-15
+- 15
     - [@qucosa]
     - [@tum-comparison]
 

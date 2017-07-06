@@ -53,7 +53,7 @@
     - [@qucosa]
 
 ## Document types
-35
+- 35
     - [@qucosa]
     - [@tum-comparison]
 

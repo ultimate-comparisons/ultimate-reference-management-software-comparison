@@ -47,7 +47,7 @@ Reference management software with costs which also provides a free web version 
     - [@qucosa]
 
 ## Document types
-51
+- 51
     - [@qucosa]
     - [@tum-comparison]
 

@@ -49,7 +49,7 @@
     - [@qucosa]
 
 ## Document types
-31
+- 31
     - [@tum-comparison]
 
 ## Define new document types

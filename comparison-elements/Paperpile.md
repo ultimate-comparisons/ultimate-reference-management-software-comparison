@@ -52,7 +52,7 @@ Reference management software for Google Docs users.
 - yes
 
 ## Document types
-36
+- 36
 
 ## Define new document types
 - yes

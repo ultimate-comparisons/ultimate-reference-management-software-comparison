@@ -40,7 +40,7 @@ Free reference management tool with additional features for paying Gold users li
     - [@citeulike]
 
 ## Document types
-17
+- 17
 
 ## Define new document types
 - no

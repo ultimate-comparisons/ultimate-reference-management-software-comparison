@@ -50,7 +50,7 @@ Free reference management software.
     - [@qucosa]
 
 ## Document types
-33
+- 33
     - [@qucosa]
     - [@tum-comparison]
 

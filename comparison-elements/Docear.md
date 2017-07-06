@@ -36,7 +36,7 @@ Free reference management software with a mind map feature.
 - yes
 
 ## Document types
-19
+- 19
 
 ## Define new document types
 - no

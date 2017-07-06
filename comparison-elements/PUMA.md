@@ -38,7 +38,7 @@ Free reference management tool based on BibSonomy [@puma-license].
 - yes
 
 ## Document types
-21
+- 21
 
 ## Define new document types
 - no
