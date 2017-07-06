@@ -1,6 +1,12 @@
 import {
-    Component, Input, Output, EventEmitter, ApplicationRef, ChangeDetectionStrategy,
-    AfterViewChecked
+    Component,
+    Input,
+    Output,
+    EventEmitter,
+    ApplicationRef,
+    ChangeDetectionStrategy,
+    AfterViewChecked,
+    OnChanges
 } from "@angular/core";
 import { TableData, Data, CriteriaSelection } from "./../../comparison/shared/index";
 import { ComparisonCitationService } from "./../../comparison/components/comparison-citation.service";
@@ -14,8 +20,10 @@ declare let anchors;
     styleUrls: ['./generic-table.component.css'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GenericTableComponent implements AfterViewChecked {
+export class GenericTableComponent implements AfterViewChecked, OnChanges {
     private counter: number = 0;
+    private table;
+
     @Input() display: boolean = false;
     @Input() settings: boolean = false;
     @Input() columns: Array<TableData> = new Array<TableData>();
@@ -65,6 +73,7 @@ export class GenericTableComponent implements AfterViewChecked {
         }
         this.orderChange.emit(this.order);
         this.orderOptionChange.emit(this.orderOption);
+        this.table.trigger('reflow');
     }
 
     private displayOrder(value: string, option: number): boolean {
@@ -76,12 +85,22 @@ export class GenericTableComponent implements AfterViewChecked {
     }
 
     ngAfterViewChecked(): void {
-        const t = (<any>$("table.table.table-hover"));
-        t.floatThead();
+        this.table = (<any>$("table.table.table-hover"));
+        this.table.floatThead();
         anchors.options = {
             placement: 'right'
         };
         anchors.add('.anchored');
+    }
+
+    ngOnChanges(): void {
+        this.update();
+    }
+
+    public update(): void {
+        if (this.table != null) {
+            this.table.trigger('reflow');
+        }
     }
 
     public shouldBeShown(data: Data) {
@@ -100,7 +119,7 @@ export class GenericTableComponent implements AfterViewChecked {
         return val;
     }
 
-    public getColor(column: TableData,label: string): SafeHtml {
+    public getColor(column: TableData, label: string): SafeHtml {
         return this.sanitization.bypassSecurityTrustStyle(column.type.colors.getColor(label));
     }
 }
