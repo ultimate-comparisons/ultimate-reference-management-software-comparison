@@ -216,10 +216,17 @@
       }
     },
     "Document types": {
-      "plain": "20",
+      "plain": "- 20\n",
       "childs": {
         "0": [
-          "20"
+          [
+            {
+              "content": "20",
+              "plain": "20\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -875,10 +882,30 @@
       }
     },
     "Document types": {
-      "plain": "35\n    - [@qucosa]\n    - [@tum-comparison]",
+      "plain": "- 35\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
-          "35  - [@qucosa]  - [@tum-comparison]"
+          [
+            {
+              "content": "35",
+              "plain": "35\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
@@ -1761,10 +1788,17 @@
       }
     },
     "Document types": {
-      "plain": "17",
+      "plain": "- 17\n",
       "childs": {
         "0": [
-          "17"
+          [
+            {
+              "content": "17",
+              "plain": "17\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -2399,10 +2433,30 @@
       }
     },
     "Document types": {
-      "plain": "15\n    - [@qucosa]\n    - [@tum-comparison]",
+      "plain": "- 15\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
-          "15  - [@qucosa]  - [@tum-comparison]"
+          [
+            {
+              "content": "15",
+              "plain": "15\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
@@ -3020,13 +3074,19 @@
       }
     },
     "Export": {
-      "plain": "- BibTeX\n- others\n",
+      "plain": "- BibTeX\n- RIS\n- others\n",
       "childs": {
         "0": [
           [
             {
               "content": "BibTeX",
               "plain": "BibTeX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "RIS",
+              "plain": "RIS\n",
               "plainChilds": "",
               "childs": []
             },
@@ -3100,10 +3160,17 @@
       }
     },
     "Document types": {
-      "plain": "19",
+      "plain": "- 19\n",
       "childs": {
         "0": [
-          "19"
+          [
+            {
+              "content": "19",
+              "plain": "19\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -3760,10 +3827,30 @@
       }
     },
     "Document types": {
-      "plain": "51\n    - [@qucosa]\n    - [@tum-comparison]",
+      "plain": "- 51\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
-          "51  - [@qucosa]  - [@tum-comparison]"
+          [
+            {
+              "content": "51",
+              "plain": "51\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
@@ -4591,10 +4678,17 @@
       }
     },
     "Document types": {
-      "plain": "11",
+      "plain": "- 11\n",
       "childs": {
         "0": [
-          "11"
+          [
+            {
+              "content": "11",
+              "plain": "11\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -5373,10 +5467,30 @@
       }
     },
     "Document types": {
-      "plain": "19\n    - [@qucosa]\n    - [@tum-comparison]",
+      "plain": "- 19\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
-          "19  - [@qucosa]  - [@tum-comparison]"
+          [
+            {
+              "content": "19",
+              "plain": "19\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
@@ -6290,10 +6404,30 @@
       }
     },
     "Document types": {
-      "plain": "20\n    - [@qucosa]\n    - [@tum-comparison]",
+      "plain": "- 20\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
-          "20  - [@qucosa]  - [@tum-comparison]"
+          [
+            {
+              "content": "20",
+              "plain": "20\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
@@ -7088,10 +7222,17 @@
       }
     },
     "Document types": {
-      "plain": "21",
+      "plain": "- 21\n",
       "childs": {
         "0": [
-          "21"
+          [
+            {
+              "content": "21",
+              "plain": "21\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -7719,10 +7860,17 @@
       }
     },
     "Document types": {
-      "plain": "36",
+      "plain": "- 36\n",
       "childs": {
         "0": [
-          "36"
+          [
+            {
+              "content": "36",
+              "plain": "36\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -8417,10 +8565,24 @@
       }
     },
     "Document types": {
-      "plain": "31\n    - [@tum-comparison]",
+      "plain": "- 31\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
-          "31  - [@tum-comparison]"
+          [
+            {
+              "content": "31",
+              "plain": "31\n",
+              "plainChilds": "    - [@tum-comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
@@ -9325,10 +9487,30 @@
       }
     },
     "Document types": {
-      "plain": "33\n    - [@qucosa]\n    - [@tum-comparison]",
+      "plain": "- 33\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
-          "33  - [@qucosa]  - [@tum-comparison]"
+          [
+            {
+              "content": "33",
+              "plain": "33\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "childs": [
+                {
+                  "content": ",[@qucosa]",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },

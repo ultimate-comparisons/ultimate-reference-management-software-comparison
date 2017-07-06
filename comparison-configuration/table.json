@@ -267,9 +267,76 @@
         "style": "width: 5%",
         "display": false,
         "type": {
-            "tag": "text"
-        },
-        "valign": "top"
+            "tag": "label",
+            "values": [
+                {
+                    "name": 11,
+                    "description": "The software supports 11 document types.",
+                    "weight": 1.1,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 15,
+                    "description": "The software supports 15 document types.",
+                    "weight": 1.5,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 17,
+                    "description": "The software supports 17 document types.",
+                    "weight": 1.7,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 19,
+                    "description": "The software supports 19 document types.",
+                    "weight": 1.9,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 20,
+                    "description": "The software supports 20 document types.",
+                    "weight": 2,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 21,
+                    "description": "The software supports 21 document types.",
+                    "weight": 2.1,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 31,
+                    "description": "The software supports 31 document types.",
+                    "weight": 3.1,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 33,
+                    "description": "The software supports 33 document types.",
+                    "weight": 3.3,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 35,
+                    "description": "The software supports 35 document types.",
+                    "weight": 3.5,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 36,
+                    "description": "The software supports 36 document types.",
+                    "weight": 3.6,
+                    "class": "label-primary"
+                },
+                {
+                    "name": 51,
+                    "description": "The software supports 51 document types.",
+                    "weight": 5.1,
+                    "class": "label-primary"
+                }
+            ]
+        }
     },
     {
         "name": "Define new document types",
