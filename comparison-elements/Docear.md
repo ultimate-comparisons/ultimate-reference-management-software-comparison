@@ -22,6 +22,7 @@ Free reference management software with a mind map feature.
 
 ## Export
 - BibTeX
+- RIS
 - others
 
 ## Database search
