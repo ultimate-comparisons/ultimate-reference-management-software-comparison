@@ -1,5 +1,511 @@
 [
   {
+    "tag": "Aigaion - https://sourceforge.net/projects/aigaion",
+    "descr": "",
+    "Open Source": {
+      "plain": "- yes\n\t- [@aigaion]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "\t- [@aigaion]\n",
+              "childs": [
+                {
+                  "content": ",[@aigaion]",
+                  "plain": "[@aigaion]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Web client": {
+      "plain": "- yes\n    - web based application\n    - [@aigaion]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - web based application\n    - [@aigaion]\n",
+              "childs": [
+                {
+                  "content": "web based application",
+                  "plain": "web based application\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@aigaion]",
+                  "plain": "[@aigaion]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Import from files": {
+      "plain": "- yes\n\t- [@aigaion]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "\t- [@aigaion]\n",
+              "childs": [
+                {
+                  "content": ",[@aigaion]",
+                  "plain": "[@aigaion]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Import filter": {
+      "plain": "- BibTeX\n\t- [@aigaion]\n- RIS\n\t- [@aigaion]\n- others\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BibTeX",
+              "plain": "BibTeX\n",
+              "plainChilds": "\t- [@aigaion]\n",
+              "childs": [
+                {
+                  "content": ",[@aigaion]",
+                  "plain": "[@aigaion]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "RIS",
+              "plain": "RIS\n",
+              "plainChilds": "\t- [@aigaion]\n",
+              "childs": [
+                {
+                  "content": ",[@aigaion]",
+                  "plain": "[@aigaion]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "others",
+              "plain": "others\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Import from web pages": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Export": {
+      "plain": "- BibTeX\n\t- [@aigaion]\n- RIS\n\t- [@aigaion]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BibTeX",
+              "plain": "BibTeX\n",
+              "plainChilds": "\t- [@aigaion]\n",
+              "childs": [
+                {
+                  "content": ",[@aigaion]",
+                  "plain": "[@aigaion]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "RIS",
+              "plain": "RIS\n",
+              "plainChilds": "\t- [@aigaion]\n",
+              "childs": [
+                {
+                  "content": ",[@aigaion]",
+                  "plain": "[@aigaion]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Database search": {
+      "plain": "- own database\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "own database",
+              "plain": "own database\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Full-text search": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Manual entry of Reference / Title": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Document types": {
+      "plain": "- 13\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "13",
+              "plain": "13\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Define new document types": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Define new entry fields": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Add metadata from other sources": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Link references": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Integration of documents": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Duplicate check": {
+      "plain": "- yes (L)\n    - possible during the import of a publications file\n    - checks if the title already exists\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes (L)",
+              "plain": "yes (L)\n",
+              "plainChilds": "    - possible during the import of a publications file\n    - checks if the title already exists\n",
+              "childs": [
+                {
+                  "content": "possible during the import of a publications file",
+                  "plain": "possible during the import of a publications file\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "checks if the title already exists",
+                  "plain": "checks if the title already exists\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Processing and evaluation of full texts": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Data display": {
+      "plain": "- full\n- list\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "full",
+              "plain": "full\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "list",
+              "plain": "list\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Sorting options": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Search history": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Sharing records": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Cooperative use": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Different citation styles": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Self-definition or adaptation of citation styles": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Word processing support": {
+      "plain": "- none\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "none",
+              "plain": "none\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Creation of literature lists": {
+      "plain": "- static\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "static",
+              "plain": "static\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Organization of knowledge": {
+      "plain": "- tags\n- notes\n- groups\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "tags",
+              "plain": "tags\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "notes",
+              "plain": "notes\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "groups",
+              "plain": "groups\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "BibSonomy - https://www.bibsonomy.org",
     "descr": "",
     "Open Source": {
