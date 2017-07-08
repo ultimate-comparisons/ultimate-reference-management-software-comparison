@@ -99,17 +99,20 @@
                 {
                     "name": "RIS",
                     "description": "RIS import filter is available.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 2
                 },
 				{
                     "name": "BibTeX",
                     "description": "BibTeX import filter is available.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 1
                 },
                 {
                     "name": "others",
                     "description": "Other import filters are available.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 3
                 }
             ]
         }
@@ -147,17 +150,20 @@
                 {
                     "name": "RIS",
                     "description": "RIS export available.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 2
                 },
                 {
                     "name": "BibTeX",
                     "description": "BibTeX export available.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 1
                 },
                 {
                     "name": "others",
                     "description": "Other export formats available.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 3
                 }
             ]
         }
@@ -174,47 +180,56 @@
                 {
                     "name": "Google Scholar",
                     "description": "The software supports database search at [Google Scholar](https://scholar.google.com).",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 4
                 },
                 {
                     "name": "own database",
                     "description": "The software supports database search in its own database.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 7
                 },
                 {
                     "name": "ArXiv",
                     "description": "The software supports database search at [ArXiv](https://arxiv.org).",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 1
                 },
                 {
                     "name": "IEEEXplore",
                     "description": "The software supports database search at [IEEE Xplore](http://ieeexplore.ieee.org).",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 5
                 },
                 {
                     "name": "dblp",
                     "description": "The software supports database search at [dblp](http://dblp.uni-trier.de).",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 3
                 },
                 {
                     "name": "Springer",
                     "description": "The software supports database search at [Springer](https://link.springer.com).",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 6
                 },
                 {
                     "name": "Crossref",
                     "description": "The software supports database search at [Crossref](http://search.crossref.org).",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 2
                 },
                 {
                     "name": "others",
                     "description": "The software supports other database searches.",
-                    "class": "label-primary"
+                    "class": "label-primary",
+                    "weight": 8
                 },
                 {
                     "name": "none",
                     "description": "The software does not support database searches.",
-                    "class": "label-danger"
+                    "class": "label-danger",
+                    "weight": 9
                 }
             ]
         }
@@ -272,67 +287,56 @@
                 {
                     "name": 11,
                     "description": "The software supports 11 document types.",
-                    "weight": 1.1,
                     "class": "label-primary"
                 },
                 {
                     "name": 15,
                     "description": "The software supports 15 document types.",
-                    "weight": 1.5,
                     "class": "label-primary"
                 },
                 {
                     "name": 17,
                     "description": "The software supports 17 document types.",
-                    "weight": 1.7,
                     "class": "label-primary"
                 },
                 {
                     "name": 19,
                     "description": "The software supports 19 document types.",
-                    "weight": 1.9,
                     "class": "label-primary"
                 },
                 {
                     "name": 20,
                     "description": "The software supports 20 document types.",
-                    "weight": 2,
                     "class": "label-primary"
                 },
                 {
                     "name": 21,
                     "description": "The software supports 21 document types.",
-                    "weight": 2.1,
                     "class": "label-primary"
                 },
                 {
                     "name": 31,
                     "description": "The software supports 31 document types.",
-                    "weight": 3.1,
                     "class": "label-primary"
                 },
                 {
                     "name": 33,
                     "description": "The software supports 33 document types.",
-                    "weight": 3.3,
                     "class": "label-primary"
                 },
                 {
                     "name": 35,
                     "description": "The software supports 35 document types.",
-                    "weight": 3.5,
                     "class": "label-primary"
                 },
                 {
                     "name": 36,
                     "description": "The software supports 36 document types.",
-                    "weight": 3.6,
                     "class": "label-primary"
                 },
                 {
                     "name": 51,
                     "description": "The software supports 51 document types.",
-                    "weight": 5.1,
                     "class": "label-primary"
                 }
             ]
