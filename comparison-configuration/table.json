@@ -290,6 +290,11 @@
                     "class": "label-primary"
                 },
                 {
+                    "name": 13,
+                    "description": "The software supports 13 document types.",
+                    "class": "label-primary"
+                },
+                {
                     "name": 15,
                     "description": "The software supports 15 document types.",
                     "class": "label-primary"
