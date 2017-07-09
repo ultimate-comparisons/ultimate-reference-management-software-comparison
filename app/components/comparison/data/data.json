@@ -1299,19 +1299,19 @@
       }
     },
     "Database search": {
-      "plain": "- ArXiv\n- IEEEXplore\n- Springer\n- Crossref\n- others\n",
+      "plain": "- arXiv\n- IEEE Xplore\n- Springer\n- Crossref\n- others\n",
       "childs": {
         "0": [
           [
             {
-              "content": "ArXiv",
-              "plain": "ArXiv\n",
+              "content": "arXiv",
+              "plain": "arXiv\n",
               "plainChilds": "",
               "childs": []
             },
             {
-              "content": "IEEEXplore",
-              "plain": "IEEEXplore\n",
+              "content": "IEEE Xplore",
+              "plain": "IEEE Xplore\n",
               "plainChilds": "",
               "childs": []
             },
@@ -2845,7 +2845,7 @@
       }
     },
     "Database search": {
-      "plain": "- Google Scholar\n- ArXiv\n- IEEEXplore\n- dblp\n- Springer\n- Crossref\n- own database\n- others\n",
+      "plain": "- Google Scholar\n- arXiv\n- IEEE Xplore\n- DBLP\n- Springer\n- Crossref\n- own database\n- others\n",
       "childs": {
         "0": [
           [
@@ -2856,20 +2856,20 @@
               "childs": []
             },
             {
-              "content": "ArXiv",
-              "plain": "ArXiv\n",
+              "content": "arXiv",
+              "plain": "arXiv\n",
               "plainChilds": "",
               "childs": []
             },
             {
-              "content": "IEEEXplore",
-              "plain": "IEEEXplore\n",
+              "content": "IEEE Xplore",
+              "plain": "IEEE Xplore\n",
               "plainChilds": "",
               "childs": []
             },
             {
-              "content": "dblp",
-              "plain": "dblp\n",
+              "content": "DBLP",
+              "plain": "DBLP\n",
               "plainChilds": "",
               "childs": []
             },
@@ -5857,49 +5857,82 @@
       }
     },
     "Database search": {
-      "plain": "- Google Scholar\n- ArXiv\n- IEEEXplore\n    - [@tum-comparison]\n- dblp\n- Springer\n    - [@tum-comparison]\n- others\n    - [@tum-comparison]\n",
+      "plain": "- Google Scholar\n    - [@jabref-search-engines]\n- arXiv\n    - [@jabref-search-engines]\n- IEEE Xplore\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n- DBLP\n    - [@jabref-search-engines]\n- Springer\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n- others\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Google Scholar",
               "plain": "Google Scholar\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "ArXiv",
-              "plain": "ArXiv\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "IEEEXplore",
-              "plain": "IEEEXplore\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "plainChilds": "    - [@jabref-search-engines]\n",
               "childs": [
                 {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "content": ",[@jabref-search-engines]",
+                  "plain": "[@jabref-search-engines]\n",
                   "plainChilds": "",
                   "childs": []
                 }
               ]
             },
             {
-              "content": "dblp",
-              "plain": "dblp\n",
-              "plainChilds": "",
-              "childs": []
+              "content": "arXiv",
+              "plain": "arXiv\n",
+              "plainChilds": "    - [@jabref-search-engines]\n",
+              "childs": [
+                {
+                  "content": ",[@jabref-search-engines]",
+                  "plain": "[@jabref-search-engines]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "IEEE Xplore",
+              "plain": "IEEE Xplore\n",
+              "plainChilds": "    - [@tum-comparison]\n    - [@jabref-search-engines]\n",
+              "childs": [
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@jabref-search-engines]",
+                  "plain": "[@jabref-search-engines]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "DBLP",
+              "plain": "DBLP\n",
+              "plainChilds": "    - [@jabref-search-engines]\n",
+              "childs": [
+                {
+                  "content": ",[@jabref-search-engines]",
+                  "plain": "[@jabref-search-engines]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             },
             {
               "content": "Springer",
               "plain": "Springer\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n    - [@jabref-search-engines]\n",
               "childs": [
                 {
                   "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "plain": "[@tum-comparison]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@jabref-search-engines]",
+                  "plain": "[@jabref-search-engines]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -5908,11 +5941,17 @@
             {
               "content": "others",
               "plain": "others\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n    - [@jabref-search-engines]\n",
               "childs": [
                 {
                   "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "plain": "[@tum-comparison]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@jabref-search-engines]",
+                  "plain": "[@jabref-search-engines]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -6365,14 +6404,14 @@
       }
     },
     "Sharing records": {
-      "plain": "- no\n    - possible to share BibTeX file or database\n    - [@qucosa]\n",
+      "plain": "- yes\n    - possible to share BibTeX file or database\n    - [@qucosa]\n    - [@jabref-share]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "no",
-              "plain": "no\n",
-              "plainChilds": "    - possible to share BibTeX file or database\n    - [@qucosa]\n",
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - possible to share BibTeX file or database\n    - [@qucosa]\n    - [@jabref-share]\n",
               "childs": [
                 {
                   "content": "possible to share BibTeX file or database",
@@ -6382,7 +6421,13 @@
                 },
                 {
                   "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@jabref-share]",
+                  "plain": "[@jabref-share]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -6393,24 +6438,24 @@
       }
     },
     "Cooperative use": {
-      "plain": "- no\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - via shared SQL database\n    - [@jabref-collaborative-work]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "no",
-              "plain": "no\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - via shared SQL database\n    - [@jabref-collaborative-work]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
+                  "content": "via shared SQL database",
+                  "plain": "via shared SQL database\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
                 {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "content": ",[@jabref-collaborative-work]",
+                  "plain": "[@jabref-collaborative-work]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -6579,7 +6624,7 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- tags\n    - [@qucosa]\n- groups\n    - [@tum-comparison]\n- special fields\n",
+      "plain": "- tags\n    - [@qucosa]\n- groups\n    - [@tum-comparison]\n- special fields\n    - [@jabref-special-fields]\n",
       "childs": {
         "0": [
           [
@@ -6612,8 +6657,15 @@
             {
               "content": "special fields",
               "plain": "special fields\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - [@jabref-special-fields]\n",
+              "childs": [
+                {
+                  "content": ",[@jabref-special-fields]",
+                  "plain": "[@jabref-special-fields]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -8268,7 +8320,7 @@
       }
     },
     "Database search": {
-      "plain": "- Google Scholar\n    - [@tum-comparison]\n- ArXiv\n    - [@tum-comparison]\n- Crossref\n    - [@tum-comparison]\n- others\n    - [@tum-comparison]\n",
+      "plain": "- Google Scholar\n    - [@tum-comparison]\n- arXiv\n    - [@tum-comparison]\n- Crossref\n    - [@tum-comparison]\n- others\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
@@ -8286,8 +8338,8 @@
               ]
             },
             {
-              "content": "ArXiv",
-              "plain": "ArXiv\n",
+              "content": "arXiv",
+              "plain": "arXiv\n",
               "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
                 {

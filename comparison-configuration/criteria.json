@@ -22,13 +22,13 @@
     "and_search": true,
     "values": [
       {
-        "name": "ArXiv"
+        "name": "arXiv"
       },
       {
-        "name": "IEEEXplore"
+        "name": "IEEE Xplore"
       },
       {
-        "name": "dblp"
+        "name": "DBLP"
       },
       {
         "name": "Springer"

@@ -190,32 +190,32 @@
                     "weight": 7
                 },
                 {
-                    "name": "ArXiv",
-                    "description": "The software supports database search at [ArXiv](https://arxiv.org).",
+                    "name": "arXiv",
+                    "description": "The software supports database search at [arXiv](https://arxiv.org).",
                     "class": "label-primary",
                     "weight": 1
                 },
                 {
-                    "name": "IEEEXplore",
-                    "description": "The software supports database search at [IEEE Xplore](http://ieeexplore.ieee.org).",
+                    "name": "IEEE Xplore",
+                    "description": "The software supports database search at [IEEE Xplore](http://ieeexplore.ieee.org/Xplore/home.jsp).",
                     "class": "label-primary",
                     "weight": 5
                 },
                 {
-                    "name": "dblp",
-                    "description": "The software supports database search at [dblp](http://dblp.uni-trier.de).",
+                    "name": "DBLP",
+                    "description": "The software supports database search at [DBLP](http://dblp.uni-trier.de).",
                     "class": "label-primary",
                     "weight": 3
                 },
                 {
                     "name": "Springer",
-                    "description": "The software supports database search at [Springer](https://link.springer.com).",
+                    "description": "The software supports database search at [Springer](https://www.springer.com).",
                     "class": "label-primary",
                     "weight": 6
                 },
                 {
                     "name": "Crossref",
-                    "description": "The software supports database search at [Crossref](http://search.crossref.org).",
+                    "description": "The software supports database search at [Crossref](http://crossref.org).",
                     "class": "label-primary",
                     "weight": 2
                 },

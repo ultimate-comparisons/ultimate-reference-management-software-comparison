@@ -12,9 +12,13 @@
 "f1000-user-guide":"<p>11. F1000Workspace user guide, <a href=\"http://f1000.com/resources/Workspace_User_Manual.FINAL.pdf\" class=\"uri\">http://f1000.com/resources/Workspace_User_Manual.FINAL.pdf</a>.</p>",
 "f1000-faq-references":"<p>12. F1000Workspace: Help guide – Working with references, <a href=\"http://f1000.com/work/faq/references-in-f1000\" class=\"uri\">http://f1000.com/work/faq/references-in-f1000</a>.</p>",
 "bibsonomy":"<p>13. Getting started with BibSonomy, <a href=\"https://www.bibsonomy.org/gettingStarted?lang=en\" class=\"uri\">https://www.bibsonomy.org/gettingStarted?lang=en</a>.</p>",
-"puma-open-source":"<p>14. PUMA goes Open Source, <a href=\"https://www.academic-puma.de/2014/12/12/puma-goes-open-source/\" class=\"uri\">https://www.academic-puma.de/2014/12/12/puma-goes-open-source/</a>, (2014).</p>",
-"puma":"<p>15. PUMA: Kernfunktionen, <a href=\"https://www.academic-puma.de/puma/kernfunktionen/\" class=\"uri\">https://www.academic-puma.de/puma/kernfunktionen/</a>.</p>",
-"bibsonomy-google-docs":"<p>16. Wiki: BibSonomy GoogleDocs Add-on – Home, <a href=\"https://bitbucket.org/fwhkoenig/bibsonomy-googledocs-add-on/wiki/Home\" class=\"uri\">https://bitbucket.org/fwhkoenig/bibsonomy-googledocs-add-on/wiki/Home</a>.</p>",
-"bibsonomy-license":"<p>17. Wiki: BibSonomy – License, <a href=\"https://bitbucket.org/bibsonomy/bibsonomy/wiki/License\" class=\"uri\">https://bitbucket.org/bibsonomy/bibsonomy/wiki/License</a>.</p>",
-"puma-license":"<p>18. Wiki: PUMA – Home, <a href=\"https://bitbucket.org/bibsonomy/puma/wiki/Home\" class=\"uri\">https://bitbucket.org/bibsonomy/puma/wiki/Home</a>.</p>"
+"jabref-search-engines":"<p>14. JabRef: Fetching entries from the web, <a href=\"http://help.jabref.org/en/#fetching-entries-from-the-web\" class=\"uri\">http://help.jabref.org/en/#fetching-entries-from-the-web</a>.</p>",
+"jabref-collaborative-work":"<p>15. JabRef: Shared SQL Database, <a href=\"http://help.jabref.org/en/SQLDatabase\" class=\"uri\">http://help.jabref.org/en/SQLDatabase</a>.</p>",
+"jabref-share":"<p>16. JabRef: Sharing a Bib(La)TeX Database, <a href=\"http://help.jabref.org/en/SharedBibFile\" class=\"uri\">http://help.jabref.org/en/SharedBibFile</a>.</p>",
+"jabref-special-fields":"<p>17. JabRef: Special Fields, <a href=\"http://help.jabref.org/en/SpecialFields\" class=\"uri\">http://help.jabref.org/en/SpecialFields</a>.</p>",
+"puma-open-source":"<p>18. PUMA goes Open Source, <a href=\"https://www.academic-puma.de/2014/12/12/puma-goes-open-source/\" class=\"uri\">https://www.academic-puma.de/2014/12/12/puma-goes-open-source/</a>, (2014).</p>",
+"puma":"<p>19. PUMA: Kernfunktionen, <a href=\"https://www.academic-puma.de/puma/kernfunktionen/\" class=\"uri\">https://www.academic-puma.de/puma/kernfunktionen/</a>.</p>",
+"bibsonomy-google-docs":"<p>20. Wiki: BibSonomy GoogleDocs Add-on – Home, <a href=\"https://bitbucket.org/fwhkoenig/bibsonomy-googledocs-add-on/wiki/Home\" class=\"uri\">https://bitbucket.org/fwhkoenig/bibsonomy-googledocs-add-on/wiki/Home</a>.</p>",
+"bibsonomy-license":"<p>21. Wiki: BibSonomy – License, <a href=\"https://bitbucket.org/bibsonomy/bibsonomy/wiki/License\" class=\"uri\">https://bitbucket.org/bibsonomy/bibsonomy/wiki/License</a>.</p>",
+"puma-license":"<p>22. Wiki: PUMA – Home, <a href=\"https://bitbucket.org/bibsonomy/puma/wiki/Home\" class=\"uri\">https://bitbucket.org/bibsonomy/puma/wiki/Home</a>.</p>"
 }
