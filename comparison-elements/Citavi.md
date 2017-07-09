@@ -37,8 +37,8 @@
     - [@tum-comparison]
 
 ## Database search
-- ArXiv
-- IEEEXplore
+- arXiv
+- IEEE Xplore
 - Springer
 - Crossref
 - others

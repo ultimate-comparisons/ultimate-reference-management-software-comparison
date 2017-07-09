@@ -39,10 +39,10 @@ Open source reference management software.
 
 ## Database search
 - Google Scholar
-- ArXiv
-- IEEEXplore
+- arXiv
+- IEEE Xplore
     - [@tum-comparison]
-- dblp
+- DBLP
 - Springer
     - [@tum-comparison]
 - others

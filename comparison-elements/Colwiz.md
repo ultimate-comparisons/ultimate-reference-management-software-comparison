@@ -34,9 +34,9 @@ Free reference management software with a web client.
 
 ## Database search
 - Google Scholar
-- ArXiv
-- IEEEXplore
-- dblp
+- arXiv
+- IEEE Xplore
+- DBLP
 - Springer
 - Crossref
 - own database

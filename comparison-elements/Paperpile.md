@@ -37,7 +37,7 @@ Reference management software for Google Docs users.
 ## Database search
 - Google Scholar
     - [@tum-comparison]
-- ArXiv
+- arXiv
     - [@tum-comparison]
 - Crossref
     - [@tum-comparison]
