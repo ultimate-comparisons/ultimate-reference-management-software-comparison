@@ -39,14 +39,20 @@ Open source reference management software.
 
 ## Database search
 - Google Scholar
+    - [@jabref-search-engines]
 - arXiv
+    - [@jabref-search-engines]
 - IEEE Xplore
     - [@tum-comparison]
+    - [@jabref-search-engines]
 - DBLP
+    - [@jabref-search-engines]
 - Springer
     - [@tum-comparison]
+    - [@jabref-search-engines]
 - others
     - [@tum-comparison]
+    - [@jabref-search-engines]
 
 ## Full-text search
 - yes
@@ -126,14 +132,15 @@ Open source reference management software.
     - [@tum-comparison]
 
 ## Sharing records
-- no
+- yes
     - possible to share BibTeX file or database
     - [@qucosa]
+    - [@jabref-share]
 
 ## Cooperative use
-- no
-    - [@qucosa]
-    - [@tum-comparison]
+- yes
+    - via shared SQL database
+    - [@jabref-collaborative-work]
 
 ## Different citation styles
 - yes
@@ -168,4 +175,5 @@ Open source reference management software.
 - groups
     - [@tum-comparison]
 - special fields
+    - [@jabref-special-fields]
 
