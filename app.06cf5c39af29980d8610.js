@@ -4698,7 +4698,7 @@ webpackJsonp([0],[
 /* 56 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"pheader\">\n    <h2>{{getHeaderText()}}\n        <template ngFor let-sitem [ngForOf]=\"data?.getPropertyListItems(confServ.comparison?.details.headerLabel)\"\n                  *ngIf=\"confServ.comparison\">\n            <ptooltip [tooltip]=\"getHeaderColumn()?.values[sitem.content]\"\n                      [tooltipHtml]=\"sitem.htmlChilds|citation:[citationServ]\" [position]=\"'s'\">\n                <div class=\"{{getHeaderLabel()?.getCls(sitem.content)}} mylabel\">\n                    {{sitem.content}}\n                </div>\n            </ptooltip>\n        </template>\n        <small><a href=\"{{getHeaderUrl()}}\" target=\"_blank\">{{getHeaderUrl()}}</a></small>\n    </h2>\n</div>\n<div class=\"content\" style=\"padding-left:15px; padding-right: 15px;\">\n    <pcard *ngIf=\"confServ.comparison\" heading=\"{{confServ.comparison?.details.bodyMainTitle}}\" style=\"display:block;\">\n        <div class=\"card-content\">\n            <htmlcitationtext [description]=\"getBody()\" [citationServ]=\"citationServ\"\n                              *ngIf=\"citationServ.check\"></htmlcitationtext>\n        </div>\n    </pcard>\n    <template ngFor let-atag [ngForOf]=\"confServ.getBodyAttachmentTags()\" *ngIf=\"confServ.comparison\">\n        <pcard heading=\"{{getTable(atag).name}}\">\n            <p class=\"card-content\">\n                <template ngFor let-sitem [ngForOf]=\"data?.getPropertyListItems(atag)\">\n                    <ptooltip *ngIf=\"!confServ.comparison?.details.tooltipAsText\" [tooltip]=\"getTable(atag)?.values[sitem.content]\"\n                              [tooltipHtml]=\"sitem.htmlChilds|citation:[citationServ]\" [position]=\"'n'\">\n                        <span class=\"{{getTable(atag)?.type?.getCls(sitem.content)}} mylabel\">{{sitem.content}}</span>\n                    </ptooltip>\n                    <div *ngIf=\"confServ.comparison?.details.tooltipAsText\">\n                        <span *ngIf=\"(this.confServ.tableDataSet.getTableData(atag).type.colors | json).length === 21\"\n                              class=\"{{getTable(atag)?.type?.getCls(sitem.content)}} mylabel\">{{sitem.content}}</span>\n                        <span *ngIf=\"(this.confServ.tableDataSet.getTableData(atag).type.colors | json).length !== 21\"\n                              class=\"label mylabel\" [style.background-color]=\"this.confServ.tableDataSet.getTableData(atag).type.colors.getColor(sitem.content)\">{{sitem.content}}</span>\n                        <span class=\"tooltip-text\">\n                        <htmlcitationtext [description]=\"getTable(atag)?.values[sitem.content]\"\n                                          [citationServ]=\"citationServ\"\n                                          *ngIf=\"citationServ.check\"></htmlcitationtext>\n                        <htmlcitationtext [description]=\"sitem.htmlChilds\" [citationServ]=\"citationServ\"\n                                          *ngIf=\"citationServ.check\"></htmlcitationtext>\n                        </span>\n                    </div>\n                </template>\n            </p>\n        </pcard>\n    </template>\n\n    <pcard heading=\"Ratings\" *ngIf=\"data?.getRatings().length > 0\" style=\"display:block\">\n        <div class=\"card-content\">\n            <template ngFor let-item [ngForOf]=\"data?.getRatings()\">\n                <dl>\n                    <dt>\n                        <iicon icon=\"star\">{{item.stars}}</iicon>\n                    </dt>\n                    <dd>\n                        {{item.text}}\n                    </dd>\n                </dl>\n            </template>\n        </div>\n    </pcard>\n</div>";
+	module.exports = "<div class=\"pheader\">\n    <h2>{{getHeaderText()}}\n        <template ngFor let-sitem [ngForOf]=\"data?.getPropertyListItems(confServ.comparison?.details.headerLabel)\"\n                  *ngIf=\"confServ.comparison\">\n            <ptooltip [tooltip]=\"getHeaderColumn()?.values[sitem.content].tag\"\n                      [tooltipHtml]=\"sitem.htmlChilds|citation:[citationServ]\" [position]=\"'s'\">\n                <div class=\"{{getHeaderLabel()?.getCls(sitem.content)}} mylabel\">\n                    {{sitem.content}}\n                </div>\n            </ptooltip>\n        </template>\n        <small><a href=\"{{getHeaderUrl()}}\" target=\"_blank\">{{getHeaderUrl()}}</a></small>\n    </h2>\n</div>\n<div class=\"content\" style=\"padding-left:15px; padding-right: 15px;\">\n    <pcard *ngIf=\"confServ.comparison\" heading=\"{{confServ.comparison?.details.bodyMainTitle}}\" style=\"display:block;\">\n        <div class=\"card-content\">\n            <htmlcitationtext [description]=\"getBody()\" [citationServ]=\"citationServ\"\n                              *ngIf=\"citationServ.check\"></htmlcitationtext>\n        </div>\n    </pcard>\n    <template ngFor let-atag [ngForOf]=\"confServ.getBodyAttachmentTags()\" *ngIf=\"confServ.comparison\">\n        <pcard heading=\"{{getTable(atag).name}}\">\n            <p class=\"card-content\">\n                <template ngFor let-sitem [ngForOf]=\"data?.getPropertyListItems(atag)\">\n                    <ptooltip *ngIf=\"!confServ.comparison?.details.tooltipAsText\" [tooltip]=\"getTable(atag)?.values[sitem.content]\"\n                              [tooltipHtml]=\"sitem.htmlChilds|citation:[citationServ]\" [position]=\"'n'\">\n                        <span class=\"{{getTable(atag)?.type?.getCls(sitem.content)}} mylabel\">{{sitem.content}}</span>\n                    </ptooltip>\n                    <div *ngIf=\"confServ.comparison?.details.tooltipAsText\">\n                        <span *ngIf=\"(this.confServ.tableDataSet.getTableData(atag).type.colors | json).length === 21\"\n                              class=\"{{getTable(atag)?.type?.getCls(sitem.content)}} mylabel\">{{sitem.content}}</span>\n                        <span *ngIf=\"(this.confServ.tableDataSet.getTableData(atag).type.colors | json).length !== 21\"\n                              class=\"label mylabel\" [style.background-color]=\"this.confServ.tableDataSet.getTableData(atag).type.colors.getColor(sitem.content)\">{{sitem.content}}</span>\n                        <span class=\"tooltip-text\">\n                        <htmlcitationtext [description]=\"getTable(atag)?.values[sitem.content]\"\n                                          [citationServ]=\"citationServ\"\n                                          *ngIf=\"citationServ.check\"></htmlcitationtext>\n                        <htmlcitationtext [description]=\"sitem.htmlChilds\" [citationServ]=\"citationServ\"\n                                          *ngIf=\"citationServ.check\"></htmlcitationtext>\n                        </span>\n                    </div>\n                </template>\n            </p>\n        </pcard>\n    </template>\n\n    <pcard heading=\"Ratings\" *ngIf=\"data?.getRatings().length > 0\" style=\"display:block\">\n        <div class=\"card-content\">\n            <template ngFor let-item [ngForOf]=\"data?.getRatings()\">\n                <dl>\n                    <dt>\n                        <iicon icon=\"star\">{{item.stars}}</iicon>\n                    </dt>\n                    <dd>\n                        {{item.text}}\n                    </dd>\n                </dl>\n            </template>\n        </div>\n    </pcard>\n</div>\n";
 
 /***/ }),
 /* 57 */
@@ -4960,9 +4960,9 @@ webpackJsonp([0],[
 	"use strict";
 	class VersionInformation {
 	    constructor() {
-	        this.date = "2017-07-12";
-	        this.commit = "22bf586af1ab0cad13ad290e76fb9c51b7b7e838";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/22bf586af1ab0cad13ad290e76fb9c51b7b7e838";
+	        this.date = "2017-07-16";
+	        this.commit = "49f090d6f16ce620210050ae43901189be4ebcde";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/49f090d6f16ce620210050ae43901189be4ebcde";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
@@ -13482,10 +13482,27 @@ webpackJsonp([0],[
 	    set position(p) {
 	        this.positionClass = p;
 	    }
+	    ngOnInit() {
+	        if (typeof this.tooltip === "number") {
+	            this.tooltip = this.tooltip.toString();
+	        }
+	        if (this.tooltip.indexOf("<") > -1 && this.tooltip.indexOf(">") > -1) {
+	            const tokens = this.tooltip.split(/[ ,\n\r]/);
+	            let tip = this.tooltip;
+	            for (let token of tokens) {
+	                token = token.substr(0, token.lastIndexOf(">") + 1);
+	                if (/<https?:\/\/[^>]+>/.test(token)) {
+	                    const href = token.substr(1, token.length - 2);
+	                    tip = tip.replace(token, "<a class='cite-link' href='" + href + "'>" + href + "</a>");
+	                }
+	            }
+	            this.tooltip = this._sanitizer.bypassSecurityTrustHtml(tip);
+	        }
+	    }
 	};
 	__decorate([
 	    core_1.Input(), 
-	    __metadata('design:type', String)
+	    __metadata('design:type', Object)
 	], TooltipComponent.prototype, "tooltip", void 0);
 	__decorate([
 	    core_1.Input(), 
@@ -13517,7 +13534,7 @@ webpackJsonp([0],[
 /* 101 */
 /***/ (function(module, exports) {
 
-	module.exports = "<ng-content></ng-content>\n<div class=\"ptooltiptext\" *ngIf=\"tooltip&&tooltip!=''||tooltipHtml&&tooltipHtml!=''\">\n    {{tooltip}}\n    <div [innerHtml]=\"_sanitizer.bypassSecurityTrustHtml(tooltipHtml)\"></div>\n</div>";
+	module.exports = "<ng-content></ng-content>\n<div class=\"ptooltiptext\" *ngIf=\"tooltip&&tooltip!=''||tooltipHtml&&tooltipHtml!=''\">\n    <div [innerHtml]=\"tooltip\"></div>\n    <div [innerHtml]=\"_sanitizer.bypassSecurityTrustHtml(tooltipHtml)\"></div>\n</div>";
 
 /***/ }),
 /* 102 */
@@ -14005,38 +14022,48 @@ webpackJsonp([0],[
 	    }
 	    getForegroundColor(color) {
 	        const h = Number.parseInt(color["changingThisBreaksApplicationSecurity"].substr(4, 3).split(',')[0]);
-	        const s = 100;
-	        const l = 88;
+	        const s = 1;
+	        const l = 0.7;
 	        const rgb = this.hslToRgb(h, s, l);
 	        const yiq = ((rgb[0] * 299) + (rgb[1] * 587) + (rgb[2] * 114)) / 1000;
-	        return this.sanitization.bypassSecurityTrustStyle((yiq >= 128) ? 'black' : 'white');
+	        return this.sanitization.bypassSecurityTrustStyle((yiq >= 128) ? '#f0f0f0' : '#0d0d0d');
 	    }
 	    hslToRgb(h, s, l) {
+	        const c = (1 - Math.abs(2 * l - 1)) * s;
+	        const x = c * (1 - Math.abs((h / 60) % 2 - 1));
+	        const m = l - c / 2;
 	        let r, g, b;
-	        if (s == 0) {
-	            r = g = b = l; // achromatic
+	        if (0 <= h && h < 60) {
+	            r = c;
+	            g = x;
+	            b = 0;
+	        }
+	        else if (60 <= h && h < 120) {
+	            r = x;
+	            g = c;
+	            b = 0;
+	        }
+	        else if (120 <= h && h < 180) {
+	            r = 0;
+	            g = c;
+	            b = x;
+	        }
+	        else if (180 <= h && h < 240) {
+	            r = 0;
+	            g = x;
+	            b = c;
+	        }
+	        else if (240 <= h && h < 300) {
+	            r = x;
+	            g = 0;
+	            b = c;
 	        }
 	        else {
-	            let hue2rgb = function hue2rgb(p, q, t) {
-	                if (t < 0)
-	                    t += 1;
-	                if (t > 1)
-	                    t -= 1;
-	                if (t < 1 / 6)
-	                    return p + (q - p) * 6 * t;
-	                if (t < 1 / 2)
-	                    return q;
-	                if (t < 2 / 3)
-	                    return p + (q - p) * (2 / 3 - t) * 6;
-	                return p;
-	            };
-	            let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-	            let p = 2 * l - q;
-	            r = hue2rgb(p, q, h + 1 / 3);
-	            g = hue2rgb(p, q, h);
-	            b = hue2rgb(p, q, h - 1 / 3);
+	            r = c;
+	            g = 0;
+	            b = x;
 	        }
-	        return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+	        return [Math.round((r + m) * 255), Math.round((g + m) * 255), Math.round((b + m) * 255)];
 	    }
 	};
 	__decorate([
@@ -14176,4 +14203,4 @@ webpackJsonp([0],[
 
 /***/ })
 ]);
-//# sourceMappingURL=app.456664d9a81f77c1e9f5.js.map
+//# sourceMappingURL=app.06cf5c39af29980d8610.js.map
