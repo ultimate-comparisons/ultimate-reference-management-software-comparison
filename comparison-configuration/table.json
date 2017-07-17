@@ -704,7 +704,7 @@
                 },
                 {
                     "name": "OpenOffice",
-                    "description": "The software supports inserting references into Open Office.",
+                    "description": "The software supports inserting references into OpenOffice.",
                     "class": "label-primary"
                 },
 				{
