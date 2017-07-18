@@ -1,9 +1,9 @@
 # BibSonomy - https://www.bibsonomy.org
-
+Web client for managing bookmarks and publications with collaborative work functionality.
 
 ## Open Source
 - yes
-    - [@bibsonomy-license]
+    - [@bibsonomy-source]
 
 ## Web client
 - yes
@@ -77,15 +77,18 @@
 
 ## Sorting options
 - yes
+    - [@bibsonomy-sort]
 
 ## Search history
 - yes
 
 ## Sharing records
 - yes
+    - [@bibsonomy-group]
 
 ## Cooperative use
 - yes
+    - [@bibsonomy-group]
     - [@bibsonomy]
 
 ## Different citation styles
@@ -101,11 +104,9 @@
 
 ## Creation of literature lists
 - static
-- dynamic
 
 ## Organization of knowledge
 - notes
 - tags
     - [@bibsonomy]
-- groups
 
