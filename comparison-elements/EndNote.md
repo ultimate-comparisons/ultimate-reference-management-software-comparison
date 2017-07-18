@@ -151,4 +151,5 @@ Reference management software with costs which also provides a free web version 
 - tags
     - [@qucosa]
 - groups
+    - also smart groups
 

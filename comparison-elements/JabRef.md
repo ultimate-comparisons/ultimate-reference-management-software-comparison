@@ -174,6 +174,7 @@ Open source reference management software.
     - [@qucosa]
 - groups
     - [@tum-comparison]
+    - also smart groups
 - special fields
     - [@jabref-special-fields]
 
