@@ -507,20 +507,20 @@
   },
   {
     "tag": "BibSonomy - https://www.bibsonomy.org",
-    "descr": "",
+    "descr": "Web client for managing bookmarks and publications with collaborative work functionality.",
     "Open Source": {
-      "plain": "- yes\n    - [@bibsonomy-license]\n",
+      "plain": "- yes\n    - [@bibsonomy-source]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@bibsonomy-license]\n",
+              "plainChilds": "    - [@bibsonomy-source]\n",
               "childs": [
                 {
-                  "content": ",[@bibsonomy-license]",
-                  "plain": "[@bibsonomy-license]\n",
+                  "content": ",[@bibsonomy-source]",
+                  "plain": "[@bibsonomy-source]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -907,15 +907,22 @@
       }
     },
     "Sorting options": {
-      "plain": "- yes\n",
+      "plain": "- yes\n    - [@bibsonomy-sort]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - [@bibsonomy-sort]\n",
+              "childs": [
+                {
+                  "content": ",[@bibsonomy-sort]",
+                  "plain": "[@bibsonomy-sort]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -937,30 +944,43 @@
       }
     },
     "Sharing records": {
-      "plain": "- yes\n",
+      "plain": "- yes\n    - [@bibsonomy-group]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - [@bibsonomy-group]\n",
+              "childs": [
+                {
+                  "content": ",[@bibsonomy-group]",
+                  "plain": "[@bibsonomy-group]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
       }
     },
     "Cooperative use": {
-      "plain": "- yes\n    - [@bibsonomy]\n",
+      "plain": "- yes\n    - [@bibsonomy-group]\n    - [@bibsonomy]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@bibsonomy]\n",
+              "plainChilds": "    - [@bibsonomy-group]\n    - [@bibsonomy]\n",
               "childs": [
+                {
+                  "content": ",[@bibsonomy-group]",
+                  "plain": "[@bibsonomy-group]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
                 {
                   "content": ",[@bibsonomy]",
                   "plain": "[@bibsonomy]\n",
@@ -1032,7 +1052,7 @@
       }
     },
     "Creation of literature lists": {
-      "plain": "- static\n- dynamic\n",
+      "plain": "- static\n",
       "childs": {
         "0": [
           [
@@ -1041,19 +1061,13 @@
               "plain": "static\n",
               "plainChilds": "",
               "childs": []
-            },
-            {
-              "content": "dynamic",
-              "plain": "dynamic\n",
-              "plainChilds": "",
-              "childs": []
             }
           ]
         ]
       }
     },
     "Organization of knowledge": {
-      "plain": "- notes\n- tags\n    - [@bibsonomy]\n- groups\n",
+      "plain": "- notes\n- tags\n    - [@bibsonomy]\n",
       "childs": {
         "0": [
           [
@@ -1075,12 +1089,6 @@
                   "childs": []
                 }
               ]
-            },
-            {
-              "content": "groups",
-              "plain": "groups\n",
-              "plainChilds": "",
-              "childs": []
             }
           ]
         ]
@@ -4898,7 +4906,7 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- notes\n    - [@qucosa]\n- tags\n    - [@qucosa]\n- groups\n",
+      "plain": "- notes\n    - [@qucosa]\n- tags\n    - [@qucosa]\n- groups\n    - also smart groups\n",
       "childs": {
         "0": [
           [
@@ -4931,8 +4939,15 @@
             {
               "content": "groups",
               "plain": "groups\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - also smart groups\n",
+              "childs": [
+                {
+                  "content": "also smart groups",
+                  "plain": "also smart groups\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -5647,7 +5662,7 @@
   },
   {
     "tag": "JabRef - http://www.jabref.org",
-    "descr": "Open source reference management software.",
+    "descr": "Free open source reference management software written in Java.",
     "Open Source": {
       "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
@@ -5857,7 +5872,7 @@
       }
     },
     "Database search": {
-      "plain": "- Google Scholar\n    - [@jabref-search-engines]\n- arXiv\n    - [@jabref-search-engines]\n- IEEE Xplore\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n- DBLP\n    - [@jabref-search-engines]\n- Springer\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n- others\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n",
+      "plain": "- Google Scholar\n    - [@jabref-search-engines]\n- arXiv\n    - [@jabref-search-engines]\n- IEEE Xplore\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n- DBLP\n    - [@jabref-search-engines]\n- Springer\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n- Crossref\n    - [@jabref-search-engines]\n- others\n    - [@tum-comparison]\n    - [@jabref-search-engines]\n",
       "childs": {
         "0": [
           [
@@ -5930,6 +5945,19 @@
                   "plainChilds": "",
                   "childs": []
                 },
+                {
+                  "content": ",[@jabref-search-engines]",
+                  "plain": "[@jabref-search-engines]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Crossref",
+              "plain": "Crossref\n",
+              "plainChilds": "    - [@jabref-search-engines]\n",
+              "childs": [
                 {
                   "content": ",[@jabref-search-engines]",
                   "plain": "[@jabref-search-engines]\n",
@@ -6624,7 +6652,7 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- tags\n    - [@qucosa]\n- groups\n    - [@tum-comparison]\n- special fields\n    - [@jabref-special-fields]\n",
+      "plain": "- tags\n    - [@qucosa]\n- groups\n    - [@tum-comparison]\n    - also smart groups\n- special fields\n    - [@jabref-special-fields]\n",
       "childs": {
         "0": [
           [
@@ -6644,11 +6672,17 @@
             {
               "content": "groups",
               "plain": "groups\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n    - also smart groups\n",
               "childs": [
                 {
                   "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "plain": "[@tum-comparison]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "also smart groups",
+                  "plain": "also smart groups\n",
                   "plainChilds": "",
                   "childs": []
                 }
