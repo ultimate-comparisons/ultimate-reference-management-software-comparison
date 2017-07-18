@@ -1,5 +1,5 @@
 # JabRef - http://www.jabref.org
-Open source reference management software.
+Free open source reference management software written in Java.
 
 ## Open Source
 - yes
@@ -49,6 +49,8 @@ Open source reference management software.
     - [@jabref-search-engines]
 - Springer
     - [@tum-comparison]
+    - [@jabref-search-engines]
+- Crossref
     - [@jabref-search-engines]
 - others
     - [@tum-comparison]
