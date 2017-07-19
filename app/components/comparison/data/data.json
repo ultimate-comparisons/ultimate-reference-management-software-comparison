@@ -1097,7 +1097,7 @@
   },
   {
     "tag": "Citavi - https://www.citavi.com",
-    "descr": "",
+    "descr": "Commercial reference management tool with different license models and also a free version for small projects up to 100 references [@tum-comparison]. ",
     "Open Source": {
       "plain": "- no\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
@@ -1231,18 +1231,30 @@
       }
     },
     "Import from web pages": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    -  with Citavi Picker\n    - [@qucosa]\n    - available for Mozilla Firefox, Internet Explorer, Google Chrome\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    -  with Citavi Picker\n    - [@qucosa]\n    - available for Mozilla Firefox, Internet Explorer, Google Chrome\n    - [@tum-comparison]\n",
               "childs": [
+                {
+                  "content": "with Citavi Picker",
+                  "plain": "with Citavi Picker\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
                 {
                   "content": ",[@qucosa]",
                   "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "available for Mozilla Firefox, Internet Explorer, Google Chrome",
+                  "plain": "available for Mozilla Firefox, Internet Explorer, Google Chrome\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
@@ -1474,7 +1486,7 @@
       }
     },
     "Add metadata from other sources": {
-      "plain": "- ISBN\n    - [@tum-comparison]\n- DOI\n    - [@tum-comparison]\n- others\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- ISBN\n    - [@tum-comparison]\n- DOI\n    - [@tum-comparison]\n- others\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
@@ -1507,14 +1519,8 @@
             {
               "content": "others",
               "plain": "others\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -1822,18 +1828,30 @@
       }
     },
     "Cooperative use": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@qucosa]\n    - only small groups with Citavi for Windows\n    - larger groups require Citavi for DBServer\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@qucosa]\n    - only small groups with Citavi for Windows\n    - larger groups require Citavi for DBServer\n    - [@tum-comparison]\n",
               "childs": [
                 {
                   "content": ",[@qucosa]",
                   "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "only small groups with Citavi for Windows",
+                  "plain": "only small groups with Citavi for Windows\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "larger groups require Citavi for DBServer",
+                  "plain": "larger groups require Citavi for DBServer\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
@@ -2015,18 +2033,24 @@
       }
     },
     "Creation of literature lists": {
-      "plain": "- static\n    - [@qucosa]\n- dynamic (L)\n    - only for MS Word with add-in and LaTeX\n    - [@qucosa]\n",
+      "plain": "- static\n    - [@qucosa]\n    - [@tum-comparison]\n- dynamic (L)\n    - only for MS Word with add-in and LaTeX\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "static",
               "plain": "static\n",
-              "plainChilds": "    - [@qucosa]\n",
+              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
               "childs": [
                 {
                   "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2035,7 +2059,7 @@
             {
               "content": "dynamic (L)",
               "plain": "dynamic (L)\n",
-              "plainChilds": "    - only for MS Word with add-in and LaTeX\n    - [@qucosa]\n",
+              "plainChilds": "    - only for MS Word with add-in and LaTeX\n    - [@qucosa]\n    - [@tum-comparison]\n",
               "childs": [
                 {
                   "content": "only for MS Word with add-in and LaTeX",
@@ -2045,7 +2069,13 @@
                 },
                 {
                   "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
+                  "plain": "[@qucosa]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -4419,15 +4449,21 @@
       }
     },
     "Add metadata from other sources": {
-      "plain": "- ISBN\n    - [@tum-comparison]\n- DOI\n    - [@tum-comparison]\n",
+      "plain": "- DOI\n    - via PDF files with DOI\n    - [@tum-comparison]\n- others\n    - via update references button\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "ISBN",
-              "plain": "ISBN\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "content": "DOI",
+              "plain": "DOI\n",
+              "plainChilds": "    - via PDF files with DOI\n    - [@tum-comparison]\n",
               "childs": [
+                {
+                  "content": "via PDF files with DOI",
+                  "plain": "via PDF files with DOI\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -4437,10 +4473,16 @@
               ]
             },
             {
-              "content": "DOI",
-              "plain": "DOI\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "content": "others",
+              "plain": "others\n",
+              "plainChilds": "    - via update references button\n    - [@tum-comparison]\n",
               "childs": [
+                {
+                  "content": "via update references button",
+                  "plain": "via update references button\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -6118,7 +6160,7 @@
       }
     },
     "Add metadata from other sources": {
-      "plain": "- ISBN\n    - [@tum-comparison]\n- DOI\n    - [@tum-comparison]\n- others\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- ISBN\n    - [@tum-comparison]\n- DOI\n    - [@tum-comparison]\n- others\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
@@ -6151,14 +6193,8 @@
             {
               "content": "others",
               "plain": "others\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
