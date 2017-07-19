@@ -85,7 +85,6 @@ Free open source reference management software written in Java.
 - DOI
     - [@tum-comparison]
 - others
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Link references

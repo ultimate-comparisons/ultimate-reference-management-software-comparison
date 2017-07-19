@@ -61,9 +61,11 @@ Reference management software with costs which also provides a free web version 
     - [@tum-comparison]
 
 ## Add metadata from other sources
-- ISBN
-    - [@tum-comparison]
 - DOI
+    - via PDF files with DOI
+    - [@tum-comparison]
+- others
+    - via update references button
     - [@tum-comparison]
 
 ## Link references

@@ -1,4 +1,5 @@
 # Citavi - https://www.citavi.com
+Commercial reference management tool with different license models and also a free version for small projects up to 100 references [@tum-comparison]. 
 
 ## Open Source
 - no
@@ -25,7 +26,9 @@
 
 ## Import from web pages
 - yes
+    -  with Citavi Picker
     - [@qucosa]
+    - available for Mozilla Firefox, Internet Explorer, Google Chrome
     - [@tum-comparison]
 
 ## Export
@@ -72,7 +75,6 @@
 - DOI
     - [@tum-comparison]
 - others
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Link references
@@ -129,6 +131,8 @@
 ## Cooperative use
 - yes
     - [@qucosa]
+    - only small groups with Citavi for Windows
+    - larger groups require Citavi for DBServer
     - [@tum-comparison]
 
 ## Different citation styles
@@ -162,9 +166,11 @@
 ## Creation of literature lists
 - static
     - [@qucosa]
+    - [@tum-comparison]
 - dynamic (L)
     - only for MS Word with add-in and LaTeX
     - [@qucosa]
+    - [@tum-comparison]
 
 ## Organization of knowledge
 - notes
