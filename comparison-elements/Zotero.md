@@ -1,6 +1,8 @@
 # Zotero - https://www.zotero.org/
 Free reference management software.
 
+## Version
+
 ## Open Source
 - yes
     - [@qucosa]

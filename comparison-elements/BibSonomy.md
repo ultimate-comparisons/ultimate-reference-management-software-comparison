@@ -1,6 +1,9 @@
 # BibSonomy - https://www.bibsonomy.org
 Web client for managing bookmarks and publications with collaborative work functionality.
 
+## Version
+- 2017-07-18
+
 ## Open Source
 - yes
     - [@bibsonomy-source]

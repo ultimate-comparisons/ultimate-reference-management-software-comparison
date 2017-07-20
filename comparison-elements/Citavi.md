@@ -1,6 +1,9 @@
 # Citavi - https://www.citavi.com
 Commercial reference management tool with different license models and also a free version for small projects up to 100 references [@tum-comparison]. 
 
+## Version
+- 5.6.0.2
+
 ## Open Source
 - no
     - [@qucosa]

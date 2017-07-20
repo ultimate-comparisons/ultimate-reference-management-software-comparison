@@ -2,6 +2,8 @@
 RefWorks is a web application for managing references. There exist different versions a legacy and a new one [@refworks-versions].
 The legacy version has to types of accounts: individual subscriber and organizational subscriber [@refworks-account].
 
+## Version
+- 2.0
 
 ## Open Source
 - no

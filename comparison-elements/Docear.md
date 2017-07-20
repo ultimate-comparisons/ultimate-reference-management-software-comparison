@@ -1,6 +1,8 @@
 # Docear - http://www.docear.org
 Free reference management software with a mind map feature.
 
+## Version
+
 ## Open Source
 - yes
     - [@docear]

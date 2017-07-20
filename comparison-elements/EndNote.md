@@ -1,6 +1,9 @@
 # EndNote - http://www.endnote.com
 Reference management software with costs which also provides a free web version with limited functionality.
 
+## Version
+- X8.0.1
+
 ## Open Source
 - no
     - [@qucosa]

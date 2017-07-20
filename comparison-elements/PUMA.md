@@ -1,6 +1,8 @@
 # PUMA - http://www.academic-puma.de
 Free reference management tool based on BibSonomy [@puma-license].
 
+## Version
+
 ## Open Source
 - yes
     - [@puma-open-source]

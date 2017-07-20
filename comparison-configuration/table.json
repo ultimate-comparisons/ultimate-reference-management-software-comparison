@@ -20,6 +20,42 @@
         }
     },
     {
+        "name": "Version",
+        "tag": "Version",
+        "style": "width: 5%",
+        "display": false,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "5.6.0.2",
+                    "description": "The software under test is Citavi for Windows version 5.6.0.2.",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "2.0",
+                    "description": "The software under test is the legacy version 2.0. It was tested on July 20, 2017.",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "4.0.0 (beta)",
+                    "description": "The software under test is version 4.0.0 (beta).",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "X8.0.1",
+                    "description": "The software under test is version X8.0.1.",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "2017-07-18",
+                    "description": "The software was tested on July 18, 2017.",
+                    "class": "label-primary"
+                }
+            ]
+        }
+    },
+    {
         "name": "Open Source",
         "tag": "Open Source",
         "style": "width: 5%",

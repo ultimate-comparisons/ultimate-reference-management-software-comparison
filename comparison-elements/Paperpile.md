@@ -1,6 +1,8 @@
 # Paperpile - https://www.paperpile.com
 Reference management software for Google Docs users.
 
+## Version
+
 ## Open Source
 - no
     - [@tum-comparison]

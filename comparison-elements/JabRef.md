@@ -1,6 +1,9 @@
 # JabRef - http://www.jabref.org
 Free open source reference management software written in Java.
 
+## Version
+- 4.0.0 (beta)
+
 ## Open Source
 - yes
     - [@qucosa]
