@@ -2,6 +2,14 @@
   {
     "tag": "Aigaion - https://sourceforge.net/projects/aigaion",
     "descr": "",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- yes\n\t- [@aigaion]\n",
       "childs": {
@@ -508,6 +516,21 @@
   {
     "tag": "BibSonomy - https://www.bibsonomy.org",
     "descr": "Web client for managing bookmarks and publications with collaborative work functionality.",
+    "Version": {
+      "plain": "- 2017-07-18\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "2017-07-18",
+              "plain": "2017-07-18\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- yes\n    - [@bibsonomy-source]\n",
       "childs": {
@@ -1098,6 +1121,21 @@
   {
     "tag": "Citavi - https://www.citavi.com",
     "descr": "Commercial reference management tool with different license models and also a free version for small projects up to 100 references [@tum-comparison]. ",
+    "Version": {
+      "plain": "- 5.6.0.2\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "5.6.0.2",
+              "plain": "5.6.0.2\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- no\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
@@ -2122,6 +2160,14 @@
   {
     "tag": "CiteULike - http://www.citeulike.org",
     "descr": "Free reference management tool with additional features for paying Gold users like adding notes in PDF files.",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- no\n",
       "childs": {
@@ -2706,6 +2752,14 @@
   {
     "tag": "Colwiz - https://www.colwiz.com",
     "descr": "Free reference management software with a web client.",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- no\n",
       "childs": {
@@ -3515,6 +3569,14 @@
   {
     "tag": "Docear - http://www.docear.org",
     "descr": "Free reference management software with a mind map feature.",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- yes\n    - [@docear]\n",
       "childs": {
@@ -4116,6 +4178,21 @@
   {
     "tag": "EndNote - http://www.endnote.com",
     "descr": "Reference management software with costs which also provides a free web version with limited functionality.",
+    "Version": {
+      "plain": "- X8.0.1\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "X8.0.1",
+              "plain": "X8.0.1\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- no\n    - [@qucosa]\n",
       "childs": {
@@ -4999,6 +5076,14 @@
   {
     "tag": "F1000Workspace - http://f1000.com/work",
     "descr": "",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- no\n",
       "childs": {
@@ -5705,6 +5790,21 @@
   {
     "tag": "JabRef - http://www.jabref.org",
     "descr": "Free open source reference management software written in Java.",
+    "Version": {
+      "plain": "- 4.0.0 (beta)\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "4.0.0 (beta)",
+              "plain": "4.0.0 (beta)\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
@@ -6745,6 +6845,14 @@
   {
     "tag": "Mendeley - https://www.mendeley.com",
     "descr": "",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- no\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {
@@ -7656,6 +7764,14 @@
   {
     "tag": "PUMA - http://www.academic-puma.de",
     "descr": "Free reference management tool based on BibSonomy [@puma-license].",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- yes\n    - [@puma-open-source]\n    - [@puma-license]\n",
       "childs": {
@@ -8199,6 +8315,14 @@
   {
     "tag": "Paperpile - https://www.paperpile.com",
     "descr": "Reference management software for Google Docs users.",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- no\n    - [@tum-comparison]\n",
       "childs": {
@@ -8923,24 +9047,33 @@
     }
   },
   {
-    "tag": "RefWorks - https://refworks.proquest.com",
-    "descr": "",
+    "tag": "RefWorks - https://www.refworks.com",
+    "descr": "RefWorks is a web application for managing references. There exist different versions a legacy and a new one [@refworks-versions]. The legacy version has to types of accounts: individual subscriber and organizational subscriber [@refworks-account].",
+    "Version": {
+      "plain": "- 2.0\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "2.0",
+              "plain": "2.0\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Open Source": {
-      "plain": "- no\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- no\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "no",
               "plain": "no\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -8954,21 +9087,15 @@
       }
     },
     "Web client": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -8982,21 +9109,15 @@
       }
     },
     "Import from files": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9058,24 +9179,30 @@
       }
     },
     "Import from web pages": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - with RefGrab-It\n    - [@tum-comparison]\n    - [@refgrab-it]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - with RefGrab-It\n    - [@tum-comparison]\n    - [@refgrab-it]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
+                  "content": "with RefGrab-It",
+                  "plain": "with RefGrab-It\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
                 {
                   "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "plain": "[@tum-comparison]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@refgrab-it]",
+                  "plain": "[@refgrab-it]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -9149,18 +9276,24 @@
       }
     },
     "Full-text search": {
-      "plain": "- yes\n    - [@qucosa]\n",
+      "plain": "- yes\n    - available for organizational subscribers if organization configured it\n    - [@refworks-full-text]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n",
+              "plainChilds": "    - available for organizational subscribers if organization configured it\n    - [@refworks-full-text]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
+                  "content": "available for organizational subscribers if organization configured it",
+                  "plain": "available for organizational subscribers if organization configured it\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@refworks-full-text]",
+                  "plain": "[@refworks-full-text]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -9171,22 +9304,15 @@
       }
     },
     "Manual entry of Reference / Title": {
-      "plain": "- yes\n    - [@qucosa]\n",
+      "plain": "- yes\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n",
-              "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -9237,21 +9363,15 @@
       }
     },
     "Define new entry fields": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9265,99 +9385,23 @@
       }
     },
     "Add metadata from other sources": {
-      "plain": "- ISBN\n    - with RefGrab-It\n    - [@tum-comparison]\n    - [@refgrab-it]\n- DOI\n    - with RefGrab-It\n    - [@tum-comparison]\n    - [@refgrab-it]\n- others\n    - with RefGrab-It\n    - [@refgrab-it]\n",
+      "plain": "",
       "childs": {
         "0": [
-          [
-            {
-              "content": "ISBN",
-              "plain": "ISBN\n",
-              "plainChilds": "    - with RefGrab-It\n    - [@tum-comparison]\n    - [@refgrab-it]\n",
-              "childs": [
-                {
-                  "content": "with RefGrab-It",
-                  "plain": "with RefGrab-It\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@refgrab-it]",
-                  "plain": "[@refgrab-it]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "DOI",
-              "plain": "DOI\n",
-              "plainChilds": "    - with RefGrab-It\n    - [@tum-comparison]\n    - [@refgrab-it]\n",
-              "childs": [
-                {
-                  "content": "with RefGrab-It",
-                  "plain": "with RefGrab-It\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@refgrab-it]",
-                  "plain": "[@refgrab-it]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "others",
-              "plain": "others\n",
-              "plainChilds": "    - with RefGrab-It\n    - [@refgrab-it]\n",
-              "childs": [
-                {
-                  "content": "with RefGrab-It",
-                  "plain": "with RefGrab-It\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@refgrab-it]",
-                  "plain": "[@refgrab-it]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
+          ""
         ]
       }
     },
     "Link references": {
-      "plain": "- no\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- no\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "no",
               "plain": "no\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9371,24 +9415,24 @@
       }
     },
     "Integration of documents": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - requires organizational subscription\n    - [@refworks-attach-file]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - requires organizational subscription\n    - [@refworks-attach-file]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
+                  "content": "requires organizational subscription",
+                  "plain": "requires organizational subscription\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
                 {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "content": ",[@refworks-attach-file]",
+                  "plain": "[@refworks-attach-file]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -9399,21 +9443,15 @@
       }
     },
     "Duplicate check": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9427,18 +9465,18 @@
       }
     },
     "Processing and evaluation of full texts": {
-      "plain": "- yes\n    - [@qucosa]\n",
+      "plain": "- no\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n",
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -9449,21 +9487,15 @@
       }
     },
     "Data display": {
-      "plain": "- short\n    - [@qucosa]\n    - [@tum-comparison]\n- full\n    - [@qucosa]\n    - [@tum-comparison]\n- list\n    - [@tum-comparison]\n- citation\n    - [@qucosa]\n",
+      "plain": "- short\n    - [@tum-comparison]\n- full\n    - [@tum-comparison]\n    - [@refworks-full-text]\n- list\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "short",
               "plain": "short\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9475,17 +9507,17 @@
             {
               "content": "full",
               "plain": "full\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n    - [@refworks-full-text]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
+                  "content": ",[@tum-comparison]",
+                  "plain": "[@tum-comparison]\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
                 {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "content": ",[@refworks-full-text]",
+                  "plain": "[@refworks-full-text]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -9503,40 +9535,21 @@
                   "childs": []
                 }
               ]
-            },
-            {
-              "content": "citation",
-              "plain": "citation\n",
-              "plainChilds": "    - [@qucosa]\n",
-              "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
             }
           ]
         ]
       }
     },
     "Sorting options": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9550,21 +9563,15 @@
       }
     },
     "Search history": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9578,18 +9585,24 @@
       }
     },
     "Sharing records": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
+                  "content": "possible with RefShare",
+                  "plain": "possible with RefShare\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "requires organizational subscription",
+                  "plain": "requires organizational subscription\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
@@ -9606,18 +9619,24 @@
       }
     },
     "Cooperative use": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
               "childs": [
                 {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
+                  "content": "possible with RefShare",
+                  "plain": "possible with RefShare\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "requires organizational subscription",
+                  "plain": "requires organizational subscription\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
@@ -9634,21 +9653,15 @@
       }
     },
     "Different citation styles": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9662,21 +9675,15 @@
       }
     },
     "Self-definition or adaptation of citation styles": {
-      "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9690,14 +9697,14 @@
       }
     },
     "Word processing support": {
-      "plain": "- MS Word\n    - add-in required\n    - [@tum-comparison]\n    - [@qucosa]\n- Google Docs\n    - add-in required\n    - [@qucosa]\n",
+      "plain": "- MS Word\n    - add-in required\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "MS Word",
               "plain": "MS Word\n",
-              "plainChilds": "    - add-in required\n    - [@tum-comparison]\n    - [@qucosa]\n",
+              "plainChilds": "    - add-in required\n    - [@tum-comparison]\n",
               "childs": [
                 {
                   "content": "add-in required",
@@ -9707,32 +9714,7 @@
                 },
                 {
                   "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Google Docs",
-              "plain": "Google Docs\n",
-              "plainChilds": "    - add-in required\n    - [@qucosa]\n",
-              "childs": [
-                {
-                  "content": "add-in required",
-                  "plain": "add-in required\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
+                  "plain": "[@tum-comparison]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -9743,21 +9725,15 @@
       }
     },
     "Creation of literature lists": {
-      "plain": "- static\n    - [@qucosa]\n    - [@tum-comparison]\n- dynamic\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- static\n    - [@tum-comparison]\n- dynamic\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "static",
               "plain": "static\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9769,14 +9745,8 @@
             {
               "content": "dynamic",
               "plain": "dynamic\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -9790,22 +9760,15 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- notes\n    - [@qucosa]\n- groups\n    - [@tum-comparison]\n- free text fields\n    - [@qucosa]\n",
+      "plain": "- notes\n- groups\n    - [@tum-comparison]\n- free text fields\n",
       "childs": {
         "0": [
           [
             {
               "content": "notes",
               "plain": "notes\n",
-              "plainChilds": "    - [@qucosa]\n",
-              "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             },
             {
               "content": "groups",
@@ -9823,15 +9786,8 @@
             {
               "content": "free text fields",
               "plain": "free text fields\n",
-              "plainChilds": "    - [@qucosa]\n",
-              "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -9841,6 +9797,14 @@
   {
     "tag": "Zotero - https://www.zotero.org/",
     "descr": "Free reference management software.",
+    "Version": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
     "Open Source": {
       "plain": "- yes\n    - [@qucosa]\n    - [@tum-comparison]\n",
       "childs": {

@@ -287,12 +287,12 @@ webpackJsonp([0],[
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	__export(__webpack_require__(32));
-	__export(__webpack_require__(33));
-	__export(__webpack_require__(34));
-	__export(__webpack_require__(35));
-	__export(__webpack_require__(36));
-	__export(__webpack_require__(39));
 	__export(__webpack_require__(37));
+	__export(__webpack_require__(38));
+	__export(__webpack_require__(39));
+	__export(__webpack_require__(40));
+	__export(__webpack_require__(43));
+	__export(__webpack_require__(41));
 	__export(__webpack_require__(44));
 	__export(__webpack_require__(45));
 	__export(__webpack_require__(46));
@@ -308,13 +308,16 @@ webpackJsonp([0],[
 
 	"use strict";
 	const index_1 = __webpack_require__(31);
+	const util_1 = __webpack_require__(33);
 	class Data {
-	    constructor(tag = "", descr = "", url = "", properties = {}, rating = new index_1.RatingSet({})) {
+	    constructor(http, tag = "", descr = "", url = "", properties = {}, rating = new index_1.RatingSet({})) {
+	        this.http = http;
 	        this.tag = tag;
 	        this.descr = descr;
 	        this.url = url;
 	        this.properties = properties;
 	        this.rating = rating;
+	        this.repoLabels = {};
 	    }
 	    getProperty(name) {
 	        switch (name) {
@@ -329,6 +332,83 @@ webpackJsonp([0],[
 	            default:
 	                return this.properties[name] ? this.properties[name] : new index_1.Property();
 	        }
+	    }
+	    getRepoLabels(td, change) {
+	        if (util_1.isNullOrUndefined(this.properties["Repo"]) || util_1.isNullOrUndefined(this.properties["Repo"].list[0])) {
+	            return new index_1.Property();
+	        }
+	        if (!util_1.isNullOrUndefined(this.properties[td.tag])) {
+	            return this.properties[td.tag];
+	        }
+	        const repoUrl = this.properties["Repo"].list[0].content;
+	        const url = this.repoQueryBuildUrl(repoUrl);
+	        if (url === "") {
+	            return new index_1.Property();
+	        }
+	        this.http.get(url).toPromise().then(res => {
+	            const d = {};
+	            const commitDate = new Date(res.json()[0].commit.author.date);
+	            let child = "The last commit is ";
+	            const cd = moment(commitDate);
+	            const now = moment();
+	            const dateStrings = ['years', 'months', 'days', 'hours', 'minutes', 'seconds'];
+	            for (const s of dateStrings) {
+	                const diff = Math.abs(now.diff(cd, s));
+	                if (diff !== 0) {
+	                    child += diff;
+	                    // append unit in singular or plural
+	                    child += " " + (diff === 1 ? s.substr(0, s.length - 1) : s);
+	                    break;
+	                }
+	            }
+	            child += " old";
+	            d.htmlChilds = child;
+	            for (const value in td.values) {
+	                if (util_1.isNullOrUndefined(td.values[value]["min-age"])) {
+	                    continue;
+	                }
+	                const min = td.values[value]["min-age"];
+	                const minUnit = td.values[value]["min-age-unit"];
+	                const minDiff = Math.abs(now.diff(cd, minUnit));
+	                const max = td.values[value]["max-age"];
+	                const maxUnit = td.values[value]["max-age-unit"];
+	                const maxDiff = Math.abs(now.diff(cd, maxUnit));
+	                // min === -1 => no limit
+	                // same for max
+	                let property;
+	                for (const prop in this.properties) {
+	                    if (prop === td.tag) {
+	                        property = this.properties[prop];
+	                        break;
+	                    }
+	                }
+	                if (util_1.isNullOrUndefined(property)) {
+	                    property = new index_1.Property();
+	                }
+	                if ((min === -1 || min <= minDiff) && (max === -1 || max > maxDiff)) {
+	                    d.content = value;
+	                    for (const item of property.list) {
+	                        if (item.content === d.content) {
+	                            property.list.splice(property.list.indexOf(item), 1);
+	                        }
+	                    }
+	                    property.list.push(d);
+	                    property.plain += " " + (cd.unix() - now.unix());
+	                    property.plain = property.plain.trim();
+	                }
+	                this.properties[td.tag] = property;
+	            }
+	            change.markForCheck();
+	        });
+	        return new index_1.Property();
+	    }
+	    repoQueryBuildUrl(repoUrl) {
+	        let url;
+	        if (/https?:\/\/github\.com.*/.test(repoUrl)) {
+	            url = repoUrl.replace(/https?:\/\/github.com/, "https://api.github.com/repos");
+	            url += url.endsWith("/") ? "commits" : "/commits";
+	        }
+	        return url;
 	    }
 	    getPropertyTags(name) {
 	        let tagList = new Array();
@@ -353,256 +433,6 @@ webpackJsonp([0],[
 
 /***/ }),
 /* 33 */
-/***/ (function(module, exports) {
-
-	"use strict";
-	class LabelCls {
-	    constructor(label_success = Array(), label_warning = Array(), label_danger = Array(), label_default = Array(), label_info = Array(), label_primary = Array()) {
-	        this.label_success = label_success;
-	        this.label_warning = label_warning;
-	        this.label_danger = label_danger;
-	        this.label_default = label_default;
-	        this.label_info = label_info;
-	        this.label_primary = label_primary;
-	    }
-	    getCls(item) {
-	        if (this.label_success.some(it => it.name == item)) {
-	            return "label-success";
-	        }
-	        if (this.label_warning.some(it => it.name == item)) {
-	            return "label-warning";
-	        }
-	        if (this.label_danger.some(it => it.name == item)) {
-	            return "label-danger";
-	        }
-	        if (this.label_default.some(it => it.name == item)) {
-	            return "label-default";
-	        }
-	        if (this.label_info.some(it => it.name == item)) {
-	            return "label-info";
-	        }
-	        if (this.label_primary.some(it => it.name == item)) {
-	            return "label-primary";
-	        }
-	        return "";
-	    }
-	}
-	exports.LabelCls = LabelCls;
-
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-	"use strict";
-	class ListItem {
-	    constructor(content = "", plainChilds = "", converter) {
-	        this.content = content;
-	        this.plainChilds = plainChilds;
-	        this.converter = converter;
-	        this.htmlChilds = "";
-	        this.latexChilds = "";
-	        this.convertChilds();
-	    }
-	    convertChilds() {
-	        if (this.plainChilds != "") {
-	            this.htmlChilds = this.converter.makeHtml(this.plainChilds.replace(/^[\s]{3}/gm, ""));
-	            if (this.htmlChilds) {
-	                this.latexChilds = this.htmlChilds.replace(/[\s]{2}/gm, " ");
-	                this.latexChilds = this.latexChilds.replace(/[\s]/gm, " ");
-	            }
-	        }
-	    }
-	    getLabel() {
-	        return this.content + this.htmlChilds;
-	    }
-	}
-	exports.ListItem = ListItem;
-
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-	"use strict";
-	class Property {
-	    constructor(plain = "", text = "", list = new Array()) {
-	        this.plain = plain;
-	        this.text = text;
-	        this.list = list;
-	    }
-	}
-	exports.Property = Property;
-
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	const type_1 = __webpack_require__(37);
-	class TableData {
-	    constructor(name = "", tag = "", url = "", style = "", display = false, type = new type_1.Type(), values = {}, sort = 0, order = 'asc') {
-	        this.name = name;
-	        this.tag = tag;
-	        this.url = url;
-	        this.style = style;
-	        this.display = display;
-	        this.type = type;
-	        this.values = values;
-	        this.sort = sort;
-	        this.order = order;
-	    }
-	}
-	exports.TableData = TableData;
-
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	const labelcls_1 = __webpack_require__(33);
-	const color_dictionary_1 = __webpack_require__(38);
-	class Type {
-	    constructor(tag = "", cls = "", labelCls = new labelcls_1.LabelCls(), colors = new color_dictionary_1.ColorDictionary()) {
-	        this.tag = tag;
-	        this.cls = cls;
-	        this.labelCls = labelCls;
-	        this.colors = colors;
-	    }
-	    getCls(item) {
-	        let labelClsString = this.labelCls.getCls(item);
-	        if (this.cls == "" && labelClsString == "" && this.colors[item] === "") {
-	            return "label label-default";
-	        }
-	        else if (this.cls == "" && labelClsString == "") {
-	            return "label";
-	        }
-	        else if (labelClsString != "") {
-	            return "label " + labelClsString;
-	        }
-	        else {
-	            //quick fix for old implementations
-	            return this.cls != "label" ? this.cls : this.cls + "label-default";
-	        }
-	    }
-	}
-	exports.Type = Type;
-
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-	"use strict";
-	class ColorDictionary {
-	    constructor() {
-	        this.colorDict = {};
-	    }
-	    setColor(label, color) {
-	        this.colorDict[label] = color;
-	    }
-	    getColor(label) {
-	        if (this.colorDict[label]) {
-	            return this.colorDict[label];
-	        }
-	        else {
-	            return "";
-	        }
-	    }
-	    isEmpty() {
-	        return Object.keys(this.colorDict).length === 0;
-	    }
-	}
-	exports.ColorDictionary = ColorDictionary;
-
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	const index_1 = __webpack_require__(31);
-	const color_dictionary_1 = __webpack_require__(38);
-	const util_1 = __webpack_require__(40);
-	class TableDataSet {
-	    constructor(jsonObj) {
-	        this.tableDataSet = {};
-	        this.set = [];
-	        this.ready = false;
-	        jsonObj.forEach(obj => {
-	            let lcls = new index_1.LabelCls();
-	            let values = {};
-	            if (obj.type.values) {
-	                obj.type.values.forEach(val => {
-	                    let value = new index_1.Value(val.name, val.description);
-	                    values[val.name] = { tag: val.description, weight: val.weight };
-	                    switch (val.class) {
-	                        case "label-success":
-	                            lcls.label_success.push(value);
-	                            break;
-	                        case "label-warning":
-	                            lcls.label_warning.push(value);
-	                            break;
-	                        case "label-danger":
-	                            lcls.label_danger.push(value);
-	                            break;
-	                        case "label-default":
-	                            lcls.label_default.push(value);
-	                            break;
-	                        case "label-info":
-	                            lcls.label_info.push(value);
-	                            break;
-	                        case "label-primary":
-	                            lcls.label_primary.push(value);
-	                            break;
-	                    }
-	                });
-	            }
-	            let colors = new color_dictionary_1.ColorDictionary();
-	            if (obj.type && obj.type.values) {
-	                for (const v of obj.type.values) {
-	                    if (v.color) {
-	                        colors.setColor(v.name, v.color);
-	                    }
-	                }
-	            }
-	            let type = new index_1.Type(obj.type.tag, obj.type.class, lcls, colors);
-	            let order = obj.order;
-	            if (!util_1.isNullOrUndefined(order)) {
-	                order = order.toLowerCase();
-	            }
-	            let td = new index_1.TableData(obj.name, obj.tag, obj.urlTag, obj.style, obj.display, type, values, obj.sort, order);
-	            this.tableDataSet[obj.tag] = td;
-	        });
-	        this.ready = true;
-	    }
-	    getTableData(tag) {
-	        return this.tableDataSet[tag] ? this.tableDataSet[tag] : new index_1.TableData();
-	    }
-	    getTableDataArray() {
-	        let size = 0;
-	        for (let key in this.tableDataSet) {
-	            if (!this.tableDataSet.hasOwnProperty(key))
-	                continue;
-	            size++;
-	        }
-	        if (this.set.length != size) {
-	            for (let key in this.tableDataSet) {
-	                if (!this.tableDataSet.hasOwnProperty(key))
-	                    continue;
-	                this.set.push(this.tableDataSet[key]);
-	            }
-	        }
-	        return this.set;
-	    }
-	}
-	exports.TableDataSet = TableDataSet;
-
-
-/***/ }),
-/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -1130,7 +960,7 @@ webpackJsonp([0],[
 	}
 	exports.isPrimitive = isPrimitive;
 	
-	exports.isBuffer = __webpack_require__(42);
+	exports.isBuffer = __webpack_require__(35);
 	
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -1174,7 +1004,7 @@ webpackJsonp([0],[
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(43);
+	exports.inherits = __webpack_require__(36);
 	
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -1192,11 +1022,11 @@ webpackJsonp([0],[
 	  return Object.prototype.hasOwnProperty.call(obj, prop);
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(41)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(34)))
 
 /***/ }),
-/* 41 */,
-/* 42 */
+/* 34 */,
+/* 35 */
 /***/ (function(module, exports) {
 
 	module.exports = function isBuffer(arg) {
@@ -1207,7 +1037,7 @@ webpackJsonp([0],[
 	}
 
 /***/ }),
-/* 43 */
+/* 36 */
 /***/ (function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -1233,6 +1063,268 @@ webpackJsonp([0],[
 	    ctor.prototype.constructor = ctor
 	  }
 	}
+
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports) {
+
+	"use strict";
+	class LabelCls {
+	    constructor(label_success = Array(), label_warning = Array(), label_danger = Array(), label_default = Array(), label_info = Array(), label_primary = Array()) {
+	        this.label_success = label_success;
+	        this.label_warning = label_warning;
+	        this.label_danger = label_danger;
+	        this.label_default = label_default;
+	        this.label_info = label_info;
+	        this.label_primary = label_primary;
+	    }
+	    getCls(item) {
+	        if (this.label_success.some(it => it.name == item)) {
+	            return "label-success";
+	        }
+	        if (this.label_warning.some(it => it.name == item)) {
+	            return "label-warning";
+	        }
+	        if (this.label_danger.some(it => it.name == item)) {
+	            return "label-danger";
+	        }
+	        if (this.label_default.some(it => it.name == item)) {
+	            return "label-default";
+	        }
+	        if (this.label_info.some(it => it.name == item)) {
+	            return "label-info";
+	        }
+	        if (this.label_primary.some(it => it.name == item)) {
+	            return "label-primary";
+	        }
+	        return "";
+	    }
+	}
+	exports.LabelCls = LabelCls;
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports) {
+
+	"use strict";
+	class ListItem {
+	    constructor(content = "", plainChilds = "", converter) {
+	        this.content = content;
+	        this.plainChilds = plainChilds;
+	        this.converter = converter;
+	        this.htmlChilds = "";
+	        this.latexChilds = "";
+	        this.convertChilds();
+	    }
+	    convertChilds() {
+	        if (this.plainChilds != "") {
+	            this.htmlChilds = this.converter.makeHtml(this.plainChilds.replace(/^[\s]{3}/gm, ""));
+	            if (this.htmlChilds) {
+	                this.latexChilds = this.htmlChilds.replace(/[\s]{2}/gm, " ");
+	                this.latexChilds = this.latexChilds.replace(/[\s]/gm, " ");
+	            }
+	        }
+	    }
+	    getLabel() {
+	        return this.content + this.htmlChilds;
+	    }
+	}
+	exports.ListItem = ListItem;
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports) {
+
+	"use strict";
+	class Property {
+	    constructor(plain = "", text = "", list = new Array()) {
+	        this.plain = plain;
+	        this.text = text;
+	        this.list = list;
+	    }
+	}
+	exports.Property = Property;
+
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const type_1 = __webpack_require__(41);
+	class TableData {
+	    constructor(name = "", tag = "", url = "", style = "", display = false, type = new type_1.Type(), values = {}, sort = 0, repo = false, order = 'asc') {
+	        this.name = name;
+	        this.tag = tag;
+	        this.url = url;
+	        this.style = style;
+	        this.display = display;
+	        this.type = type;
+	        this.values = values;
+	        this.sort = sort;
+	        this.repo = repo;
+	        this.order = order;
+	    }
+	}
+	exports.TableData = TableData;
+
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const labelcls_1 = __webpack_require__(37);
+	const color_dictionary_1 = __webpack_require__(42);
+	class Type {
+	    constructor(tag = "", cls = "", labelCls = new labelcls_1.LabelCls(), colors = new color_dictionary_1.ColorDictionary()) {
+	        this.tag = tag;
+	        this.cls = cls;
+	        this.labelCls = labelCls;
+	        this.colors = colors;
+	    }
+	    getCls(item) {
+	        let labelClsString = this.labelCls.getCls(item);
+	        if (this.cls == "" && labelClsString == "" && this.colors[item] === "") {
+	            return "label label-default";
+	        }
+	        else if (this.cls == "" && labelClsString == "") {
+	            return "label";
+	        }
+	        else if (labelClsString != "") {
+	            return "label " + labelClsString;
+	        }
+	        else {
+	            //quick fix for old implementations
+	            return this.cls != "label" ? this.cls : this.cls + "label-default";
+	        }
+	    }
+	}
+	exports.Type = Type;
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports) {
+
+	"use strict";
+	class ColorDictionary {
+	    constructor() {
+	        this.colorDict = {};
+	    }
+	    setColor(label, color) {
+	        this.colorDict[label] = color;
+	    }
+	    getColor(label) {
+	        if (this.colorDict[label]) {
+	            return this.colorDict[label];
+	        }
+	        else {
+	            return "";
+	        }
+	    }
+	    isEmpty() {
+	        return Object.keys(this.colorDict).length === 0;
+	    }
+	}
+	exports.ColorDictionary = ColorDictionary;
+
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const index_1 = __webpack_require__(31);
+	const color_dictionary_1 = __webpack_require__(42);
+	const util_1 = __webpack_require__(33);
+	class TableDataSet {
+	    constructor(jsonObj) {
+	        this.tableDataSet = {};
+	        this.set = [];
+	        this.ready = false;
+	        jsonObj.forEach(obj => {
+	            let lcls = new index_1.LabelCls();
+	            let values = {};
+	            if (obj.type.values) {
+	                obj.type.values.forEach(val => {
+	                    let value = new index_1.Value(val.name, val.description);
+	                    if (util_1.isNullOrUndefined(val["min-age"])) {
+	                        values[val.name] = { tag: val.description, weight: val.weight };
+	                    }
+	                    else {
+	                        const v = {};
+	                        v["min-age"] = val["min-age"];
+	                        v["min-age-unit"] = val["min-age-unit"];
+	                        v["max-age"] = val["max-age"];
+	                        v["max-age-unit"] = val["max-age-unit"];
+	                        v["description"] = val.description;
+	                        values[val.name] = v;
+	                    }
+	                    switch (val.class) {
+	                        case "label-success":
+	                            lcls.label_success.push(value);
+	                            break;
+	                        case "label-warning":
+	                            lcls.label_warning.push(value);
+	                            break;
+	                        case "label-danger":
+	                            lcls.label_danger.push(value);
+	                            break;
+	                        case "label-default":
+	                            lcls.label_default.push(value);
+	                            break;
+	                        case "label-info":
+	                            lcls.label_info.push(value);
+	                            break;
+	                        case "label-primary":
+	                            lcls.label_primary.push(value);
+	                            break;
+	                    }
+	                });
+	            }
+	            let colors = new color_dictionary_1.ColorDictionary();
+	            if (obj.type && obj.type.values) {
+	                for (const v of obj.type.values) {
+	                    if (v.color) {
+	                        colors.setColor(v.name, v.color);
+	                    }
+	                }
+	            }
+	            let type = new index_1.Type(obj.type.tag, obj.type.class, lcls, colors);
+	            let order = obj.order;
+	            if (!util_1.isNullOrUndefined(order)) {
+	                order = order.toLowerCase();
+	            }
+	            let td = new index_1.TableData(obj.name, obj.tag, obj.urlTag, obj.style, obj.display, type, values, obj.sort, obj.repo, order);
+	            this.tableDataSet[obj.tag] = td;
+	        });
+	        this.ready = true;
+	    }
+	    getTableData(tag) {
+	        return this.tableDataSet[tag] ? this.tableDataSet[tag] : new index_1.TableData();
+	    }
+	    getTableDataArray() {
+	        let size = 0;
+	        for (let key in this.tableDataSet) {
+	            if (!this.tableDataSet.hasOwnProperty(key))
+	                continue;
+	            size++;
+	        }
+	        if (this.set.length != size) {
+	            for (let key in this.tableDataSet) {
+	                if (!this.tableDataSet.hasOwnProperty(key))
+	                    continue;
+	                this.set.push(this.tableDataSet[key]);
+	            }
+	        }
+	        return this.set;
+	    }
+	}
+	exports.TableDataSet = TableDataSet;
 
 
 /***/ }),
@@ -1536,7 +1628,7 @@ webpackJsonp([0],[
 	        this.http.request('app/components/comparison/data/data.json')
 	            .subscribe(res => {
 	            res.json().forEach(obj => {
-	                let data = new index_1.Data();
+	                let data = new index_1.Data(this.http);
 	                data.tag = obj.tag;
 	                let regArray = /^((?:(?:\w+\s*)(?:-?\s*\w+.)*)+)\s*-?\s*((?:(?:http|ftp|https)(?::\/\/)(?:[\w_-]+(?:(?:\.[\w_-]+)+))|(?:www.))(?:[\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])?)$/gi.exec(data.tag);
 	                data.url = regArray ? regArray[2] : "";
@@ -1582,7 +1674,6 @@ webpackJsonp([0],[
 	                            break;
 	                    }
 	                }
-	                ;
 	                this.data.push(data);
 	            });
 	            cd.markForCheck();
@@ -4785,10 +4876,11 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	const core_1 = __webpack_require__(3);
+	const util_1 = __webpack_require__(33);
 	let CitationPipe = class CitationPipe {
 	    transform(value, args = []) {
-	        if (value.length == 0) {
-	            return value;
+	        if (util_1.isUndefined(value) || value.length == 0) {
+	            return "";
 	        }
 	        let citServ = args[0];
 	        let latex = args[1];
@@ -4842,9 +4934,11 @@ webpackJsonp([0],[
 	const comparison_service_1 = __webpack_require__(53);
 	const comparison_citation_service_1 = __webpack_require__(55);
 	const VersionInformation_1 = __webpack_require__(61);
+	const http_1 = __webpack_require__(29);
 	var FileSaver = __webpack_require__(62);
 	let ComparisonComponent = class ComparisonComponent {
-	    constructor(serv, dataServ, confServ, citationServ, cd) {
+	    constructor(http, serv, dataServ, confServ, citationServ, cd) {
+	        this.http = http;
 	        this.serv = serv;
 	        this.dataServ = dataServ;
 	        this.confServ = confServ;
@@ -4857,7 +4951,7 @@ webpackJsonp([0],[
 	        this.orderOption = new Array();
 	        this.ready = false;
 	        this.versionInformation = new VersionInformation_1.VersionInformation();
-	        this.activeRow = new index_1.Data();
+	        this.activeRow = new index_1.Data(this.http);
 	        this.showTable = false;
 	        this.showTableTooltips = true;
 	        this.tableTooltipsAsFootnotes = false;
@@ -4947,10 +5041,10 @@ webpackJsonp([0],[
 	        template: __webpack_require__(65),
 	        styles: [__webpack_require__(66)]
 	    }), 
-	    __metadata('design:paramtypes', [(typeof (_b = typeof comparison_service_1.ComparisonService !== 'undefined' && comparison_service_1.ComparisonService) === 'function' && _b) || Object, (typeof (_c = typeof comparison_data_service_1.ComparisonDataService !== 'undefined' && comparison_data_service_1.ComparisonDataService) === 'function' && _c) || Object, (typeof (_d = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _d) || Object, (typeof (_e = typeof comparison_citation_service_1.ComparisonCitationService !== 'undefined' && comparison_citation_service_1.ComparisonCitationService) === 'function' && _e) || Object, (typeof (_f = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _f) || Object])
+	    __metadata('design:paramtypes', [(typeof (_b = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _b) || Object, (typeof (_c = typeof comparison_service_1.ComparisonService !== 'undefined' && comparison_service_1.ComparisonService) === 'function' && _c) || Object, (typeof (_d = typeof comparison_data_service_1.ComparisonDataService !== 'undefined' && comparison_data_service_1.ComparisonDataService) === 'function' && _d) || Object, (typeof (_e = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _e) || Object, (typeof (_f = typeof comparison_citation_service_1.ComparisonCitationService !== 'undefined' && comparison_citation_service_1.ComparisonCitationService) === 'function' && _f) || Object, (typeof (_g = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _g) || Object])
 	], ComparisonComponent);
 	exports.ComparisonComponent = ComparisonComponent;
-	var _a, _b, _c, _d, _e, _f;
+	var _a, _b, _c, _d, _e, _f, _g;
 
 
 /***/ }),
@@ -4960,9 +5054,9 @@ webpackJsonp([0],[
 	"use strict";
 	class VersionInformation {
 	    constructor() {
-	        this.date = "2017-07-19";
-	        this.commit = "013734c6611db67277aacb6afedbcac3f55c43fb";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/013734c6611db67277aacb6afedbcac3f55c43fb";
+	        this.date = "2017-07-20";
+	        this.commit = "39229e836cf5783112ea6ca02b1a22d322ce13fd";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/39229e836cf5783112ea6ca02b1a22d322ce13fd";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
@@ -5187,7 +5281,7 @@ webpackJsonp([0],[
 /* 66 */
 /***/ (function(module, exports) {
 
-	module.exports = "comparison {\n    min-height: 100%;\n    position: relative;\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}\n\n.card-content {\n    padding: 16px;\n    position: relative;\n}\n\n.footer {\n    position: relative;\n    bottom: 0;\n    width: 100%;\n    height: 50px;\n    background-color: #f5f5f5;\n}\n\n.footer > .container {\n    padding: 10px;\n}\n\npdialog {\n    z-index: 5000;\n}\n\n.floatThead-container {\n    z-index: 3000;\n}\n\n.ltable {\n    display: none;\n}\n\n.large-paper-card {\n    width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n.super-large-paper-card {\n    min-width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n/* github corner */\n.github-corner {\n    z-index: 1000;\n}\n\n.github-corner svg {\n    z-index: 999;\n}\n\n.github-corner:hover .octo-arm {\n    animation: octocat-wave 560ms ease-in-out;\n}\n\n@keyframes octocat-wave {\n    0%,\n    100% {\n        transform: rotate(0);\n    }\n    20%,\n    60% {\n        transform: rotate(-25deg);\n    }\n    40%,\n    80% {\n        transform: rotate(10deg);\n    }\n}\n\n@media (max-width: 500px) {\n    .github-corner:hover .octo-arm {\n        animation: none;\n    }\n\n    .github-corner .octo-arm {\n        animation: octocat-wave 560ms ease-in-out;\n    }\n}\n\n.search-indicator {\n    color: rgba(255, 0, 0, 0.52);\n    font-size: 8pt;\n    opacity: 80;\n}\n\n.range-search {\n    border: 0px !important;\n    border-bottom: 1px solid #aaa !important;\n    border-radius: 0px !important;\n}\n\n.range-search:focus {\n    outline-width: 0;\n}"
+	module.exports = "comparison {\n    min-height: 100%;\n    position: relative;\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}\n\n.card-content {\n    padding: 16px;\n    position: relative;\n}\n\n.footer {\n    position: relative;\n    bottom: 0;\n    width: 100%;\n    height: 50px;\n    background-color: #f5f5f5;\n}\n\n.footer > .container {\n    padding: 10px;\n}\n\npdialog {\n    z-index: 5000;\n}\n\n.floatThead-container {\n    z-index: 3000;\n}\n\n.ltable {\n    display: none;\n}\n\n.large-paper-card {\n    width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n.super-large-paper-card {\n    min-width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n/* github corner */\n.github-corner {\n    z-index: 1000;\n}\n\n.github-corner svg {\n    z-index: 999;\n}\n\n.github-corner:hover .octo-arm {\n    animation: octocat-wave 560ms ease-in-out;\n}\n\n@keyframes octocat-wave {\n    0%,\n    100% {\n        transform: rotate(0);\n    }\n    20%,\n    60% {\n        transform: rotate(-25deg);\n    }\n    40%,\n    80% {\n        transform: rotate(10deg);\n    }\n}\n\n@media (max-width: 500px) {\n    .github-corner:hover .octo-arm {\n        animation: none;\n    }\n\n    .github-corner .octo-arm {\n        animation: octocat-wave 560ms ease-in-out;\n    }\n}\n\n.search-indicator {\n    color: rgba(255, 0, 0, 0.52);\n    font-size: 8pt;\n    opacity: 80;\n}\n\n.range-search {\n    border: 0px !important;\n    border-bottom: 1px solid #aaa !important;\n    border-radius: 0px !important;\n    margin-top: 8px;\n}\n\n.range-search:focus {\n    outline-width: 0;\n}"
 
 /***/ }),
 /* 67 */
@@ -5550,7 +5644,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	const core_1 = __webpack_require__(3);
-	const util_1 = __webpack_require__(40);
+	const util_1 = __webpack_require__(33);
 	let AttributePipe = class AttributePipe {
 	    transform(values, ...args) {
 	        const tdata = args[0][0];
@@ -13932,11 +14026,14 @@ webpackJsonp([0],[
 	const comparison_citation_service_1 = __webpack_require__(55);
 	const comparison_config_service_1 = __webpack_require__(51);
 	const platform_browser_1 = __webpack_require__(21);
+	const http_1 = __webpack_require__(29);
 	let GenericTableComponent = class GenericTableComponent {
-	    constructor(ar, confServ, sanitization) {
+	    constructor(ar, confServ, sanitization, http, cd) {
 	        this.ar = ar;
 	        this.confServ = confServ;
 	        this.sanitization = sanitization;
+	        this.http = http;
+	        this.cd = cd;
 	        this.counter = 0;
 	        this.display = false;
 	        this.settings = false;
@@ -14129,17 +14226,17 @@ webpackJsonp([0],[
 	        styles: [__webpack_require__(123)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
-	    __metadata('design:paramtypes', [(typeof (_f = typeof core_1.ApplicationRef !== 'undefined' && core_1.ApplicationRef) === 'function' && _f) || Object, (typeof (_g = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _g) || Object, (typeof (_h = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _h) || Object])
+	    __metadata('design:paramtypes', [(typeof (_f = typeof core_1.ApplicationRef !== 'undefined' && core_1.ApplicationRef) === 'function' && _f) || Object, (typeof (_g = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _g) || Object, (typeof (_h = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _h) || Object, (typeof (_j = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _j) || Object, (typeof (_k = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _k) || Object])
 	], GenericTableComponent);
 	exports.GenericTableComponent = GenericTableComponent;
-	var _a, _b, _c, _d, _e, _f, _g, _h;
+	var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 
 
 /***/ }),
 /* 122 */
 /***/ (function(module, exports) {
 
-	module.exports = "<table class=\"table table-hover\" *ngIf=\"display\">\n    <thead style=\"background-color: white;\">\n    <tr>\n        <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n            <th valign=column.valign style=column.style name=column.tag>\n                <button (click)=\"orderClick($event, column.tag)\">{{column.name}}\n                    <iicon icon=\"keyboard-arrow-up\" *ngIf=\"displayOrder(column.tag, -1)\"></iicon>\n                    <iicon icon=\"keyboard-arrow-down\" *ngIf=\"displayOrder(column.tag, 1)\"></iicon>\n                </button>\n            </th>\n        </template>\n        <th style=\"width: 3%\" name=\"details\" *ngIf=\"settings\">\n            <picon-button icon=\"settings\" title=\"Settings\" (click)=\"settingsCallback.emit()\"></picon-button>\n        </th>\n    </tr>\n    </thead>\n    <tbody>\n    <template ngFor let-dat [ngForOf]=\"data | orderBy: [order,orderOption] | datafilter: [query, displayTemplate]\">\n        <tr *ngIf=\"shouldBeShown(dat)\">\n            <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n                <td *ngIf=\"column.type?.tag==='url'\"><a class=\"anchored\" href=\"{{dat.getProperty(column.url).text}}\" target=\"_blank\">{{dat.getProperty(column.tag).text}}</a>\n                </td>\n                <td *ngIf=\"column.type?.tag==='text'\">\n                    <div [innerHtml]=\"dat.getProperty(column.tag).text|citation: [citationServ] | sanitizeHtml\"></div>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label'\">\n                    <template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag) | orderAttributes: [column]\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltip]=\"column.values[sitem.content].tag\"\n                                  [tooltipHtml]=\"sitem.htmlChilds | citation: [citationServ]\" [position]=\"'n'\">\n                            <div *ngIf=\"column.type.colors.isEmpty()\" [ngClass]=\"{'label-unknown': column.type.labelCls.getCls(sitem.content).length + column.type.getCls(sitem.content).length === 5}\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                            <div *ngIf=\"!column.type.colors.isEmpty()\" [style.background-color]=\"getColor(column, sitem.content)\" [style.color]=\"getForegroundColor(getColor(column, sitem.content))\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag=='rating'\">\n                    <iicon icon=\"star\" *ngIf=\"dat.getRating()!=0\">{{dat.getRating()}}</iicon>\n                </td>\n            </template>\n            <td>\n                <picon-button icon=\"info\" title=\"Details\" (click)=\"showDetails.emit(dat)\"></picon-button>\n            </td>\n        </tr>\n    </template>\n    </tbody>\n</table>\n        ";
+	module.exports = "<table class=\"table table-hover\" *ngIf=\"display\">\n    <thead style=\"background-color: white;\">\n    <tr>\n        <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n            <th valign=column.valign style=column.style name=column.tag>\n                <button (click)=\"orderClick($event, column.tag)\">{{column.name}}\n                    <iicon icon=\"keyboard-arrow-up\" *ngIf=\"displayOrder(column.tag, -1)\"></iicon>\n                    <iicon icon=\"keyboard-arrow-down\" *ngIf=\"displayOrder(column.tag, 1)\"></iicon>\n                </button>\n            </th>\n        </template>\n        <th style=\"width: 3%\" name=\"details\" *ngIf=\"settings\">\n            <picon-button icon=\"settings\" title=\"Settings\" (click)=\"settingsCallback.emit()\"></picon-button>\n        </th>\n    </tr>\n    </thead>\n    <tbody>\n    <template ngFor let-dat [ngForOf]=\"data | orderBy: [order,orderOption] | datafilter: [query, displayTemplate]\">\n        <tr *ngIf=\"shouldBeShown(dat)\">\n            <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n                <td *ngIf=\"column.type?.tag==='url'\"><a class=\"anchored\" href=\"{{dat.getProperty(column.url).text}}\" target=\"_blank\">{{dat.getProperty(column.tag).text}}</a>\n                </td>\n                <td *ngIf=\"column.type?.tag==='text'\">\n                    <div [innerHtml]=\"dat.getProperty(column.tag).text|citation: [citationServ] | sanitizeHtml\"></div>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label' && !column.repo\">\n                    <template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag)\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltip]=\"column.values[sitem.content].tag\"\n                                  [tooltipHtml]=\"sitem.htmlChilds | citation: [citationServ]\" [position]=\"'n'\">\n                            <div *ngIf=\"column.type.colors.isEmpty()\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                            <div *ngIf=\"!column.type.colors.isEmpty()\" [style.color]=\"getForegroundColor(getColor(column, sitem.content))\" [style.background-color]=\"getColor(column, sitem.content)\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label' && column.repo\">\n                    <template ngFor let-sitem [ngForOf]=\"dat.getRepoLabels(column, cd).list\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltipHtml]=\"sitem.htmlChilds\" [position]=\"'n'\">\n                            <div *ngIf=\"column.type.colors.isEmpty()\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                            <div *ngIf=\"!column.type.colors.isEmpty()\" [style.background-color]=\"getColor(column, sitem.content)\" [style.color]=\"getForegroundColor(getColor(column, sitem.content))\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag=='rating'\">\n                    <iicon icon=\"star\" *ngIf=\"dat.getRating()!=0\">{{dat.getRating()}}</iicon>\n                </td>\n            </template>\n            <td>\n                <picon-button icon=\"info\" title=\"Details\" (click)=\"showDetails.emit(dat)\"></picon-button>\n            </td>\n        </tr>\n    </template>\n    </tbody>\n</table>\n        ";
 
 /***/ }),
 /* 123 */
@@ -14203,4 +14300,4 @@ webpackJsonp([0],[
 
 /***/ })
 ]);
-//# sourceMappingURL=app.72f5146ec2f4fb867b6f.js.map
+//# sourceMappingURL=app.fde093734184f5801f33.js.map
