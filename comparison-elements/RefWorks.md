@@ -1,19 +1,18 @@
-# RefWorks - https://refworks.proquest.com
+# RefWorks - https://www.refworks.com
+RefWorks is a web application for managing references. There exist different versions a legacy and a new one [@refworks-versions].
+The legacy version has to types of accounts: individual subscriber and organizational subscriber [@refworks-account].
 
 
 ## Open Source
 - no
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Web client
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Import from files
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Import filter
@@ -26,8 +25,9 @@
 
 ## Import from web pages
 - yes
-    - [@qucosa]
+    - with RefGrab-It
     - [@tum-comparison]
+    - [@refgrab-it]
 
 ## Export
 - BibTeX
@@ -42,11 +42,11 @@
 
 ## Full-text search
 - yes
-    - [@qucosa]
+    - available for organizational subscribers if organization configured it
+    - [@refworks-full-text]
 
 ## Manual entry of Reference / Title
 - yes
-    - [@qucosa]
 
 ## Document types
 - 31
@@ -58,105 +58,78 @@
 
 ## Define new entry fields
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Add metadata from other sources
-- ISBN
-    - with RefGrab-It
-    - [@tum-comparison]
-    - [@refgrab-it]
-- DOI
-    - with RefGrab-It
-    - [@tum-comparison]
-    - [@refgrab-it]
-- others
-    - with RefGrab-It
-    - [@refgrab-it]
 
 ## Link references
 - no
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Integration of documents
 - yes
-    - [@qucosa]
-    - [@tum-comparison]
+    - requires organizational subscription
+    - [@refworks-attach-file]
 
 ## Duplicate check
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Processing and evaluation of full texts
-- yes
-    - [@qucosa]
+- no
+    - [@tum-comparison]
 
 ## Data display
 - short
-    - [@qucosa]
     - [@tum-comparison]
 - full
-    - [@qucosa]
     - [@tum-comparison]
+    - [@refworks-full-text]
 - list
     - [@tum-comparison]
-- citation
-    - [@qucosa]
 
 ## Sorting options
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Search history
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Sharing records
 - yes
-    - [@qucosa]
+    - possible with RefShare
+    - requires organizational subscription
     - [@tum-comparison]
 
 ## Cooperative use
 - yes
-    - [@qucosa]
+    - possible with RefShare
+    - requires organizational subscription
     - [@tum-comparison]
 
 ## Different citation styles
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Self-definition or adaptation of citation styles
 - yes
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Word processing support
 - MS Word
     - add-in required
     - [@tum-comparison]
-    - [@qucosa]
-- Google Docs
-    - add-in required
-    - [@qucosa]
 
 ## Creation of literature lists
 - static
-    - [@qucosa]
     - [@tum-comparison]
 - dynamic
-    - [@qucosa]
     - [@tum-comparison]
 
 ## Organization of knowledge
 - notes
-    - [@qucosa]
 - groups
     - [@tum-comparison]
 - free text fields
-    - [@qucosa]
 

@@ -536,12 +536,12 @@
                 },
                 {
                     "name": "short",
-                    "description": "The software supports a short view of an entry.",
+                    "description": "The software supports a short view of an entry or all entries.",
                     "class": "label-primary"
                 },
                 {
                     "name": "full",
-                    "description": "The software supports a full view of an entry.",
+                    "description": "The software supports a full view of an entry or all entries.",
                     "class": "label-primary"
                 },
                 {
