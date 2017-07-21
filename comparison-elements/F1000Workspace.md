@@ -1,6 +1,8 @@
 # F1000Workspace - http://f1000.com/work
+F1000Workspace is a commercial web client to manage bibliographical references. It supports collaborative work of multiple users. Also, a free subscription is available with, e.g. limited storage and projects.
 
 ## Version
+- 2017-07-21
 
 ## Open Source
 - no
@@ -23,6 +25,7 @@
 
 ## Import from web pages
 - yes
+    - add-on required
     - [@f1000-user-guide]
 
 ## Export
@@ -127,4 +130,7 @@
 - tags
     - [@f1000-user-guide]
 - groups
+    - called projects
+    - also subprojects possible
+    - [@f1000-user-guide]
 
