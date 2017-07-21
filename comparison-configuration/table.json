@@ -38,6 +38,11 @@
                     "class": "label-primary"
                 },
                 {
+                    "name": "2.2.b",
+                    "description": "The software under test is version 2.2.b.",
+                    "class": "label-primary"
+                },
+                {
                     "name": "4.0.0 (beta)",
                     "description": "The software under test is version 4.0.0 (beta).",
                     "class": "label-primary"

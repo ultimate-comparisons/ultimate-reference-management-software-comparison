@@ -1,12 +1,19 @@
 [
   {
     "tag": "Aigaion - https://sourceforge.net/projects/aigaion",
-    "descr": "",
+    "descr": "Web based reference management program written in PHP and MySQL [@aigaion].",
     "Version": {
-      "plain": "",
+      "plain": "- 2.2.b\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "2.2.b",
+              "plain": "2.2.b\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -174,13 +181,13 @@
       }
     },
     "Database search": {
-      "plain": "- own database\n",
+      "plain": "- none\n",
       "childs": {
         "0": [
           [
             {
-              "content": "own database",
-              "plain": "own database\n",
+              "content": "none",
+              "plain": "none\n",
               "plainChilds": "",
               "childs": []
             }
@@ -366,6 +373,28 @@
       }
     },
     "Sorting options": {
+      "plain": "- yes\n    - in the navigation bar\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - in the navigation bar\n",
+              "childs": [
+                {
+                  "content": "in the navigation bar",
+                  "plain": "in the navigation bar\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Search history": {
       "plain": "- no\n",
       "childs": {
         "0": [
@@ -373,21 +402,6 @@
             {
               "content": "no",
               "plain": "no\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
-    "Search history": {
-      "plain": "- yes\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "yes",
-              "plain": "yes\n",
               "plainChilds": "",
               "childs": []
             }
@@ -486,7 +500,7 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- tags\n- notes\n- groups\n",
+      "plain": "- tags\n- notes\n- groups\n    - called topics\n    - also subtopics possible\n",
       "childs": {
         "0": [
           [
@@ -505,8 +519,21 @@
             {
               "content": "groups",
               "plain": "groups\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - called topics\n    - also subtopics possible\n",
+              "childs": [
+                {
+                  "content": "called topics",
+                  "plain": "called topics\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "also subtopics possible",
+                  "plain": "also subtopics possible\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
