@@ -287,6 +287,11 @@
                     "name": "yes",
                     "description": "The software supports full-text search.",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software supports partly full-text search.",
+                    "class": "label-warning"
                 }
             ]
         }
@@ -483,13 +488,18 @@
             "values": [
                 {
                     "name": "no",
-                    "description": "The software does not support integration of documents (local or via internet).",
+                    "description": "The software does not support the integration of documents (local or via internet).",
                     "class": "label-danger"
                 },
                 {
                     "name": "yes",
-                    "description": "The software supports integration of documents (local or via internet).",
+                    "description": "The software supports the integration of documents (local or via internet).",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software supports partly the integration of documents (local or via internet).",
+                    "class": "label-warning"
                 }
             ]
         }
@@ -652,6 +662,11 @@
                     "name": "yes",
                     "description": "The software supports sharing records with other users of the same reference management software.",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software supports partly sharing records with other users of the same reference management software.",
+                    "class": "label-warning"
                 }
             ]
         }
@@ -673,6 +688,11 @@
                     "name": "yes",
                     "description": "The software supports cooperative use and processing by several users.",
                     "class": "label-success"
+                },
+                {
+                    "name": "yes (L)",
+                    "description": "The software supports partly cooperative use and processing by several users.",
+                    "class": "label-warning"
                 }
             ]
         }

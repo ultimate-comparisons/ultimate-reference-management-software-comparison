@@ -43,7 +43,7 @@ The legacy version has to types of accounts: individual subscriber and organizat
 - others
 
 ## Full-text search
-- yes
+- yes (L)
     - available for organizational subscribers if organization configured it
     - [@refworks-full-text]
 
@@ -69,7 +69,7 @@ The legacy version has to types of accounts: individual subscriber and organizat
     - [@tum-comparison]
 
 ## Integration of documents
-- yes
+- yes (L)
     - requires organizational subscription
     - [@refworks-attach-file]
 
@@ -99,13 +99,13 @@ The legacy version has to types of accounts: individual subscriber and organizat
     - [@tum-comparison]
 
 ## Sharing records
-- yes
+- yes (L)
     - possible with RefShare
     - requires organizational subscription
     - [@tum-comparison]
 
 ## Cooperative use
-- yes
+- yes (L)
     - possible with RefShare
     - requires organizational subscription
     - [@tum-comparison]
