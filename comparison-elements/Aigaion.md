@@ -1,6 +1,8 @@
 # Aigaion - https://sourceforge.net/projects/aigaion
+Web based reference management program written in PHP and MySQL [@aigaion].
 
 ## Version
+- 2.2.b
 
 ## Open Source
 - yes
@@ -32,7 +34,7 @@
 	- [@aigaion]
 
 ## Database search
-- own database
+- none
 
 ## Full-text search
 - no
@@ -70,10 +72,11 @@
 - list
 
 ## Sorting options
-- no
+- yes
+    - in the navigation bar
 
 ## Search history
-- yes
+- no
 
 ## Sharing records
 - yes
@@ -97,4 +100,6 @@
 - tags
 - notes
 - groups
+    - called topics
+    - also subtopics possible
 
