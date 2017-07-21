@@ -5075,12 +5075,19 @@
   },
   {
     "tag": "F1000Workspace - http://f1000.com/work",
-    "descr": "",
+    "descr": "F1000Workspace is a commercial web client to manage bibliographical references. It supports collaborative work of multiple users. Also, a free subscription is available with, e.g. limited storage and projects.",
     "Version": {
-      "plain": "",
+      "plain": "- 2017-07-21\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "2017-07-21",
+              "plain": "2017-07-21\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -5192,15 +5199,21 @@
       }
     },
     "Import from web pages": {
-      "plain": "- yes\n    - [@f1000-user-guide]\n",
+      "plain": "- yes\n    - add-on required\n    - [@f1000-user-guide]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@f1000-user-guide]\n",
+              "plainChilds": "    - add-on required\n    - [@f1000-user-guide]\n",
               "childs": [
+                {
+                  "content": "add-on required",
+                  "plain": "add-on required\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
                 {
                   "content": ",[@f1000-user-guide]",
                   "plain": "[@f1000-user-guide]\n",
@@ -5746,7 +5759,7 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- notes\n    - [@f1000-user-guide]\n- tags\n    - [@f1000-user-guide]\n- groups\n",
+      "plain": "- notes\n    - [@f1000-user-guide]\n- tags\n    - [@f1000-user-guide]\n- groups\n    - called projects\n    - also subprojects possible\n    - [@f1000-user-guide]\n",
       "childs": {
         "0": [
           [
@@ -5779,8 +5792,27 @@
             {
               "content": "groups",
               "plain": "groups\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - called projects\n    - also subprojects possible\n    - [@f1000-user-guide]\n",
+              "childs": [
+                {
+                  "content": "called projects",
+                  "plain": "called projects\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "also subprojects possible",
+                  "plain": "also subprojects possible\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@f1000-user-guide]",
+                  "plain": "[@f1000-user-guide]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -6788,7 +6820,7 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- tags\n    - [@qucosa]\n- groups\n    - [@tum-comparison]\n    - also smart groups\n- special fields\n    - [@jabref-special-fields]\n",
+      "plain": "- tags\n    - [@qucosa]\n- groups\n    - [@tum-comparison]\n    - also smart groups\n- special fields\n    - rate reference\n    - mark as relevant\n    - set priority\n    - mark as quality assured\n    - [@jabref-special-fields]\n    - read status\n    - print status\n",
       "childs": {
         "0": [
           [
@@ -6827,11 +6859,47 @@
             {
               "content": "special fields",
               "plain": "special fields\n",
-              "plainChilds": "    - [@jabref-special-fields]\n",
+              "plainChilds": "    - rate reference\n    - mark as relevant\n    - set priority\n    - mark as quality assured\n    - [@jabref-special-fields]\n    - read status\n    - print status\n",
               "childs": [
                 {
+                  "content": "rate reference",
+                  "plain": "rate reference\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "mark as relevant",
+                  "plain": "mark as relevant\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "set priority",
+                  "plain": "set priority\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "mark as quality assured",
+                  "plain": "mark as quality assured\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
                   "content": ",[@jabref-special-fields]",
-                  "plain": "[@jabref-special-fields]\n",
+                  "plain": "[@jabref-special-fields]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "read status",
+                  "plain": "read status\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "print status",
+                  "plain": "print status\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -9276,13 +9344,13 @@
       }
     },
     "Full-text search": {
-      "plain": "- yes\n    - available for organizational subscribers if organization configured it\n    - [@refworks-full-text]\n",
+      "plain": "- yes (L)\n    - available for organizational subscribers if organization configured it\n    - [@refworks-full-text]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
+              "content": "yes (L)",
+              "plain": "yes (L)\n",
               "plainChilds": "    - available for organizational subscribers if organization configured it\n    - [@refworks-full-text]\n",
               "childs": [
                 {
@@ -9415,13 +9483,13 @@
       }
     },
     "Integration of documents": {
-      "plain": "- yes\n    - requires organizational subscription\n    - [@refworks-attach-file]\n",
+      "plain": "- yes (L)\n    - requires organizational subscription\n    - [@refworks-attach-file]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
+              "content": "yes (L)",
+              "plain": "yes (L)\n",
               "plainChilds": "    - requires organizational subscription\n    - [@refworks-attach-file]\n",
               "childs": [
                 {
@@ -9585,13 +9653,13 @@
       }
     },
     "Sharing records": {
-      "plain": "- yes\n    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
+      "plain": "- yes (L)\n    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
+              "content": "yes (L)",
+              "plain": "yes (L)\n",
               "plainChilds": "    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
               "childs": [
                 {
@@ -9619,13 +9687,13 @@
       }
     },
     "Cooperative use": {
-      "plain": "- yes\n    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
+      "plain": "- yes (L)\n    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
+              "content": "yes (L)",
+              "plain": "yes (L)\n",
               "plainChilds": "    - possible with RefShare\n    - requires organizational subscription\n    - [@tum-comparison]\n",
               "childs": [
                 {
