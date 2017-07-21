@@ -180,5 +180,10 @@ Free open source reference management software written in Java.
     - [@tum-comparison]
     - also smart groups
 - special fields
+    - rate reference
+    - mark as relevant
+    - set priority
+    - mark as quality assured
     - [@jabref-special-fields]
-
+    - read status
+    - print status
