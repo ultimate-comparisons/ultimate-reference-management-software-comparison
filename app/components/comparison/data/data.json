@@ -2240,24 +2240,18 @@
       }
     },
     "Import from files": {
-      "plain": "- yes\n    - [@citeulike]\n    - browser button available\n",
+      "plain": "- yes\n    - [@citeulike]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@citeulike]\n    - browser button available\n",
+              "plainChilds": "    - [@citeulike]\n",
               "childs": [
                 {
                   "content": ",[@citeulike]",
-                  "plain": "[@citeulike]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": "browser button available",
-                  "plain": "browser button available\n",
+                  "plain": "[@citeulike]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2296,18 +2290,24 @@
       }
     },
     "Import from web pages": {
-      "plain": "- yes\n    - [@citeulike]\n",
+      "plain": "- yes\n    - [@citeulike]\n    - browser button available\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@citeulike]\n",
+              "plainChilds": "    - [@citeulike]\n    - browser button available\n",
               "childs": [
                 {
                   "content": ",[@citeulike]",
-                  "plain": "[@citeulike]\n",
+                  "plain": "[@citeulike]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "browser button available",
+                  "plain": "browser button available\n",
                   "plainChilds": "",
                   "childs": []
                 }
