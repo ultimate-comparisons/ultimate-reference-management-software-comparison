@@ -49,7 +49,8 @@ Web based reference management program written in PHP and MySQL [@aigaion].
 - no
 
 ## Define new entry fields
-- no
+- yes
+    - in the site configuration
 
 ## Add metadata from other sources
 
