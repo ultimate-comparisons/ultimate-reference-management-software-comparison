@@ -2195,10 +2195,17 @@
     "tag": "CiteULike - http://www.citeulike.org",
     "descr": "Free reference management tool with additional features for paying Gold users like adding notes in PDF files.",
     "Version": {
-      "plain": "",
+      "plain": "- 2017-07-22\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "2017-07-22",
+              "plain": "2017-07-22\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -2233,18 +2240,24 @@
       }
     },
     "Import from files": {
-      "plain": "- yes\n    - [@citeulike]\n",
+      "plain": "- yes\n    - [@citeulike]\n    - browser button available\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@citeulike]\n",
+              "plainChilds": "    - [@citeulike]\n    - browser button available\n",
               "childs": [
                 {
                   "content": ",[@citeulike]",
-                  "plain": "[@citeulike]\n",
+                  "plain": "[@citeulike]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "browser button available",
+                  "plain": "browser button available\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2368,22 +2381,15 @@
       }
     },
     "Full-text search": {
-      "plain": "- yes\n    - in the library of the user and in groups the user belongs to\n",
+      "plain": "- no\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
-              "plainChilds": "    - in the library of the user and in groups the user belongs to\n",
-              "childs": [
-                {
-                  "content": "in the library of the user and in groups the user belongs to",
-                  "plain": "in the library of the user and in groups the user belongs to\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -2457,29 +2463,10 @@
       }
     },
     "Add metadata from other sources": {
-      "plain": "- ISBN\n- DOI\n- others\n",
+      "plain": "",
       "childs": {
         "0": [
-          [
-            {
-              "content": "ISBN",
-              "plain": "ISBN\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "DOI",
-              "plain": "DOI\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "others",
-              "plain": "others\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
+          ""
         ]
       }
     },
@@ -2630,13 +2617,13 @@
       }
     },
     "Search history": {
-      "plain": "- yes\n",
+      "plain": "- no\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
+              "content": "no",
+              "plain": "no\n",
               "plainChilds": "",
               "childs": []
             }
