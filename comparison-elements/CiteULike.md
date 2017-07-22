@@ -2,6 +2,7 @@
 Free reference management tool with additional features for paying Gold users like adding notes in PDF files.
 
 ## Version
+- 2017-07-22
 
 ## Open Source
 - no
@@ -12,6 +13,7 @@ Free reference management tool with additional features for paying Gold users li
 ## Import from files
 - yes
     - [@citeulike]
+    - browser button available
 
 ## Import filter
 - BibTeX
@@ -34,8 +36,7 @@ Free reference management tool with additional features for paying Gold users li
 - own database
 
 ## Full-text search
-- yes
-    - in the library of the user and in groups the user belongs to
+- no
 
 ## Manual entry of Reference / Title
 - yes
@@ -51,9 +52,6 @@ Free reference management tool with additional features for paying Gold users li
 - no
 
 ## Add metadata from other sources
-- ISBN
-- DOI
-- others
 
 ## Link references
 - no
@@ -83,7 +81,7 @@ Free reference management tool with additional features for paying Gold users li
 - yes
 
 ## Search history
-- yes
+- no
 
 ## Sharing records
 - yes
