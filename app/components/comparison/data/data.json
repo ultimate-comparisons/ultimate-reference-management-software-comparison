@@ -256,15 +256,22 @@
       }
     },
     "Define new entry fields": {
-      "plain": "- no\n",
+      "plain": "- yes\n    - in the site configuration\n",
       "childs": {
         "0": [
           [
             {
-              "content": "no",
-              "plain": "no\n",
-              "plainChilds": "",
-              "childs": []
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - in the site configuration\n",
+              "childs": [
+                {
+                  "content": "in the site configuration",
+                  "plain": "in the site configuration\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
