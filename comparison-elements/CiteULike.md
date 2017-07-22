@@ -13,7 +13,6 @@ Free reference management tool with additional features for paying Gold users li
 ## Import from files
 - yes
     - [@citeulike]
-    - browser button available
 
 ## Import filter
 - BibTeX
@@ -23,6 +22,7 @@ Free reference management tool with additional features for paying Gold users li
 ## Import from web pages
 - yes
     - [@citeulike]
+    - browser button available
 
 ## Export
 - BibTeX
