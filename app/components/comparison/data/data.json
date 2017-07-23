@@ -2772,12 +2772,19 @@
   },
   {
     "tag": "Colwiz - https://www.colwiz.com",
-    "descr": "Free reference management software with a web client.",
+    "descr": "Free reference management software with a web client [@tum-comparison]. There is a limitation of 5000 references per account and a maximum online storage of 30GB which can be achieved by actions like inviting friends or completing the profile details.",
     "Version": {
-      "plain": "",
+      "plain": "- 3.17.0606\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "3.17.0606",
+              "plain": "3.17.0606\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -3052,28 +3059,15 @@
       }
     },
     "Document types": {
-      "plain": "- 15\n    - [@qucosa]\n    - [@tum-comparison]\n",
+      "plain": "- 15\n",
       "childs": {
         "0": [
           [
             {
               "content": "15",
               "plain": "15\n",
-              "plainChilds": "    - [@qucosa]\n    - [@tum-comparison]\n",
-              "childs": [
-                {
-                  "content": ",[@qucosa]",
-                  "plain": "[@qucosa]\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -3124,10 +3118,16 @@
       }
     },
     "Add metadata from other sources": {
-      "plain": "- DOI\n    - [@tum-comparison]\n- others\n    - [@tum-comparison]\n",
+      "plain": "- ISBN\n- DOI\n    - [@tum-comparison]\n- others\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
+            {
+              "content": "ISBN",
+              "plain": "ISBN\n",
+              "plainChilds": "",
+              "childs": []
+            },
             {
               "content": "DOI",
               "plain": "DOI\n",
@@ -3181,43 +3181,36 @@
       }
     },
     "Integration of documents": {
-      "plain": "- yes\n    - only for Desktop version\n    - [@tum-comparison]\n",
+      "plain": "- yes\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - only for Desktop version\n    - [@tum-comparison]\n",
-              "childs": [
-                {
-                  "content": "only for Desktop version",
-                  "plain": "only for Desktop version\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
-                {
-                  "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
       }
     },
     "Duplicate check": {
-      "plain": "- yes\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - automatically executed\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "plainChilds": "    - automatically executed\n    - [@tum-comparison]\n",
               "childs": [
+                {
+                  "content": "automatically executed",
+                  "plain": "automatically executed\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -3322,21 +3315,15 @@
       }
     },
     "Search history": {
-      "plain": "- yes\n    - within one session\n    - [@tum-comparison]\n",
+      "plain": "- yes\n    - [@tum-comparison]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - within one session\n    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n",
               "childs": [
-                {
-                  "content": "within one session",
-                  "plain": "within one session\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@tum-comparison]",
                   "plain": "[@tum-comparison]\n",
@@ -3438,7 +3425,7 @@
       }
     },
     "Word processing support": {
-      "plain": "- TeX-Editor\n    - [@tum-comparison]\n- MS Word\n    - plug-in required\n    - [@tum-comparison]\n- LibreOffice\n    - plug-in required\n    - [@tum-comparison]\n- OpenOffice\n    - plug-in required\n    - [@tum-comparison]\n",
+      "plain": "- TeX-Editor\n    - [@tum-comparison]\n- MS Word\n    - plug-in required\n    - [@tum-comparison]\n- LibreOffice\n    - plug-in required\n    - [@tum-comparison]\n- OpenOffice\n    - plug-in required\n    - [@tum-comparison]\n- Google Docs\n    - add-on required\n",
       "childs": {
         "0": [
           [
@@ -3511,6 +3498,19 @@
                   "childs": []
                 }
               ]
+            },
+            {
+              "content": "Google Docs",
+              "plain": "Google Docs\n",
+              "plainChilds": "    - add-on required\n",
+              "childs": [
+                {
+                  "content": "add-on required",
+                  "plain": "add-on required\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -3552,7 +3552,7 @@
       }
     },
     "Organization of knowledge": {
-      "plain": "- notes\n    - [@tum-comparison]\n- groups\n    - [@tum-comparison]\n",
+      "plain": "- notes\n    - [@tum-comparison]\n- groups\n    - [@tum-comparison]\n    - also smart groups\n- tags\n",
       "childs": {
         "0": [
           [
@@ -3572,15 +3572,27 @@
             {
               "content": "groups",
               "plain": "groups\n",
-              "plainChilds": "    - [@tum-comparison]\n",
+              "plainChilds": "    - [@tum-comparison]\n    - also smart groups\n",
               "childs": [
                 {
                   "content": ",[@tum-comparison]",
-                  "plain": "[@tum-comparison]\n",
+                  "plain": "[@tum-comparison]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "also smart groups",
+                  "plain": "also smart groups\n",
                   "plainChilds": "",
                   "childs": []
                 }
               ]
+            },
+            {
+              "content": "tags",
+              "plain": "tags\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
