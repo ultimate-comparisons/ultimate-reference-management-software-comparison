@@ -1,7 +1,9 @@
 # Colwiz - https://www.colwiz.com
-Free reference management software with a web client.
+Free reference management software with a web client [@tum-comparison].
+There is a limitation of 5000 references per account and a maximum online storage of 30GB which can be achieved by actions like inviting friends or completing the profile details.
 
 ## Version
+- 3.17.0606
 
 ## Open Source
 - no
@@ -53,8 +55,6 @@ Free reference management software with a web client.
 
 ## Document types
 - 15
-    - [@qucosa]
-    - [@tum-comparison]
 
 ## Define new document types
 - no
@@ -65,6 +65,7 @@ Free reference management software with a web client.
     - [@tum-comparison]
 
 ## Add metadata from other sources
+- ISBN
 - DOI
     - [@tum-comparison]
 - others
@@ -76,11 +77,10 @@ Free reference management software with a web client.
 
 ## Integration of documents
 - yes
-    - only for Desktop version
-    - [@tum-comparison]
 
 ## Duplicate check
 - yes
+    - automatically executed
     - [@tum-comparison]
 
 ## Processing and evaluation of full texts
@@ -101,7 +101,6 @@ Free reference management software with a web client.
 
 ## Search history
 - yes
-    - within one session
     - [@tum-comparison]
 
 ## Sharing records
@@ -132,6 +131,8 @@ Free reference management software with a web client.
 - OpenOffice
     - plug-in required
     - [@tum-comparison]
+- Google Docs
+    - add-on required
 
 ## Creation of literature lists
 - static
@@ -144,5 +145,7 @@ Free reference management software with a web client.
     - [@tum-comparison]
 - groups
     - [@tum-comparison]
+    - also smart groups
+- tags
 
 

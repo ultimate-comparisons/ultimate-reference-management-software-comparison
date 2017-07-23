@@ -53,6 +53,11 @@
                     "class": "label-primary"
                 },
                 {
+                    "name": "3.17.0606",
+                    "description": "The software under test is version 3.17.0606.",
+                    "class": "label-primary"
+                },
+                {
                     "name": "2017-07-18",
                     "description": "The software was tested on July 18, 2017.",
                     "class": "label-info"
