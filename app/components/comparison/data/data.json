@@ -3603,10 +3603,17 @@
     "tag": "Docear - http://www.docear.org",
     "descr": "Free reference management software with a mind map feature.",
     "Version": {
-      "plain": "",
+      "plain": "- 1.2.0\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "1.2.0",
+              "plain": "1.2.0\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     },
@@ -3691,18 +3698,24 @@
       }
     },
     "Import from web pages": {
-      "plain": "- no\n    - [@docear]\n",
+      "plain": "- no\n    - copy BibTeX source manually\n    - [@docear-import-webpages]\n",
       "childs": {
         "0": [
           [
             {
               "content": "no",
               "plain": "no\n",
-              "plainChilds": "    - [@docear]\n",
+              "plainChilds": "    - copy BibTeX source manually\n    - [@docear-import-webpages]\n",
               "childs": [
                 {
-                  "content": ",[@docear]",
-                  "plain": "[@docear]\n",
+                  "content": "copy BibTeX source manually",
+                  "plain": "copy BibTeX source manually\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@docear-import-webpages]",
+                  "plain": "[@docear-import-webpages]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3740,18 +3753,18 @@
       }
     },
     "Database search": {
-      "plain": "- own database\n    - [@docear]\n",
+      "plain": "- none\n    - currently not available\n",
       "childs": {
         "0": [
           [
             {
-              "content": "own database",
-              "plain": "own database\n",
-              "plainChilds": "    - [@docear]\n",
+              "content": "none",
+              "plain": "none\n",
+              "plainChilds": "    - currently not available\n",
               "childs": [
                 {
-                  "content": ",[@docear]",
-                  "plain": "[@docear]\n",
+                  "content": "currently not available",
+                  "plain": "currently not available\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3762,18 +3775,24 @@
       }
     },
     "Full-text search": {
-      "plain": "- no\n    - [@docear]\n",
+      "plain": "- no\n    - [@docear]\n    - [@docear-manual]\n",
       "childs": {
         "0": [
           [
             {
               "content": "no",
               "plain": "no\n",
-              "plainChilds": "    - [@docear]\n",
+              "plainChilds": "    - [@docear]\n    - [@docear-manual]\n",
               "childs": [
                 {
                   "content": ",[@docear]",
-                  "plain": "[@docear]\n",
+                  "plain": "[@docear]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@docear-manual]",
+                  "plain": "[@docear-manual]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3844,18 +3863,24 @@
       }
     },
     "Add metadata from other sources": {
-      "plain": "- others\n    - [@docear]\n",
+      "plain": "- others\n    - for PDF files users can search on Google Scholar for metadata\n    - [@docear-manual]\n",
       "childs": {
         "0": [
           [
             {
               "content": "others",
               "plain": "others\n",
-              "plainChilds": "    - [@docear]\n",
+              "plainChilds": "    - for PDF files users can search on Google Scholar for metadata\n    - [@docear-manual]\n",
               "childs": [
                 {
-                  "content": ",[@docear]",
-                  "plain": "[@docear]\n",
+                  "content": "for PDF files users can search on Google Scholar for metadata",
+                  "plain": "for PDF files users can search on Google Scholar for metadata\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@docear-manual]",
+                  "plain": "[@docear-manual]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3881,28 +3906,35 @@
       }
     },
     "Integration of documents": {
-      "plain": "- yes\n",
+      "plain": "- yes\n    - [@docear-manual]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - [@docear-manual]\n",
+              "childs": [
+                {
+                  "content": ",[@docear-manual]",
+                  "plain": "[@docear-manual]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
       }
     },
     "Duplicate check": {
-      "plain": "- yes (L)\n    - in settings menu:\n    - automatically resolve duplicate keys\n    - always ignore duplicate keys\n",
+      "plain": "- yes\n    - in settings menu:\n    - automatically resolve duplicate keys\n    - always ignore duplicate keys\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes (L)",
-              "plain": "yes (L)\n",
+              "content": "yes",
+              "plain": "yes\n",
               "plainChilds": "    - in settings menu:\n    - automatically resolve duplicate keys\n    - always ignore duplicate keys\n",
               "childs": [
                 {
@@ -3930,15 +3962,28 @@
       }
     },
     "Processing and evaluation of full texts": {
-      "plain": "- yes\n",
+      "plain": "- yes\n    - [@docear-manual]\n    - currently add-on for automatic extraction of highlighted text is not available\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - [@docear-manual]\n    - currently add-on for automatic extraction of highlighted text is not available\n",
+              "childs": [
+                {
+                  "content": ",[@docear-manual]",
+                  "plain": "[@docear-manual]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "currently add-on for automatic extraction of highlighted text is not available",
+                  "plain": "currently add-on for automatic extraction of highlighted text is not available\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -4008,15 +4053,22 @@
       }
     },
     "Sharing records": {
-      "plain": "- no\n",
+      "plain": "- yes\n    - possible to copy project [@docear-manual] or BibTeX file\n",
       "childs": {
         "0": [
           [
             {
-              "content": "no",
-              "plain": "no\n",
-              "plainChilds": "",
-              "childs": []
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "    - possible to copy project [@docear-manual] or BibTeX file\n",
+              "childs": [
+                {
+                  "content": "possible to copy project [@docear-manual] or BibTeX file",
+                  "plain": "possible to copy project [@docear-manual] or BibTeX file\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -4051,14 +4103,14 @@
       }
     },
     "Different citation styles": {
-      "plain": "- yes\n    - [@docear-citation]\n    - [@docear]\n",
+      "plain": "- yes\n    - [@docear-citation]\n    - [@docear]\n    - [@docear-manual]\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "    - [@docear-citation]\n    - [@docear]\n",
+              "plainChilds": "    - [@docear-citation]\n    - [@docear]\n    - [@docear-manual]\n",
               "childs": [
                 {
                   "content": ",[@docear-citation]",
@@ -4068,7 +4120,13 @@
                 },
                 {
                   "content": ",[@docear]",
-                  "plain": "[@docear]\n",
+                  "plain": "[@docear]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@docear-manual]",
+                  "plain": "[@docear-manual]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -4101,21 +4159,15 @@
       }
     },
     "Word processing support": {
-      "plain": "- TeX-Editor\n    - add-on required\n    - [@docear]\n- MS Word\n    - add-on required\n    - only available for Windows\n    - [@docear]\n",
+      "plain": "- TeX-Editor\n    - [@docear]\n- MS Word\n    - add-on Docear4Word required\n    - only available for Windows\n    - [@docear]\n",
       "childs": {
         "0": [
           [
             {
               "content": "TeX-Editor",
               "plain": "TeX-Editor\n",
-              "plainChilds": "    - add-on required\n    - [@docear]\n",
+              "plainChilds": "    - [@docear]\n",
               "childs": [
-                {
-                  "content": "add-on required",
-                  "plain": "add-on required\n    ",
-                  "plainChilds": "",
-                  "childs": []
-                },
                 {
                   "content": ",[@docear]",
                   "plain": "[@docear]\n",
@@ -4127,11 +4179,11 @@
             {
               "content": "MS Word",
               "plain": "MS Word\n",
-              "plainChilds": "    - add-on required\n    - only available for Windows\n    - [@docear]\n",
+              "plainChilds": "    - add-on Docear4Word required\n    - only available for Windows\n    - [@docear]\n",
               "childs": [
                 {
-                  "content": "add-on required",
-                  "plain": "add-on required\n    ",
+                  "content": "add-on Docear4Word required",
+                  "plain": "add-on Docear4Word required\n    ",
                   "plainChilds": "",
                   "childs": []
                 },
