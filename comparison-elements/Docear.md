@@ -2,6 +2,7 @@
 Free reference management software with a mind map feature.
 
 ## Version
+- 1.2.0
 
 ## Open Source
 - yes
@@ -20,7 +21,8 @@ Free reference management software with a mind map feature.
 
 ## Import from web pages
 - no
-    - [@docear]
+    - copy BibTeX source manually
+    - [@docear-import-webpages]
 
 ## Export
 - BibTeX
@@ -28,12 +30,13 @@ Free reference management software with a mind map feature.
 - others
 
 ## Database search
-- own database
-    - [@docear]
+- none
+    - currently not available
 
 ## Full-text search
 - no
     - [@docear]
+    - [@docear-manual]
 
 ## Manual entry of Reference / Title
 - yes
@@ -49,22 +52,26 @@ Free reference management software with a mind map feature.
 
 ## Add metadata from other sources
 - others
-    - [@docear]
+    - for PDF files users can search on Google Scholar for metadata
+    - [@docear-manual]
 
 ## Link references
 - yes
 
 ## Integration of documents
 - yes
+    - [@docear-manual]
 
 ## Duplicate check
-- yes (L)
+- yes
     - in settings menu:
     - automatically resolve duplicate keys
     - always ignore duplicate keys
 
 ## Processing and evaluation of full texts
 - yes
+    - [@docear-manual]
+    - currently add-on for automatic extraction of highlighted text is not available
 
 ## Data display
 - BibTeX
@@ -79,7 +86,8 @@ Free reference management software with a mind map feature.
 - yes
 
 ## Sharing records
-- no
+- yes
+    - possible to copy project [@docear-manual] or BibTeX file
 
 ## Cooperative use
 - no
@@ -90,6 +98,7 @@ Free reference management software with a mind map feature.
 - yes
     - [@docear-citation]
     - [@docear]
+    - [@docear-manual]
 
 ## Self-definition or adaptation of citation styles
 - yes
@@ -97,10 +106,9 @@ Free reference management software with a mind map feature.
 
 ## Word processing support
 - TeX-Editor
-    - add-on required
     - [@docear]
 - MS Word
-    - add-on required
+    - add-on Docear4Word required
     - only available for Windows
     - [@docear]
 
