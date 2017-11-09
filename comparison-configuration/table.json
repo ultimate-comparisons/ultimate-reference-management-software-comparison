@@ -240,7 +240,7 @@
             "values": [
                 {
                     "name": "Google Scholar",
-                    "description": "The software supports database search at [Google Scholar](https://scholar.google.com).",
+                    "description": "The software supports database search at Google Scholar <https://scholar.google.com>.",
                     "class": "label-primary",
                     "weight": 4
                 },
@@ -252,31 +252,31 @@
                 },
                 {
                     "name": "arXiv",
-                    "description": "The software supports database search at [arXiv](https://arxiv.org).",
+                    "description": "The software supports database search at arXiv <https://arxiv.org>.",
                     "class": "label-primary",
                     "weight": 1
                 },
                 {
                     "name": "IEEE Xplore",
-                    "description": "The software supports database search at [IEEE Xplore](http://ieeexplore.ieee.org/Xplore/home.jsp).",
+                    "description": "The software supports database search at IEEE Xplore <http://ieeexplore.ieee.org>.",
                     "class": "label-primary",
                     "weight": 5
                 },
                 {
                     "name": "DBLP",
-                    "description": "The software supports database search at [DBLP](http://dblp.uni-trier.de).",
+                    "description": "The software supports database search at DBLP <http://dblp.uni-trier.de>.",
                     "class": "label-primary",
                     "weight": 3
                 },
                 {
                     "name": "Springer",
-                    "description": "The software supports database search at [Springer](https://www.springer.com).",
+                    "description": "The software supports database search at Springer <https://link.springer.com>.",
                     "class": "label-primary",
                     "weight": 6
                 },
                 {
                     "name": "Crossref",
-                    "description": "The software supports database search at [Crossref](http://crossref.org).",
+                    "description": "The software supports database search at Crossref <https://search.crossref.org>.",
                     "class": "label-primary",
                     "weight": 2
                 },
