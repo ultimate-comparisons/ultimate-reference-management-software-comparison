@@ -9200,6 +9200,550 @@
     }
   },
   {
+    "tag": "Papis - http://github.com/alejandrogallo/papis",
+    "descr": "Papis is a powerful and highly extensible command-line based document and bibliography manager.",
+    "Version": {
+      "plain": "- v0.4.8\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "v0.4.8",
+              "plain": "v0.4.8\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Open Source": {
+      "plain": "- yes\n- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Performance": {
+      "plain": "- fast\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "fast",
+              "plain": "fast\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- GPLv3\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "GPLv3",
+              "plain": "GPLv3\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Web client": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Import from files": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Import filter": {
+      "plain": "- BibTeX\n- yaml\n- json\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BibTeX",
+              "plain": "BibTeX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "yaml",
+              "plain": "yaml\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "json",
+              "plain": "json\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Import from web pages": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Export": {
+      "plain": "- BibTeX\n- yaml\n- json\n- user defined\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BibTeX",
+              "plain": "BibTeX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "yaml",
+              "plain": "yaml\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "json",
+              "plain": "json\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "user defined",
+              "plain": "user defined\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Database search": {
+      "plain": "- ArXiv\n- Crossref\n- isbnplus.org\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "ArXiv",
+              "plain": "ArXiv\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Crossref",
+              "plain": "Crossref\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "isbnplus.org",
+              "plain": "isbnplus.org\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Full-text search": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Manual entry of Reference / Title": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Define new document types": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Define new entry fields": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Add metadata from other sources": {
+      "plain": "- ISBN\n- DOI\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "ISBN",
+              "plain": "ISBN\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "DOI",
+              "plain": "DOI\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Integration of documents": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Duplicate check": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Processing and evaluation of full texts": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Data display": {
+      "plain": "- BibTeX\n- short\n- full\n- list\n- table\n- citation\n- arbitrary\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BibTeX",
+              "plain": "BibTeX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "short",
+              "plain": "short\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "full",
+              "plain": "full\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "list",
+              "plain": "list\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "table",
+              "plain": "table\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "citation",
+              "plain": "citation\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "arbitrary",
+              "plain": "arbitrary\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Sorting options": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Search history": {
+      "plain": "- no\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "no",
+              "plain": "no\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Sharing records": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Cooperative use": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Different citation styles": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Self-definition or adaptation of citation styles": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Word processing support": {
+      "plain": "- none\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "none",
+              "plain": "none\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Creation of literature lists": {
+      "plain": "- static\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "static",
+              "plain": "static\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Organization of knowledge": {
+      "plain": "- notes\n- tags\n- groups\n- special fields\n- free text fields\n- mind map\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "notes",
+              "plain": "notes\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "tags",
+              "plain": "tags\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "groups",
+              "plain": "groups\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "special fields",
+              "plain": "special fields\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "free text fields",
+              "plain": "free text fields\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "mind map",
+              "plain": "mind map\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "RefWorks - https://www.refworks.com",
     "descr": "RefWorks is a web application for managing references. There exist different versions a legacy and a new one [@refworks-versions]. The legacy version has to types of accounts: individual subscriber and organizational subscriber [@refworks-account].",
     "Version": {
