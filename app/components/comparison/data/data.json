@@ -9203,13 +9203,13 @@
     "tag": "Papis - http://github.com/alejandrogallo/papis",
     "descr": "Papis is a powerful and highly extensible command-line based document and bibliography manager.",
     "Version": {
-      "plain": "- v0.4.8\n",
+      "plain": "- 0.4.8\n",
       "childs": {
         "0": [
           [
             {
-              "content": "v0.4.8",
-              "plain": "v0.4.8\n",
+              "content": "0.4.8",
+              "plain": "0.4.8\n",
               "plainChilds": "",
               "childs": []
             }
@@ -9218,49 +9218,13 @@
       }
     },
     "Open Source": {
-      "plain": "- yes\n- no\n",
+      "plain": "- yes\n",
       "childs": {
         "0": [
           [
             {
               "content": "yes",
               "plain": "yes\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "no",
-              "plain": "no\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
-    "Performance": {
-      "plain": "- fast\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "fast",
-              "plain": "fast\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
-    "License": {
-      "plain": "- GPLv3\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "GPLv3",
-              "plain": "GPLv3\n",
               "plainChilds": "",
               "childs": []
             }
@@ -9299,7 +9263,7 @@
       }
     },
     "Import filter": {
-      "plain": "- BibTeX\n- yaml\n- json\n",
+      "plain": "- BibTeX\n- others\n",
       "childs": {
         "0": [
           [
@@ -9310,14 +9274,8 @@
               "childs": []
             },
             {
-              "content": "yaml",
-              "plain": "yaml\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "json",
-              "plain": "json\n",
+              "content": "others",
+              "plain": "others\n",
               "plainChilds": "",
               "childs": []
             }
@@ -9341,7 +9299,7 @@
       }
     },
     "Export": {
-      "plain": "- BibTeX\n- yaml\n- json\n- user defined\n",
+      "plain": "- BibTeX\n- others\n",
       "childs": {
         "0": [
           [
@@ -9352,20 +9310,8 @@
               "childs": []
             },
             {
-              "content": "yaml",
-              "plain": "yaml\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "json",
-              "plain": "json\n",
-              "plainChilds": "",
-              "childs": []
-            },
-            {
-              "content": "user defined",
-              "plain": "user defined\n",
+              "content": "others",
+              "plain": "others\n",
               "plainChilds": "",
               "childs": []
             }
@@ -9374,13 +9320,13 @@
       }
     },
     "Database search": {
-      "plain": "- ArXiv\n- Crossref\n- isbnplus.org\n",
+      "plain": "- arXiv\n- Crossref\n- others\n",
       "childs": {
         "0": [
           [
             {
-              "content": "ArXiv",
-              "plain": "ArXiv\n",
+              "content": "arXiv",
+              "plain": "arXiv\n",
               "plainChilds": "",
               "childs": []
             },
@@ -9391,8 +9337,8 @@
               "childs": []
             },
             {
-              "content": "isbnplus.org",
-              "plain": "isbnplus.org\n",
+              "content": "others",
+              "plain": "others\n",
               "plainChilds": "",
               "childs": []
             }
@@ -9427,6 +9373,14 @@
               "childs": []
             }
           ]
+        ]
+      }
+    },
+    "Document types": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
         ]
       }
     },
@@ -9478,6 +9432,14 @@
               "childs": []
             }
           ]
+        ]
+      }
+    },
+    "Link references": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
         ]
       }
     },

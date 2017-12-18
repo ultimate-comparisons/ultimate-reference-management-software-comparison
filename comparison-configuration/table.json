@@ -63,6 +63,11 @@
                     "class": "label-primary"
                 },
                 {
+                    "name": "0.4.8",
+                    "description": "The software under test is version 0.4.8.",
+                    "class": "label-primary"
+                },
+                {
                     "name": "2017-07-18",
                     "description": "The software was tested on July 18, 2017.",
                     "class": "label-info"
@@ -623,6 +628,11 @@
                 {
                     "name": "citation",
                     "description": "The software supports a citation display of an entry.",
+                    "class": "label-primary"
+                },
+                {
+                    "name": "arbitrary",
+                    "description": "The software supports an arbitrary view of all entries.",
                     "class": "label-primary"
                 }
             ]
