@@ -66,9 +66,9 @@ The value for `Version` must be added to the `table.json` file and also the numb
     
     ## Database search
     - Google Scholar
-    - ArXiv
-    - IEEEXplore
-    - dblp
+    - arXiv
+    - IEEE Xplore
+    - DBLP
     - Springer
     - Crossref
     - own database
@@ -127,6 +127,7 @@ The value for `Version` must be added to the `table.json` file and also the numb
     - table
     - timeline
     - citation
+	- arbitrary
     
     ## Sorting options
     - yes

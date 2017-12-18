@@ -2,17 +2,10 @@
 Papis is a powerful and highly extensible command-line based document and bibliography manager.
 
 ## Version
-- "v0.4.8"
+- 0.4.8
 
 ## Open Source
 - yes
-- no
-
-## Performance
-- fast
-
-## License
-- GPLv3
 
 ## Web client
 - no
@@ -22,28 +15,28 @@ Papis is a powerful and highly extensible command-line based document and biblio
 
 ## Import filter
 - BibTeX
-- yaml
-- json
+- others
 
 ## Import from web pages
 - yes
 
 ## Export
 - BibTeX
-- yaml
-- json
-- user defined
+- others
 
 ## Database search
-- ArXiv
+- arXiv
 - Crossref
-- isbnplus.org
+- others
 
 ## Full-text search
 - no
 
 ## Manual entry of Reference / Title
 - yes
+
+## Document types
+
 
 ## Define new document types
 - yes
@@ -54,6 +47,9 @@ Papis is a powerful and highly extensible command-line based document and biblio
 ## Add metadata from other sources
 - ISBN
 - DOI
+
+## Link references
+
 
 ## Integration of documents
 - yes
