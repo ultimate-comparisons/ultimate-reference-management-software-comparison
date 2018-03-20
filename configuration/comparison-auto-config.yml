@@ -2,7 +2,8 @@ title: Ultimate-Comparison
 subtitle: Ultimate comparison of reference management software
 selectTitle: Criteria
 tableTitle: Comparison of reference management software
-repository: 'https://github.com/kleinech/database-comparison.git'
+repository: >-
+  https://github.com/ultimate-comparisons/ultimate-reference-management-software-comparison
 details:
   header:
     nameRef: id
@@ -17,7 +18,6 @@ criteria:
   - id:
       name: Software
       search: false
-      type: url
   - description:
       name: Short Description
       table: false

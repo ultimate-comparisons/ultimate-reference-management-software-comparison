@@ -17,7 +17,6 @@ criteria:
   - id:
       name: Software
       search: false
-      type: url
   - description:
       name: Short Description
       table: false
