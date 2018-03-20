@@ -1,0 +1,522 @@
+title: Ultimate-Comparison
+subtitle: Ultimate comparison of reference management software
+selectTitle: Criteria
+tableTitle: Comparison of reference management software
+repository: 'https://github.com/ultimate-comparisons/ultimate-reference-management-software-comparison'
+details:
+  header:
+    nameRef: id
+    urlRef: inline
+  body:
+    title: Description
+    bodyRef: description
+citation:
+  csl: apa.csl
+  bib: default.bib
+criteria:
+  - id:
+      name: Software
+      search: false
+  - description:
+      name: Short Description
+      table: false
+      search: false
+      type: markdown
+  - Version:
+      table: false
+      search: false
+      type: label
+      values:
+        5.6.0.2:
+          description: The software under test is Citavi for Windows version 5.6.0.2.
+          class: label-primary
+        2.0:
+          description: The software under test is the legacy version 2.0. It was tested on July 20, 2017.
+          class: label-primary
+        2.2.b:
+          description: The software under test is version 2.2.b.
+          class: label-primary
+        4.0.0 (beta):
+          description: The software under test is version 4.0.0 (beta).
+          class: label-primary
+        X8.0.1:
+          description: The software under test is version X8.0.1.
+          class: label-primary
+        3.17.0606:
+          description: The software under test is version 3.17.0606.
+          class: label-primary
+        1.2.0:
+          description: The software under test is version 1.2.0.
+          class: label-primary
+        0.4.8:
+          description: The software under test is version 0.4.8.
+          class: label-primary
+        2017-07-18:
+          description: The software was tested on July 18, 2017.
+          class: label-info
+        2017-07-21:
+          description: The software was tested on July 21, 2017.
+          class: label-info
+        2017-07-22:
+          description: The software was tested on July 22, 2017.
+          class: label-info
+  - Open Source:
+      table: true
+      search: true
+      description: The software is open source or not.
+      andSearch: false
+      placeholder: Select ...
+      type: label
+      values:
+        no:
+          description: The software is not Open Source.
+          class: label-danger
+        yes:
+          description: The software is Open Source.
+          class: label-success
+  - Web client:
+      table: true
+      search: false
+      type: label
+      values:
+        no:
+          description: The software has no web client.
+          class: label-danger
+        yes:
+          description: The software has a web client.
+          class: label-success
+        yes (L):
+          description: The software has a web client with limited functionality.
+          class: label-warning
+  - Import from files:
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support import from files.
+          class: label-danger
+        yes:
+          description: The software supports import from files.
+          class: label-success
+  - Import filter:
+      table: true
+      search: false
+      type: label
+      values:
+        RIS:
+          description: RIS import filter is available.
+          class: label-primary
+          weight: 2
+        BibTeX:
+          description: BibTeX import filter is available.
+          class: label-primary
+          weight: 1
+        others:
+          description: Other import filters are available.
+          class: label-primary
+          weight: 3
+  - Import from web pages:
+      table: true
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support import from web pages.
+          class: label-danger
+        yes:
+          description: The software supports import from web pages.
+          class: label-success
+  - Export:
+      table: true
+      search: false
+      type: label
+      values:
+        RIS:
+          description: RIS export available.
+          class: label-primary
+          weight: 2
+        BibTeX:
+          description: BibTeX export available.
+          class: label-primary
+          weight: 1
+        others:
+          description: Other export formats available.
+          class: label-primary
+          weight: 3
+  - Database search:
+      table: true
+      search: true
+      description: Database searches within the software.
+      andSearch: true
+      placeholder: Select ...
+      type: label
+      values:
+        Google Scholar:
+          description: The software supports database search at Google Scholar <https://scholar.google.com>.
+          class: label-primary
+          weight: 4
+        own database:
+          description: The software supports database search in its own database.
+          class: label-primary
+          weight: 7
+        arXiv:
+          description: The software supports database search at arXiv <https://arxiv.org>.
+          class: label-primary
+          weight: 1
+        IEEE Xplore:
+          description: The software supports database search at IEEE Xplore <http://ieeexplore.ieee.org>.
+          class: label-primary
+          weight: 5
+        DBLP:
+          description: The software supports database search at DBLP <http://dblp.uni-trier.de>.
+          class: label-primary
+          weight: 3
+        Springer:
+          description: The software supports database search at Springer <https://link.springer.com>.
+          class: label-primary
+          weight: 6
+        Crossref:
+          description: The software supports database search at Crossref <https://search.crossref.org>.
+          class: label-primary
+          weight: 2
+        others:
+          description: The software supports other database searches.
+          class: label-primary
+          weight: 8
+        none:
+          description: The software does not support database searches.
+          class: label-danger
+          weight: 9
+  - Full-text search:
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support full-text search.
+          class: label-danger
+        yes:
+          description: The software supports full-text search.
+          class: label-success
+        yes (L):
+          description: The software supports partly full-text search.
+          class: label-warning
+  - Manual entry of Reference / Title:
+      name: Manual entry of Reference
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support manual entry of a reference / title.
+          class: label-danger
+        yes:
+          description: The software supports manual entry of a reference / title.
+          class: label-success
+  - Document types:
+      table: false
+      search: true
+      description: Number of available document types.
+      order: ASC
+      rangeSearch: true
+      placeholder: Select number ranges ...
+      type:
+      values:
+        11:
+          description: The software supports 11 document types.
+          class: label-primary
+        13:
+          description: The software supports 13 document types.
+          class: label-primary
+        15:
+          description: The software supports 15 document types.
+          class: label-primary
+        17:
+          description: The software supports 17 document types.
+          class: label-primary
+        19:
+          description: The software supports 19 document types.
+          class: label-primary
+        20:
+          description: The software supports 20 document types.
+          class: label-primary
+        21:
+          description: The software supports 21 document types.
+          class: label-primary
+        31:
+          description: The software supports 31 document types.
+          class: label-primary
+        33:
+          description: The software supports 33 document types.
+          class: label-primary
+        35:
+          description: The software supports 35 document types.
+          class: label-primary
+        36:
+          description: The software supports 36 document types.
+          class: label-primary
+        51:
+          description: The software supports 51 document types.
+          class: label-primary
+  - Define new document types:
+      table: true
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support user defined document types.
+          class: label-danger
+        yes:
+          description: The software supports user defined document types.
+          class: label-success
+  - Define new entry fields:
+      table: true
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support user defined entry fields.
+          class: label-danger
+        yes:
+          description: The software supports user defined entry fields.
+          class: label-success
+  - Add metadata from other sources:
+      table: true
+      search: false
+      type: label
+      values:
+        ISBN:
+          description: The software supports adding metadata via ISBN.
+          class: label-primary
+        DOI:
+          description: The software supports adding metadata via DOI.
+          class: label-primary
+        others:
+          description: The software supports adding metadata via other information.
+          class: label-primary
+  - Link references:
+      table: true
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support linking references (e.g. reprints, translations).
+          class: label-danger
+        yes:
+          description: The software supports linking references (e.g. reprints, translations).
+          class: label-success
+  - Integration of documents:
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support the integration of documents (local or via internet).
+          class: label-danger
+        yes:
+          description: The software supports the integration of documents (local or via internet).
+          class: label-success
+        yes (L):
+          description: The software supports partly the integration of documents (local or via internet).
+          class: label-warning
+  - Duplicate check:
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support duplicate check.
+          class: label-danger
+        yes:
+          description: The software supports duplicate check.
+          class: label-success
+        yes (L):
+          description: The software supports partly a duplicate check.
+          class: label-warning
+  - Processing and evaluation of full texts:
+      table: true
+      search: true
+      andSearch: false
+      type: label
+      values:
+        no:
+          description: The software does not support processing and evaluation of full texts.
+          class: label-danger
+        yes:
+          description: The software supports processing and evaluation of full texts.
+          class: label-success
+        yes (L):
+          description: The software supports partly processing and evaluation of full texts.
+          class: label-warning
+  - Data display:
+      table: false
+      search: false
+      type: label
+      values:
+        BibTeX:
+          description: The software supports a view of the BibTeX source code.
+          class: label-primary
+        list:
+          description: The software supports a list view of all entries.
+          class: label-primary
+        table:
+          description: The software supports a table view of all entries.
+          class: label-primary
+        short:
+          description: The software supports a short view of an entry or all entries.
+          class: label-primary
+        full:
+          description: The software supports a full view of an entry or all entries.
+          class: label-primary
+        timeline:
+          description: The software supports a timeline view of all entries.
+          class: label-primary
+        citation:
+          description: The software supports a citation display of an entry.
+          class: label-primary
+        arbitrary:
+          description: The software supports an arbitrary view of all entries.
+          class: label-primary
+  - Sorting options:
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support sorting options for references.
+          class: label-danger
+        yes:
+          description: The software supports sorting options for references.
+          class: label-success
+  - Search history:
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support search history.
+          class: label-danger
+        yes:
+          description: The software supports search history.
+          class: label-success
+  - Sharing records:
+      name: Sharing records with other users
+      table: true
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support sharing records with other users of the same reference management software.
+          class: label-danger
+        yes:
+          description: The software supports sharing records with other users of the same reference management software.
+          class: label-success
+        yes (L):
+          description: The software supports partly sharing records with other users of the same reference management software.
+          class: label-warning
+  - Cooperative use:
+      table: true
+      search: true
+      description: The software supports cooperative use and processing by several users.
+      andSearch: false
+      placeholder: Select ...
+      type: label
+      values:
+        no:
+          description: The software does not support cooperative use and processing by several users.
+          class: label-danger
+        yes:
+          description: The software supports cooperative use and processing by several users.
+          class: label-success
+        yes (L):
+          description: The software supports partly cooperative use and processing by several users.
+          class: label-warning
+  - Different citation styles:
+      table: false
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support different citation styles.
+          class: label-danger
+        yes:
+          description: The software supports different citation styles.
+          class: label-success
+  - Self-definition or adaptation of citation styles:
+      table: true
+      search: false
+      type: label
+      values:
+        no:
+          description: The software does not support self-definition or adaptation of citation styles.
+          class: label-danger
+        yes:
+          description: The software supports self-definition or adaptation of citation styles.
+          class: label-success
+  - Word processing support:
+      table: false
+      search: true
+      description: The software has word processing program support.
+      andSearch: true
+      placeholder: Select word processing program ...
+      type: label
+      values:
+        TeX-Editor:
+          description: The software supports inserting references into TeX-Editors.
+          class: label-primary
+        MS Word:
+          description: The software supports inserting references into Microsoft Word.
+          class: label-primary
+        OpenOffice:
+          description: The software supports inserting references into OpenOffice.
+          class: label-primary
+        				        LibreOffice:
+          description: The software supports inserting references into LibreOffice.
+          class: label-primary
+        Google Docs:
+          description: The software supports inserting references into Google Docs.
+          class: label-primary
+        none:
+          description: The software does not support a word processing program.
+          class: label-danger
+  - Creation of literature lists:
+      table: true
+      search: true
+      description: Support of static or dynamic creation of literature lists.
+      andSearch: true
+      placeholder: Select ...
+      type: label
+      values:
+        static:
+          description: The software supports the creation of static reference lists.
+          class: label-primary
+        dynamic:
+          description: The software supports the creation of dynamic reference lists.
+          class: label-primary
+        dynamic (L):
+          description: The software supports partly the creation of dynamic reference lists.
+          class: label-warning
+  - Organization of knowledge:
+      table: true
+      search: false
+      type: label
+      values:
+        notes:
+          description: The software supports creation of notes.
+          class: label-primary
+        tags:
+          description: The software supports creation of tags.
+          class: label-primary
+        groups:
+          description: The software supports creation of reference groups.
+          class: label-primary
+        special fields:
+          description: The software supports creation of special fields.
+          class: label-primary
+        free text fields:
+          description: The software supports creation of free text fields.
+          class: label-primary
+        mind map:
+          description: The software supports creation of mind maps.
+          class: label-primary
